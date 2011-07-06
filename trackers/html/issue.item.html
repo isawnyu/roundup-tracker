@@ -1,0 +1,235 @@
+<tal:block metal:use-macro="templates/page/macros/icing">
+<title metal:fill-slot="head_title">
+<tal:block condition="context/id" i18n:translate=""
+ >Issue <tal:x tal:content="context/id" i18n:name="id"
+ />: <tal:x content="context/title" i18n:name="title"
+ /> - <tal:x content="config/TRACKER_NAME" i18n:name="tracker"
+/></tal:block>
+<tal:block condition="not:context/id" i18n:translate=""
+ >New Issue - <span tal:replace="config/TRACKER_NAME" i18n:name="tracker"
+/></tal:block>
+</title>
+<tal:block metal:fill-slot="body_title">
+ <span tal:condition="python: not (context.id or context.is_edit_ok())"
+  tal:omit-tag="python:1" i18n:translate="">New Ticket</span>
+ <span tal:condition="python: not context.id and context.is_edit_ok()"
+  tal:omit-tag="python:1" i18n:translate="">New Ticket Editing</span>
+ <span tal:condition="python: context.id and not context.is_edit_ok()"
+  tal:omit-tag="python:1" i18n:translate="">Ticket<tal:x
+  replace="context/id" i18n:name="id" /></span>
+ <span tal:condition="python: context.id and context.is_edit_ok()"
+  tal:omit-tag="python:1" i18n:translate="">Editing Ticket <tal:x
+  replace="context/id" i18n:name="id" /></span>
+</tal:block>
+
+<span class="content" metal:fill-slot="content">
+
+<p tal:condition="python:not (context.is_view_ok()
+ or request.user.hasRole('Anonymous'))" i18n:translate="">
+ You are not allowed to view this page.</p>
+
+<p tal:condition="python:not context.is_view_ok()
+ and request.user.hasRole('Anonymous')" i18n:translate="">
+ Please login with your username and password.</p>
+
+<div tal:condition="context/is_view_ok">
+
+<form method="POST" name="itemSynopsis"
+      onSubmit="return submit_once()" enctype="multipart/form-data"
+      tal:attributes="action context/designator">
+
+<table class="form">
+<tr>
+ <th class="required" i18n:translate="">Title</th>
+ <td colspan=3 tal:content="structure python:context.title.field(size=60)">title</td>
+</tr>
+
+<tr tal:condition="context/is_edit_ok">
+ <th i18n:translate="">Add note</th>
+  <td colspan=3>
+  <textarea class="wysiwyg" tal:content="request/form/@note/value | default"
+            name="@note" wrap="hard" rows="10" cols="80"></textarea>
+  </td>
+</tr>
+
+
+
+<!-- We set the default values here -->
+<!-- If you need to update these you need to check the option list -->
+<!-- Christopher Warner -->
+<tr>
+<!-- Set defaults for new tickets -->
+ <th tal:condition="not:context/id" class="required" i18n:translate="">Priority</th>
+ <td tal:condition="not:context/id" tal:content="structure python:context.priority.menu(value=3)">priority</td>
+ <th tal:condition="not:context/id" i18n:translate="">Status</th>
+ <td tal:condition="not:context/id" tal:content="structure python:context.status.menu(value=1)">status</td>
+<!-- -->
+
+<!-- This is ugly -->
+<!-- I know, I know -->
+ <th tal:condition="context/id" class="required" i18n:translate="">Priority</th>
+ <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
+ <th tal:condition="context/id" i18n:translate="">Status</th>
+ <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
+</tr>
+
+<tr>
+ <th i18n:translate="">Related Ticket</th>
+ <td>
+  <span tal:replace="structure python:context.superseder.field(showid=1, size=20)" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title', property='superseder')" />
+  <span tal:condition="context/superseder">
+   <br><span i18n:translate="">View:</span>
+     <a tal:repeat="sup context/superseder"
+        tal:content="python:sup['id'] + ', '*(not repeat['sup'].end)"
+        tal:attributes="href string:issue${sup/id}"></a>
+  </span>
+ </td>
+ <th i18n:translate="">CC</th>
+ <td>
+  <span tal:replace="structure context/nosy/field" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure
+python:db.user.classhelp('username,realname,address', property='nosy', width='600')" /><br>
+ </td>
+</tr>
+
+<tr>
+ <th i18n:translate="">Assigned To</th>
+ <td tal:content="structure context/assignedto/menu">assignedto menu</td>
+ <th i18n:translate="">Keywords</th>
+ <td>
+  <span tal:replace="structure context/keyword/field" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.keyword.classhelp(property='keyword')" />
+ </td>
+</tr>
+
+<tr tal:condition="context/is_edit_ok">
+ <th i18n:translate="">Attach a file</th>
+ <td colspan=2><input type="file" class="fileupload" name="@file"></td>
+</tr>
+
+<tr tal:condition="context/is_edit_ok">
+ <td>
+  &nbsp;
+  <input type="hidden" name="@template" value="item">
+  <input type="hidden" name="@required" value="title,priority">
+ </td>
+ <td colspan=3>
+  <button class="button" tal:content="structure context/submit">Update Changes</button>
+  <a class="button" tal:condition="context/id" tal:attributes="href context/copy_url"
+   i18n:translate="">Copy this ticket</a>
+ </td>
+</tr>
+
+</table>
+</form>
+
+<table class="messages" tal:condition="context/messages">
+ <tr>
+<th colspan="2" class="header" i18n:translate="">
+<h2>Conversation</h2>
+</th>
+</tr>
+ <tal:block tal:repeat="msg context/messages/reverse">
+<!--
+  <tr>
+   <th><a tal:attributes="href string:msg${msg/id}"
+    i18n:translate="">msg<tal:x replace="msg/id" i18n:name="id" /> (view)</a></th>
+   <th i18n:translate="">Author: <tal:x replace="msg/author"
+       i18n:name="author" /></th>
+   <th i18n:translate="">Date: <tal:x replace="msg/date"
+       i18n:name="date" /></th>
+   <th>
+-->
+   <!--
+   </th>
+  </tr>
+-->
+  <tr>
+   <td width=80% class="messages">
+    <ul class="logs">
+    <li>
+	<span class="logs-timestamp" i18n:translate=""><tal:x replace="msg/date" i18n:name="date" /></span>
+	<h4 class="logs-event" i18n:translate=""><tal:x replace="msg/id" i18n:name="id" /></h4>
+    	<p tal:replace="structure msg/content/plain">content</p>
+	<br /><br />
+	<em class="logs-meta"><tal:x replace="msg/author" /></em>
+    </li>
+   </td>
+   <td width=20% style="text-align: center; padding: 0px 0px 0px 0px;" tal:condition="context/is_edit_ok"> <form style="padding:0" method="POST" tal:condition="context/is_edit_ok"
+          tal:attributes="action string:issue${context/id}">
+     <input type="hidden" name="@remove@messages" tal:attributes="value msg/id">
+     <input type="hidden" name="@action" value="edit">
+     <button class="red medium" type="submit" value="remove" i18n:attributes="value">remove</button>
+    </form>
+   </td>
+
+  </tr>
+ </tal:block>
+</table>
+
+<br /><br />
+<tal:block tal:condition="not:context/id" i18n:translate="">
+<table class="form">
+<tr>
+ <td>Note:&nbsp;</td>
+ <th class="required">highlighted</th>
+ <td>&nbsp;fields are required.</td>
+</tr>
+</table>
+</tal:block>
+
+<table class="files" tal:condition="context/files">
+ <tr><th colspan="5" class="header" i18n:translate="">Files</th></tr>
+ <tr>
+  <th i18n:translate="">File name</th>
+  <th i18n:translate="">Uploaded</th>
+  <th i18n:translate="">Type</th>
+  <th i18n:translate="">Edit</th>
+  <th i18n:translate="">Remove</th>
+ </tr>
+ <tr tal:repeat="file context/files">
+  <td>
+   <a tal:attributes="href file/download_url"
+      tal:content="file/name">dld link</a>
+  </td>
+  <td>
+   <span tal:content="file/creator">creator's name</span>,
+   <span tal:content="file/creation">creation date</span>
+  </td>
+  <td tal:content="file/type" />
+  <td><a tal:condition="file/is_edit_ok"
+          tal:attributes="href string:file${file/id}">edit</a>
+  </td>
+  <td>
+   <form style="padding:0" method="POST" tal:condition="context/is_edit_ok"
+         tal:attributes="action string:issue${context/id}">
+    <input type="hidden" name="@remove@files" tal:attributes="value file/id">
+    <input type="hidden" name="@action" value="edit">
+    <input type="submit" value="remove" i18n:attributes="value">
+   </form>
+  </td>
+ </tr>
+</table>
+
+<tal:block tal:condition="context/id" tal:replace="structure context/history" />
+
+</div>
+
+</span>
+</tal:block>
+
+        <!-- JS Libs at the end for faster loading -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="@@file/chromatron/HTML5/js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+        <script src="@@file/chromatron/HTML5/js/libs/selectivizr.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.facebox.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.tipsy.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.wysiwyg.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.datatables.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.datepicker.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.fileinput.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.fullcalendar.min.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/excanvas.js"></script>
+        <script src="@@file/chromatron/HTML5/js/jquery/jquery.visualize.js"></script>
+        <script src="@@file/chromatron/HTML5/js/script.js"></script>
