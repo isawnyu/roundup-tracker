@@ -47,11 +47,16 @@ body, select, input, textarea { color:#666; }
 /*  General Settings  */
 body {
 	background:url('../img/bgs/bg_aside_main.png') repeat-y 263px 0;
-	font-family:'PT Sans', Arial, sans-serif;
-	font-size:15px;
-	*font-size:small;
+	font-family:'PT Serif', Arial, sans-serif;
+	font-size:16px;
 	zoom:1;
 }
+
+body comment {
+    font-family: monospace;
+    font-size: 16px;
+}
+
 body section[role=navigation] {
 	width:271px;
 	height:auto;
