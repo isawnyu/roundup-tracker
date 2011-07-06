@@ -82,11 +82,13 @@
 
  <metal:index define-macro="batch-footer">
  <tr tal:condition="batch">
+ <!--
  <td colspan="4">
               <button type="submit" value="Redisplay"  i18n:attributes="value">Reload</button>
               <tal:block tal:replace="structure
                 python:request.indexargs_form(sort=0, group=0)" />
   </td>
+  -->
   <th tal:attributes="colspan python:len(request.columns)">
     <ul class="pagination">
       <li>
@@ -117,7 +119,6 @@
 <!--
 <a tal:attributes="href python:request.indexargs_url('issue',
             {'@action':'export_csv'})" i18n:translate="">Download as CSV</a>
--->
 <li>
 <center><h3>Sort ticket list</h3></center>
 </li>
@@ -169,7 +170,7 @@
   </tal:block>
  </table>
 </form>
-
+-->
 </tal:block>
 
 </span>
