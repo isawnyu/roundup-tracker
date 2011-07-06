@@ -102,32 +102,27 @@ python:db.user.classhelp('username,realname,address', property='nosy', width='60
 
 <tr tal:condition="context/is_edit_ok">
  <th i18n:translate="">Attach a file</th>
- <td colspan=2><input type="file" class="fileupload" name="@file"></td>
+ <td colspan=3><input type="file" class="fileupload" name="@file"></td>
 </tr>
 
 <tr tal:condition="context/is_edit_ok">
+<td colspan=3>
+    <span tal:replace="structure context/submit">submit button</span>
+<!--
+  <a class="button" tal:condition="context/id" tal:attributes="href context/copy_url"
+   i18n:translate="">Copy this ticket</a> -->
+ </td>
  <td>
   &nbsp;
   <input type="hidden" name="@template" value="item">
   <input type="hidden" name="@required" value="title,priority">
  </td>
- <td colspan=3>
-  <button class="button" tal:content="structure context/submit">Update Changes</button>
-<!--
-  <a class="button" tal:condition="context/id" tal:attributes="href context/copy_url"
-   i18n:translate="">Copy this ticket</a> -->
- </td>
-</tr>
+ </tr>
 
 </table>
 </form>
 
-<table class="messages" tal:condition="context/messages">
- <tr>
-<!--<th colspan="2" class="header" i18n:translate="">
-<h2>Conversation</h2>
-</th>-->
-</tr>
+<table class="datatable" tal:condition="context/messages">
  <tal:block tal:repeat="msg context/messages">
 <!--
   <tr>
@@ -138,32 +133,24 @@ python:db.user.classhelp('username,realname,address', property='nosy', width='60
    <th i18n:translate="">Date: <tal:x replace="msg/date"
        i18n:name="date" /></th>
    <th>
--->
-   <!--
    </th>
   </tr>
 -->
   <tr>
    <td width=80% class="messages">
-    	<p tal:replace="structure msg/content/plain">content</p>
-        <br/><br />
-	    <h2><tal:x replace="msg/author" /></h2>
-        <pre tal:replace="structure msg/date" />
-    <!--
-   <td width=20% style="text-align: center; padding: 0px 0px 0px 0px;" tal:condition="context/is_edit_ok"> 
-    -->
+    	<p class="messages" tal:replace="structure msg/content/plain">content</p><br /><br />
+	    <h2><tal:x replace="msg/author" /></h2><br />
+        <!--<pre tal:replace="structure msg/date" />-->
     <form style="padding:0" method="POST" tal:condition="context/is_edit_ok"
           tal:attributes="action string:issue${context/id}">
      <input type="hidden" name="@remove@messages" tal:attributes="value msg/id">
      <input type="hidden" name="@action" value="edit">
-     <input type="submit" value="remove post" i18n:attributes="value">
+     <input class="button-link gray" type="submit" value="remove post" i18n:attributes="value">
     </form>
    </td>
-
   </tr>
  </tal:block>
 </table>
-
 <br /><br />
 <tal:block tal:condition="not:context/id" i18n:translate="">
 <table class="form">

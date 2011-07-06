@@ -56,6 +56,8 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    </div>
 
   <ul>
+
+  <!--
   <span class="classblock"
      tal:condition="python:request.user.hasPermission('View', 'query')">
    <span i18n:translate=""
@@ -65,6 +67,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
        tal:content="qs/name">link</a><br>
    </tal:block>
   </span>
+  -->
 
   <form method="POST" tal:attributes="action request/base">
    
@@ -72,6 +75,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
     <li tal:condition="python:request.user.hasPermission('Create', 'issue')">
       <a href="issue?@template=item" class="dashboard no-submenu" title="" i18n:translate="">New ticket</a>
     </li>
+   <!--
     <li>
     <a href="#"
        class="projects no-submenu"
@@ -88,6 +92,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      })"
        i18n:translate="">Unassigned tickets</a>
     </li>
+    -->
     <li>
     <a href="#"
        class="gallery no-submenu"
@@ -103,9 +108,11 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      })"
        i18n:translate="">List all tickets</a>
     </li>
+    <!--
     <li>
     <a class="products no-submenu" title="" href="issue?@template=search" i18n:translate="">Search</a>
     </li>
+    -->
     <!--
     <input type="submit" class="form-small" value="Show issue:"
      i18n:attributes="value"><input class="form-small" size="4"
@@ -116,6 +123,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
   </form>
  </ul>
 
+  <!--
   <p class="classblock"
      tal:condition="python:kw_edit or kw_create">
    <b i18n:translate="">Keywords</b><br>
@@ -126,6 +134,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
     <a href="keyword?@template=item" i18n:translate="">Edit Existing</a><br>
    </span>
   </p>
+  -->
 
   <p class="classblock"
        tal:condition="python:request.user.hasPermission('View', 'user')">
