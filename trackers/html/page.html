@@ -47,6 +47,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
 <img src="http://isaw.nyu.edu/isawdoortoday.png" />
 </section>
 
+<!--
   <div id="body-title">
    <header>
      <h2 style="cursor: s-resize;">
@@ -54,7 +55,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      </h2>
    </header>
    </div>
-
+-->
 
   <!--
   <span class="classblock"
@@ -149,13 +150,13 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
       href="user?@template=item" i18n:translate="">Add User</a>
   </p>
 
-  <section id="user-info">
-  <img alt="Sample User Avatar" src="@@file/chromatron/HTML5/img/sample_user.png">
   <div>
-  <a href="issue?@template=login"><button>Login</button></a>
-  <em>anonymous user</em>
+  <section class="sidebar">
+  <a tal:condition="python:request.user.username=='anonymous'" href="issue?@template=login"><button>Login</button></a>
+  </section>
 
   <!-- LOST DATA LOGIN -->
+  <!--
   <form method="POST" tal:condition="python:request.user.username=='anonymous'"
         tal:attributes="action request/base">
    <p class="userblock">
@@ -175,6 +176,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    </p>
   </form>
 
+  -->
   <p class="userblock" tal:condition="python:request.user.username != 'anonymous'">
    <b i18n:translate="">Hello, <span i18n:name="user"
     tal:replace="python:request.user.realname.plain(escape=1)">realname</span></b><br>
@@ -198,7 +200,6 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
 
 <!-- LOST DATA LOGIN -->
   </div>
-  </section>
   <!--
   <p class="userblock">
    <b i18n:translate="">Help</b><br>
@@ -222,7 +223,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      </form>
    </div>
    </section>
-
+<!--
   <p tal:condition="options/error_message | nothing" class="error-message"
      tal:repeat="m options/error_message" tal:content="structure m" />
   <p tal:condition="options/ok_message | nothing" class="ok-message">
@@ -231,7 +232,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      <a class="form-small" tal:attributes="href request/current_url"
         i18n:translate="">clear this message</a>
   </p>
-
+-->
 
 </nav>
 </section>

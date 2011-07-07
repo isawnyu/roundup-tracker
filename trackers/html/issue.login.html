@@ -5,7 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
-	<title>Login | Chromatron Admin Theme</title>
+	<title>Login | ISAW Ticket System</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,51 +14,55 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	
 	<!-- CSS Styles -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors.css">
-	<link rel="stylesheet" href="css/jquery.tipsy.css">
+	<link rel="stylesheet" href="@@file/chromatron/HTML5/css/style.css">
+	<link rel="stylesheet" href="@@file/chromatron/HTML5/css/colors.css">
+	<link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.tipsy.css">
 
-	<script src="js/libs/modernizr-1.7.min.js"></script>
+	<script src="@@file/chromatron/HTML5/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body class="login">
 	<section role="main">
 	
-		<a href="/" title="Back to Homepage"></a>
+		<a href="/" title="ISAW"></a>
 	
 		<!-- Login box -->
 		<article id="login-box">
 		
 			<div class="article-container">
 			
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam. </p>
-				
+			<p>Welcome to the ISAW ticket system where you can put in a request for help, please login below</p>	
 				<!-- Notification -->
+                <!--
 				<div class="notification error">
 					<a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
 					<p><strong>Error notification</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, sapien quis fermentum luctus, libero.</p>
 				</div>
+                -->
 				<!-- /Notification -->
 			
-				<form action="/">
+				<form method="POST" tal:condition="python:request.user.username=='anonymous'"
+                       tal:attributes="action request/base" >
 					<fieldset>
 						<dl>
 							<dt>
 								<label>Login</label>
 							</dt>
 							<dd>
-								<input type="text" class="large">
+								<input type="text" class="large" name="__login_name">
 							</dd>
 							<dt>
 								<label>Password</label>
 							</dt>
 							<dd>
-								<input type="password" class="large">
+								<input type="password" class="large" name="__login_password">
 							</dd>
-							<dt class="checkbox"><label>Remeber me</label></dt>
-							<dd><input type="checkbox"></dd>
+                            <input type="hidden" name="@action" value="Login">
+							<dt class="checkbox"><label>Remember me</label></dt>
+							<dd><input type="checkbox" name="remember" id="remember"></dd>
 						</dl>
 					</fieldset>
-					<button type="submit" class="right">Log in</button>
+					<button type="submit" value="Login" class="right">Log in</button>
+                    <input type="hidden" name="__came_from" tal:attributes="value string:${request/base}${request/env/PATH_INFO}">
 				</form>
 			
 			</div>
@@ -66,24 +70,19 @@
 		</article>
 		<!-- /Login box -->
 		<ul class="login-links">
-			<li><a href="#">Lost password?</a></li>
-			<li><a href="#">Wiki</a></li>
-			<li><a href="#">Back to page</a></li>
+            <li><a href="user?@template=register" tal:condition="python:request.user.hasPermission('Register', 'user')"
+             i18n:translate="">Register</a></li>
+			<li><a href="user?@template=forgotten">Lost password?</a></li>
+			<li><a href="http://isaw.nyu.edu">Website</a></li>
 		</ul>
 		
 	</section>
 
 	<!-- JS Libs at the end for faster loading -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-	<script src="js/libs/selectivizr.js"></script>
-	<script src="js/jquery/jquery.tipsy.js"></script>
-	<script src="js/script.js"></script>
-	<script>
-		var _gaq=[['_setAccount','UA-XXXXX'],['_trackPageview']];
-		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="@@file/chromatron/HTML5/js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="@@file/chromatron/HTML5/js/libs/selectivizr.js"></script>
+	<script src="@@file/chromatron/HTML5/js/jquery/jquery.tipsy.js"></script>
+	<script src="@@file/chromatron/HTML5/js/script.js"></script>
 </body>
 </html>
