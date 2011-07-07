@@ -55,7 +55,6 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    </header>
    </div>
 
-  <ul>
 
   <!--
   <span class="classblock"
@@ -68,13 +67,12 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    </tal:block>
   </span>
   -->
-
+  <section class="sidebar nested">
   <form method="POST" tal:attributes="action request/base">
-   
     <span tal:condition="python:request.user.hasPermission('View', 'issue')">
-    <li tal:condition="python:request.user.hasPermission('Create', 'issue')">
-      <a href="issue?@template=item" class="dashboard no-submenu" title="" i18n:translate="">New ticket</a>
-    </li>
+    <span tal:condition="python:request.user.hasPermission('Create', 'issue')">
+      <a href="issue?@template=item" title="" i18n:translate="">New ticket</a>
+    </span>
    <!--
     <li>
     <a href="#"
@@ -105,6 +103,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
       '@search_text': '',
       'status': status_notresolved,
       '@dispname': i18n.gettext('Showing all'),
+      '@pagesize': 15,
      })"
        i18n:translate="">List all tickets</a>
     </li>
@@ -121,7 +120,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
     <input type="hidden" name="@action" value="show">-->
    </span>
   </form>
- </ul>
+  </section>
 
   <!--
   <p class="classblock"
