@@ -26,6 +26,11 @@ keyword = Class(db, "keyword",
                 name=String())
 keyword.setkey("name")
 
+# Department
+department = Class(db, "department",
+                name=String())
+department.setkey("name")
+
 # User-defined saved searches
 query = Class(db, "query",
                 klass=String(),

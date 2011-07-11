@@ -40,7 +40,7 @@ kw_create python:request.user.hasPermission('Create', 'keyword');
 kw_edit_link python:kw_edit and db.keyword.list();
 columns string:id,activity,title,creator,status;
 columns_showall string:id,activity,title,creator,status,priority;
-status_notresolved string:-1,1,2,3,4,6,7,8;
+status_notresolved string:1,2,3,4,5,6,-7;
 "
 >
 <section class="sidebar">
@@ -68,31 +68,15 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    </tal:block>
   </span>
   -->
+
   <section class="sidebar nested">
+  <b i18n:translate="">Tickets</b>
   <form method="POST" tal:attributes="action request/base">
     <span tal:condition="python:request.user.hasPermission('View', 'issue')">
     <span tal:condition="python:request.user.hasPermission('Create', 'issue')">
       <a href="issue?@template=item" title="" i18n:translate="">New ticket</a>
     </span>
-   <!--
-    <li>
-    <a href="#"
-       class="projects no-submenu"
-       title=""
-       tal:attributes="href python:request.indexargs_url('issue', {
-      '@sort': '-activity',
-      '@group': 'priority',
-      '@filter': 'status,assignedto',
-      '@columns': columns,
-      '@search_text': '',
-      'status': status_notresolved,
-      'assignedto': '-1',
-      '@dispname': i18n.gettext('Unassigned tickets'),
-     })"
-       i18n:translate="">Unassigned tickets</a>
-    </li>
-    -->
-    <li>
+   <li>
     <a href="#"
        class="gallery no-submenu"
        title=""
@@ -108,20 +92,14 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
      })"
        i18n:translate="">List all tickets</a>
     </li>
-    <!--
-    <li>
-    <a class="products no-submenu" title="" href="issue?@template=search" i18n:translate="">Search</a>
-    </li>
-    -->
-    <!--
-    <input type="submit" class="form-small" value="Show issue:"
-     i18n:attributes="value"><input class="form-small" size="4"
-     type="text" name="@number">
-    <input type="hidden" name="@type" value="issue">
-    <input type="hidden" name="@action" value="show">-->
-   </span>
+  </span>
   </form>
   </section>
+
+  <section class="sidebar">
+  <a tal:condition="python:request.user.username=='anonymous'" href="issue?@template=login"><button>Login</button></a>
+  </section>
+
 
   <!--
   <p class="classblock"
@@ -136,25 +114,23 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
   </p>
   -->
 
+  <section tal:condition="python:request.user.hasPermission('Edit', 'None')" class="sidebar nested">
   <p class="classblock"
-       tal:condition="python:request.user.hasPermission('View', 'user')">
+       tal:condition="python:request.user.hasPermission('Edit', 'None')">
    <b i18n:translate="">Administration</b><br>
    <span tal:condition="python:request.user.hasPermission('Edit', None)">
     <a href="home?@template=classlist" i18n:translate="">Class List</a><br>
    </span>
-   <span tal:condition="python:request.user.hasPermission('View', 'user')
-                            or request.user.hasPermission('Edit', 'user')">
+   <span tal:condition="python:request.user.hasPermission('Edit', 'None')">
+   <!--                         or request.user.hasPermission('Edit', 'user')"> -->
     <a href="user"  i18n:translate="">User List</a><br>
    </span>
    <a tal:condition="python:request.user.hasPermission('Create', 'user')"
       href="user?@template=item" i18n:translate="">Add User</a>
   </p>
-
-  <div>
-  <section class="sidebar">
-  <a tal:condition="python:request.user.username=='anonymous'" href="issue?@template=login"><button>Login</button></a>
   </section>
 
+  <div>
   <!-- LOST DATA LOGIN -->
   <!--
   <form method="POST" tal:condition="python:request.user.username=='anonymous'"
@@ -177,8 +153,9 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
   </form>
 
   -->
+  <section  tal:condition="python:request.user.hasPermission('View', 'user')" class="sidebar nested">
   <p class="userblock" tal:condition="python:request.user.username != 'anonymous'">
-   <b i18n:translate="">Hello, <span i18n:name="user"
+   <b i18n:translate=""><span i18n:name="user"
     tal:replace="python:request.user.realname.plain(escape=1)">realname</span></b><br>
     <a href="#"
        tal:attributes="href python:request.indexargs_url('issue', {
@@ -197,6 +174,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
    <a href="#" tal:attributes="href python:request.indexargs_url('',
        {'@action':'logout'})" i18n:translate="">Logout</a>
   </p>
+  </section>
 
 <!-- LOST DATA LOGIN -->
   </div>
@@ -217,7 +195,7 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
        <input type="hidden" name="@group" value="priority"/>
        <input class="medium" id="search-text" name="@search_text" 
               tal:attributes="value request/search_text | default" />
-       <p>Search for a ticket
+       <p>
        <input class="button" type="submit" id="submit" name="submit" value="Search"
               i18n:attributes="value" /></p>
      </form>
@@ -247,6 +225,22 @@ status_notresolved string:-1,1,2,3,4,6,7,8;
 
 <pre tal:condition="request/form/debug | nothing" tal:content="request">
 </pre>
+<!--
+   <div  tal:define="columns_showall string:id,activity,title,creator,status,priority" id="searchbox">
+     <form method="GET" action="issue">
+       <input type="hidden" name="@columns"
+          tal:attributes="value columns_showall"
+          value="id,activity,title,creator,assignedto,status"/>
+       <input type="hidden" name="@sort" value="activity"/>
+       <input type="hidden" name="@group" value="priority"/>
+       <input class="small" id="search-text" name="@search_text" 
+              tal:attributes="value request/search_text | default" />
+       <p> 
+       <input class="button" type="submit" id="submit" name="submit" value="Search"                                                                                    
+              i18n:attributes="value" /></p>
+     </form>
+   </div>
+-->
 
 </section>
 </div>
