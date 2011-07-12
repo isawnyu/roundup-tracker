@@ -28,7 +28,8 @@ keyword.setkey("name")
 
 # Department
 department = Class(db, "department",
-                name=String())
+                name=String(),
+                order=Number())
 department.setkey("name")
 
 # User-defined saved searches

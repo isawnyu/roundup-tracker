@@ -2,10 +2,10 @@
 # TRACKER INITIAL PRIORITY AND STATUS VALUES
 #
 pri = db.getclass('priority')
-pri.create(name=''"emergency", order="4")
-pri.create(name=''"high", order="3")
-pri.create(name=''"normal", order="2")
 pri.create(name=''"low", order="1")
+pri.create(name=''"normal", order="2")
+pri.create(name=''"high", order="3")
+pri.create(name=''"emergency", order="4")
 
 stat = db.getclass('status')
 stat.create(name=''"unread", order="1")
@@ -26,6 +26,7 @@ user.create(username="anonymous", roles='Anonymous')
 department = db.getclass('department')
 department.create(name=''"building")
 department.create(name=''"isawit")
+department.create(name=''"research")
 
 # add any additional database creation steps here - but only if you
 # haven't initialised the database with the admin "initialise" command

@@ -33,6 +33,7 @@
    <th tal:condition="request/show/title" i18n:translate="">Title</th>
    <th class="index" tal:condition="request/show/creation" i18n:translate="">Creation</th>
    <th tal:condition="request/show/activity" i18n:translate="">Activity</th>
+   <th tal:condition="request/show/department" i18n:translate="">Department</th>
    <th tal:condition="request/show/priority" i18n:translate="">Priority</th>
    <th class="index" tal:condition="request/show/actor" i18n:translate="">Actor</th>
    <th class="index" tal:condition="request/show/keyword" i18n:translate="">Keyword</th>
@@ -63,6 +64,8 @@
        tal:content="i/creation/reldate">&nbsp;</td>
    <td class="date" tal:condition="request/show/activity"
        tal:content="i/activity/reldate">&nbsp;</td>
+    <td tal:condition="request/show/department"
+        tal:content="python:i.department.plain() or default">&nbsp;</td>
    <td tal:condition="request/show/priority"
        tal:content="python:i.priority.plain() or default">&nbsp;</td>
    <td class="date" tal:condition="request/show/actor"

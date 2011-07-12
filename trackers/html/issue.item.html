@@ -68,6 +68,9 @@
  <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
  <th tal:condition="context/id" i18n:translate="">Status</th>
  <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
+ <th il8n:translate="">Department</th>
+ <td tal:content="structure python:context.department.menu()">department</td>
+
 </tr>
 
 <tr>
@@ -98,7 +101,9 @@ python:db.user.classhelp('username,realname,address', property='nosy', width='60
   <span tal:replace="structure context/keyword/field" />
   <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.keyword.classhelp(property='keyword')" />
  </td>
+
 </tr>
+
 
 <tr tal:condition="context/is_edit_ok">
  <th i18n:translate="">Attach a file</th>
