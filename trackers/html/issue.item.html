@@ -43,20 +43,16 @@
  <h4 colspan=3 tal:content="structure python:context.title.field(size=80)">title</h4>
 
 <tr tal:condition="context/is_edit_ok">
-  <td colspan=3>
-  <textarea class="tinymce" tal:content="request/form/@note/value | default"
-            name="@note" wrap="hard" rows="10" cols="80"></textarea>
-  </td>
+  <textarea cols="80" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
+            name="@note"></textarea>
 </tr>
-
-
 
 <!-- We set the default values here -->
 <!-- If you need to update these you need to check the option list -->
 <!-- Christopher Warner -->
 <tr>
 <!-- Set defaults for new tickets -->
- <th tal:condition="not:context/id" class="required" i18n:translate="">Priority</th>
+ <th tal:condition="not:context/id" class="item" i18n:translate="">Priority</th>
  <td tal:condition="not:context/id" tal:content="structure python:context.priority.menu(value=3)">priority</td>
  <th tal:condition="not:context/id" i18n:translate="">Status</th>
  <td tal:condition="not:context/id" tal:content="structure python:context.status.menu(value=1)">status</td>
@@ -64,7 +60,7 @@
 
 <!-- This is ugly -->
 <!-- I know, I know -->
- <th tal:condition="context/id" class="required" i18n:translate="">Priority</th>
+ <th tal:condition="context/id" class="required item" i18n:translate="">Priority</th>
  <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
  <th tal:condition="context/id" i18n:translate="">Status</th>
  <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
@@ -240,7 +236,7 @@ python:db.user.classhelp('username,realname,address', property='nosy', width='60
             plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",
 
             // Theme options
-            theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull|,cut,copy,paste,pastetext,pasteword,|,undo,redo,|,link,unlink,anchor,image|,insertdate,inserttime,preview",
+            theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull|,cut,copy,paste,pastetext,pasteword,|,undo,redo,|,link,unlink,anchor,image|preview",
             theme_advanced_buttons2 : "",
             theme_advanced_buttons3 : "",
             theme_advanced_toolbar_location : "top",

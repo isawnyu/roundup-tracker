@@ -1152,6 +1152,15 @@ th, td {
 	vertical-align:middle;
 }
 
+th.item, td.item {
+
+    height:30px;
+    width: 5px;
+    text-align:left;
+    vertical-align:middle;
+    border-spacing: 1px;
+}
+
 th.index {
 	text-align:center;
 }
@@ -1161,7 +1170,7 @@ td.index {
 }
 
 th { padding:10px 0; }
-th { font-size:116%; }
+th { font-size:90%; }
 table input[type="checkbox"] {
 	margin:0 6px;
 	position:static;
