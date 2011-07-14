@@ -15,8 +15,9 @@ $(function () {
 	$('a[rel*=modal]').facebox();
 
 	// jQuery jWYSIWYG Editor
-	$('.wysiwyg').wysiwyg({ iFrameClass:'wysiwyg-iframe' });
-	
+//	$('.wysiwyg').wysiwyg(
+  //          { iFrameClass:'wysiwyg-iframe' });
+
 	// jQuery dataTables
 	$('.datatable').dataTable();
 

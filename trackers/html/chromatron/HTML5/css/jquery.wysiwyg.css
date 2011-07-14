@@ -71,6 +71,7 @@ div.wysiwyg iframe {
 	-webkit-box-shadow:0 0 4px rgba(0,0,0,0.15) inset;
 	-moz-box-shadow:0 0 4px rgba(0,0,0,0.15) inset;
 	box-shadow:0 0 4px rgba(0,0,0,0.15) inset;
+
 }
 div.wysiwyg .wysiwyg-iframe {
 	width:490px;

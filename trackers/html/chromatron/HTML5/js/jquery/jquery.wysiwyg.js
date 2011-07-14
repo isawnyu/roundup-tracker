@@ -381,6 +381,7 @@
 				visible: true,
 				tooltip: "Undo"
 			}
+
 		};
 
 		this.defaults = {
