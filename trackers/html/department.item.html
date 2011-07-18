@@ -1,0 +1,54 @@
+<tal:block metal:use-macro="templates/page/macros/icing">
+<title metal:fill-slot="head_title" i18n:translate="">Keyword editing - <span
+ i18n:name="tracker" tal:replace="config/TRACKER_NAME" /></title>
+<span metal:fill-slot="body_title" tal:omit-tag="python:1"
+ i18n:translate="">Department editing</span>
+<td class="content" metal:fill-slot="content">
+
+<table class="otherinfo" tal:define="departments db/departments/list"
+       tal:condition="keywords">
+ <tr><th colspan="4" class="header" i18n:translate="">Existing Departments</th></tr>
+ <tr tal:repeat="start python:range(0, len(keywords), 4)">
+  <td width="25%" tal:define="batch python:utils.Batch(departments, 4, start)"
+      tal:repeat="department batch">
+    <a tal:attributes="href string:departments${keyword/id}"
+       tal:content="department/name">department here</a>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="4" style="border-top: 1px solid gray" i18n:translate="">
+   To edit an existing department (for spelling or typing errors),
+   click on its entry above.
+  </td>
+ </tr>
+</table>
+
+<p class="help" tal:condition="not:context/id" i18n:translate="">
+ To create a new department, enter it below and click "Submit New Entry".
+</p>
+
+<form method="POST" onSubmit="return submit_once()"
+      enctype="multipart/form-data"
+      tal:attributes="action context/designator">
+
+ <table class="form">
+  <tr>
+   <th i18n:translate="">Department</th>
+   <td tal:content="structure context/name/field">name</td>
+  </tr>
+
+  <tr>
+   <td>
+    &nbsp;
+    <input type="hidden" name="@required" value="name">
+    <input type="hidden" name="@template" value="item">
+   </td>
+   <td colspan=3 tal:content="structure context/submit">
+    submit button will go here
+   </td>
+  </tr>
+ </table>
+</form>
+</td>
+
+</tal:block>
