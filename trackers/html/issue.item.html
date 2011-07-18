@@ -40,39 +40,36 @@
       tal:attributes="action context/designator">
 
 <table class="form">
- <h4 colspan=3 tal:content="structure python:context.title.field(size=80)">title</h4>
+ <h4 colspan=3 tal:content="structure python:context.title.field(size=60)">title</h4>
 
 <tr tal:condition="context/is_edit_ok">
-  <textarea cols="110" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
+  <textarea cols="78" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
             name="@note"></textarea>
 </tr>
 
 <!-- We set the default values here -->
 <!-- If you need to update these you need to check the option list -->
 <!-- Christopher Warner -->
+<div class="item">
 <tr>
 <!-- Set defaults for new tickets -->
- <th tal:condition="not:context/id" class="item" i18n:translate="">Priority</th>
+ <th tal:condition="not:context/id" i18n:translate="">Priority</th>
  <td tal:condition="not:context/id" tal:content="structure python:context.priority.menu(value=3)">priority</td>
+</tr>
+<tr>
  <th tal:condition="not:context/id" i18n:translate="">Status</th>
  <td tal:condition="not:context/id" tal:content="structure python:context.status.menu(value=1)">status</td>
+</tr>
 <!-- -->
 
 <!-- This is ugly -->
 <!-- I know, I know -->
+<tr>
  <th tal:condition="context/id" class="required item" i18n:translate="">Priority</th>
  <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
- <th tal:condition="context/id" i18n:translate="">Status</th>
- <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
- <th il8n:translate="">Department</th>
- <td tal:content="structure python:context.department.menu()">department</td>
-
-</tr>
-
-<tr>
- <th i18n:translate="">Related Ticket</th>
- <td>
-  <span tal:replace="structure python:context.superseder.field(showid=1, size=20)" />
+ <th style="text-align: right" i18n:translate="">Related ticket</th>
+ <td style="padding: 0px 0px 0px 30px">
+  <span tal:replace="structure python:context.superseder.field(showid=1, size=30)" />
   <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title', property='superseder')" />
   <span tal:condition="context/superseder">
    <br><span i18n:translate="">View:</span>
@@ -81,45 +78,41 @@
         tal:attributes="href string:issue${sup/id}"></a>
   </span>
  </td>
- <th i18n:translate="">CC</th>
- <td>
+ 
+</tr>
+<tr>
+ <th tal:condition="context/id" i18n:translate="">Status</th>
+ <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
+<th style="text-align: right" i18n:translate="">CC</th>
+ <td style="padding: 0px 0px 0px 30px">
   <span tal:replace="structure context/nosy/field" />
   <span tal:condition="context/is_edit_ok" tal:replace="structure
-python:db.user.classhelp('username,realname,address', property='nosy', width='600')" /><br>
+python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
  </td>
-</tr>
 
+</tr>
 <tr>
- <th i18n:translate="">Assigned To</th>
- <td tal:content="structure context/assignedto/menu">assignedto menu</td>
- <th i18n:translate="">Keywords</th>
- <td>
-  <span tal:replace="structure context/keyword/field" />
-  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.keyword.classhelp(property='keyword')" />
- </td>
-
-</tr>
-
-
-<tr tal:condition="context/is_edit_ok">
- <th i18n:translate="">Attach a file</th>
- <td colspan=3><input type="file" class="fileupload" name="@file"></td>
+ <th tal:condition="context/id" i18n:translate="">Dept</th>
+ <td tal:condition="context/id" tal:content="structure python:context.department.menu(height=1)">department</td>
+ <th style="text-align: right" i18n:translate="">Assignee</th>
+ <td style="padding: 0px 0px 0px 30px" tal:content="structure context/assignedto/menu">assignedto menu</td>
+ 
 </tr>
 
 <tr tal:condition="context/is_edit_ok">
-<td colspan=3>
+<th>Ticket</th>
+<td>
     <span tal:replace="structure context/submit">submit button</span>
-<!--
-  <a class="button" tal:condition="context/id" tal:attributes="href context/copy_url"
-   i18n:translate="">Copy this ticket</a> -->
  </td>
+ <th style="text-align: right" i18n:translate="">Attach file</th>
+ <td style="padding: 0px 0px 0px 30px" ><input type="file" class="fileupload" name="@file"></td>
  <td>
   &nbsp;
   <input type="hidden" name="@template" value="item">
   <input type="hidden" name="@required" value="title,priority">
  </td>
  </tr>
-
+</div> <!-- item -->
 </table>
 </form>
 

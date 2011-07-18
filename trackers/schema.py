@@ -80,7 +80,7 @@ file = FileClass(db, "file",
 issue = IssueClass(db, "issue",
                 assignedto=Link("user"),
                 keyword=Multilink("keyword"),
-                department=Multilink("department"),
+                department=Link("department"),
                 priority=Link("priority"),
                 status=Link("status"))
 

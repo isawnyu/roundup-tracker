@@ -29,7 +29,7 @@
  <table class="table-form">
  <thead>
   <tr>
-   <th style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" i18n:translate="">ID</th>
+<!--   <th style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" i18n:translate="">ID</th> -->
    <th tal:condition="request/show/title" i18n:translate="">Title</th>
    <!--
    <th class="index" tal:condition="request/show/creation" i18n:translate="">Creation</th>
@@ -61,7 +61,7 @@
   </tr>
 
   <tr>
-   <td style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" tal:content="i/id">&nbsp;</td>
+<!--   <td style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" tal:content="i/id">&nbsp;</td> -->
    <td tal:condition="request/show/title">
     <a tal:attributes="href string:issue${i/id}"
 		tal:content="python:str(i.title.plain(hyperlink=0)) or '[no title]'">title</a>

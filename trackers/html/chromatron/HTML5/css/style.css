@@ -1146,19 +1146,37 @@ tbody {
 }
 th, td {
 	padding:5px 0px 5px 0px;
-	height:30px;
+    min-height:10px;
+    max-height:30px;
 	text-align:left;
 	border-bottom:1px solid;
-	vertical-align:middle;
+    vertical-align:middle;
+    padding-bottom: 20px;
 }
 
-th.item, td.item {
 
-    height:10px;
+th.item, td.item tr.item {
+
+    padding-bottom: 2px !important;
+    padding:10px 30px 0px 0px;
     width: 5px;
+    max-height:10px !important;
     text-align:left;
-    vertical-align:middle;
     border-spacing: 1px;
+    vertical-align:middle;
+}
+
+.issueitem {
+    padding-bottom: 2px !important;
+}
+
+tr {
+    padding-bottom: 1em;
+    padding: "10px";
+}
+
+td.right {
+    padding:10px 30px 0px 0px !important;
 }
 
 th.index {
@@ -1169,7 +1187,7 @@ td.index {
 	text-align:center;
 }
 
-th { padding:10px 0; }
+th { padding:10px 0 ; }
 th { font-size:90%; }
 table input[type="checkbox"] {
 	margin:0 6px;

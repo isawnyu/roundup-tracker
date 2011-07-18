@@ -24,9 +24,9 @@ user.create(username="anonymous", roles='Anonymous')
 
 # default departments
 department = db.getclass('department')
-department.create(name=''"building")
-department.create(name=''"isawit")
-department.create(name=''"research")
+department.create(name=''"building", order="1")
+department.create(name=''"isawit", order="2")
+department.create(name=''"research", order="3")
 
 # add any additional database creation steps here - but only if you
 # haven't initialised the database with the admin "initialise" command
