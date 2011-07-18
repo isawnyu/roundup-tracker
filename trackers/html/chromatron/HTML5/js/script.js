@@ -130,7 +130,7 @@ $(function () {
 	
 	// Content box accordions
 	$('.accordion li div').hide();
-	$('.accordion li:first-child div').show();
+	//$('.accordion li:first-child div').show();
 	$('.accordion .accordion-switch').click(
 		function() {
 			$(this).parent().siblings().find('div').slideUp();

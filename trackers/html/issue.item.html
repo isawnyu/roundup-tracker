@@ -43,7 +43,7 @@
  <h4 colspan=3 tal:content="structure python:context.title.field(size=80)">title</h4>
 
 <tr tal:condition="context/is_edit_ok">
-  <textarea cols="80" rows="50"  class="tinymce" tal:content="request/form/@note/value | default"
+  <textarea cols="110" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
             name="@note"></textarea>
 </tr>
 
@@ -203,7 +203,16 @@ python:db.user.classhelp('username,realname,address', property='nosy', width='60
  </tr>
 </table>
 
+<ul class="accordion">
+<li>
+<a style="text-align:center" class="accordion-switch" href><h2>Ticket History</h2></a>
+<div style="display:none; ">
+<p>
 <tal:block tal:condition="context/id" tal:replace="structure context/history" />
+</p>
+</div>
+</li>
+</ul>
 
 </div>
 
