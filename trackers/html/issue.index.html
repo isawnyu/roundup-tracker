@@ -49,17 +49,14 @@
   </tr>
  </thead>
  <tal:block tal:repeat="i batch" condition=true>
-  <tr tal:define="group python:[r[1] for r in request.group]"
-      tal:condition="python:group and batch.propchanged(*group)">
-   <!--
+ <!-- <tr tal:define="group python:[r[1] for r in request.group]"
+      tal:condition="python:group and batch.propchanged(*group)"> 
    <th tal:attributes="colspan python:len(request.columns)" class="group">
     <tal:block tal:repeat="g group">
      <tal:block i18n:translate="" tal:content="python:str(i[g]) or '(no %s set)'%g"/>
     </tal:block>
    </th>
-   --> 
-  </tr>
-
+  </tr>-->
   <tr>
 <!--   <td style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" tal:content="i/id">&nbsp;</td> -->
    <td tal:condition="request/show/title" class="issueindex">
