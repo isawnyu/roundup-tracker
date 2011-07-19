@@ -14,11 +14,11 @@
 
 <table class="form">
  <tr>
-  <th i18n:translate="">Name</th>
+  <th i18n:translate="">First and Last name</th>
   <td tal:content="structure context/realname/field">realname</td>
  </tr>
  <tr>
-  <th class="required" i18n:translate="">Login Name</th>
+  <th class="required" i18n:translate="">Login Name (normally your email address)</th>
   <td tal:content="structure context/username/field">username</td>
  </tr>
  <tr>
@@ -64,6 +64,7 @@
   </td>
  </tr>
 </table>
+
 </form>
 
 <tal:block tal:condition="not:context/id" i18n:translate="">

@@ -39,7 +39,7 @@ section[role=navigation] header h1, article footer, .widget.add-new-widget a:hov
 .htmlcalendar .week { color:#d6d6d6; }
 .htmlcalendar .day { color:#a6a6a6; }
 dd p { color:#888; }
-a:hover { color:#036; }
+a:hover { color:#036;}
 
 /*  Background Color  */
 body, body.login, body.error-page, tbody tr:hover { background-color:#e6e6e6; }

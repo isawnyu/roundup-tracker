@@ -69,8 +69,9 @@ status_notresolved string:1,2,3,4,5,6,-7;
   -->
 
   <section class="sidebar nested">
-  <b i18n:translate="">Tickets</b>
   <form method="POST" tal:attributes="action request/base">
+    <b i18n:translate="">Tickets</b>
+    <br />
     <span tal:condition="python:request.user.hasPermission('View', 'issue')">
     <span tal:condition="python:request.user.hasPermission('Create', 'issue')">
       <a href="issue?@template=item" title="" i18n:translate="">New ticket</a>
@@ -94,8 +95,8 @@ status_notresolved string:1,2,3,4,5,6,-7;
   </form>
   </section>
 
-  <section class="sidebar">
-  <a tal:condition="python:request.user.username=='anonymous'" href="issue?@template=login"><button>Login</button></a>
+  <section tal:condition="python:request.user.username=='anonymous'" class="sidebar">
+  <a href="issue?@template=login"><button>Login</button></a>
   </section>
 
 
@@ -183,6 +184,7 @@ status_notresolved string:1,2,3,4,5,6,-7;
     i18n:translate="">Roundup docs</a>
   </p>
   -->
+<!--
    <section class="sidebar">
    <div id="searchbox">
      <form method="GET" action="issue">
@@ -199,6 +201,7 @@ status_notresolved string:1,2,3,4,5,6,-7;
      </form>
    </div>
    </section>
+-->
 <!--
   <p tal:condition="options/error_message | nothing" class="error-message"
      tal:repeat="m options/error_message" tal:content="structure m" />

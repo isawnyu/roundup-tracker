@@ -28,7 +28,7 @@
  <form class="table-form">
  <table class="table-form">
  <thead>
-  <tr>
+  <tr class="issueindex">
 <!--   <th style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" i18n:translate="">ID</th> -->
    <th tal:condition="request/show/title" i18n:translate="">Title</th>
    <!--
@@ -62,7 +62,7 @@
 
   <tr>
 <!--   <td style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" tal:content="i/id">&nbsp;</td> -->
-   <td tal:condition="request/show/title">
+   <td tal:condition="request/show/title" class="issueindex">
     <a tal:attributes="href string:issue${i/id}"
 		tal:content="python:str(i.title.plain(hyperlink=0)) or '[no title]'">title</a>
    </td>
@@ -72,9 +72,9 @@
    <td class="date" tal:condition="request/show/activity"
        tal:content="i/activity/reldate">&nbsp;</td>
        -->
-    <td tal:condition="request/show/department"
+   <td tal:condition="request/show/department" class="issueindex"
         tal:content="python:i.department.plain() or default">&nbsp;</td>
-   <td tal:condition="request/show/priority"
+   <td tal:condition="request/show/priority" class="issueindex"
        tal:content="python:i.priority.plain() or default">&nbsp;</td>
        <!--
    <td class="date" tal:condition="request/show/actor"
@@ -83,9 +83,9 @@
        tal:content="python:i.keyword.plain() or default">&nbsp;</td>
        -->
    <td tal:condition="request/show/status"
-       i18n:translate=""
+       i18n:translate="" class="issueindex"
        tal:content="python:i.status.plain() or default">&nbsp;</td>
-   <td tal:condition="request/show/creator"
+   <td tal:condition="request/show/creator" class="issueindex"
        tal:content="python:i.creator.plain() or default">&nbsp;</td>
        <!--
    <td tal:condition="request/show/assignedto"
@@ -96,7 +96,26 @@
  </tal:block>
 
  <metal:index define-macro="batch-footer">
+
  <tr tal:condition="batch">
+ <td>
+    <div tal:define="columns_showall string:id,title,creator,status,priority,department" id="searchbox">                                                                                                                     
+         <form method="GET" action="issue">
+                <input type="hidden" name="@columns"
+                          tal:attributes="value columns_showall"
+                                    value="id,activity,title,creator,assignedto,status"/>
+                                           <input type="hidden" name="@sort" value="activity"/>
+                                                  <input type="hidden" name="@group" value="priority"/>
+                                                         <input class="medium" id="search-text" name="@search_text" 
+                                                                       tal:attributes="value request/search_text | default" />
+                                                                              <p> 
+                                                                                     <input class=button-link gray type="submit" id="submit" name="submit" value="Search"
+                                                                                                   i18n:attributes="value" /></p>
+                                                                                                        </form>
+                                                                                                           </div>
+                                                                                                            </td>
+
+
  <!--
  <td colspan="4">
               <button type="submit" value="Redisplay"  i18n:attributes="value">Reload</button>
@@ -105,6 +124,7 @@
   </td>
   -->
   <th tal:attributes="colspan python:len(request.columns)">
+
     <ul class="pagination">
       <li>
       <a tal:define="prev batch/previous" tal:condition="prev"

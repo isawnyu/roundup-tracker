@@ -46,11 +46,12 @@
   <textarea cols="78" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
             name="@note"></textarea>
 </tr>
-
+<br />
+</table>
+<table class="form">
 <!-- We set the default values here -->
 <!-- If you need to update these you need to check the option list -->
 <!-- Christopher Warner -->
-<div class="item">
 <tr>
 <!-- Set defaults for new tickets -->
  <th tal:condition="not:context/id" i18n:translate="">Priority</th>
@@ -64,7 +65,7 @@
 
 <!-- This is ugly -->
 <!-- I know, I know -->
-<tr>
+<tr class=issueitem>
  <th tal:condition="context/id" class="required item" i18n:translate="">Priority</th>
  <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
  <th style="text-align: right" i18n:translate="">Related ticket</th>
@@ -80,7 +81,7 @@
  </td>
  
 </tr>
-<tr>
+<tr class=issueitem>
  <th tal:condition="context/id" i18n:translate="">Status</th>
  <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
 <th style="text-align: right" i18n:translate="">CC</th>
@@ -112,7 +113,6 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
   <input type="hidden" name="@required" value="title,priority">
  </td>
  </tr>
-</div> <!-- item -->
 </table>
 </form>
 
