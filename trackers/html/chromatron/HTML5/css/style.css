@@ -233,10 +233,20 @@ section[role=navigation] header h1 {
 }
 .sidebar img {
 	padding:3px;
-	margin:0 auto 25px auto;
+	margin:0 auto 15px auto;
 	border:1px solid;
+/*    height: 338px;
+    width: 210px; */
 }
 
+.sidebar img.logo {
+	padding:3px;
+	margin:0 auto 15px auto;
+	border:1px solid;
+    height: 338px;
+    width: 210px; 
+}
+    
 .sidebar.separator, .sidebar .separator {
 	border-top:3px solid;
 	padding-top:8px;
