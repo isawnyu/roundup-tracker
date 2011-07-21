@@ -52,22 +52,10 @@
 <!-- We set the default values here -->
 <!-- If you need to update these you need to check the option list -->
 <!-- Christopher Warner -->
-<tr>
+<tr class=issueitem tal:condition="not:context/id">
 <!-- Set defaults for new tickets -->
- <th tal:condition="not:context/id" i18n:translate="">Priority</th>
- <td tal:condition="not:context/id" tal:content="structure python:context.priority.menu(value=3)">priority</td>
-</tr>
-<tr>
- <th tal:condition="not:context/id" i18n:translate="">Status</th>
- <td tal:condition="not:context/id" tal:content="structure python:context.status.menu(value=1)">status</td>
-</tr>
-<!-- -->
-
-<!-- This is ugly -->
-<!-- I know, I know -->
-<tr class=issueitem>
- <th tal:condition="context/id" class="required item" i18n:translate="">Priority</th>
- <td tal:condition="context/id" tal:content="structure python:context.priority.menu()">priority</td>
+ <th i18n:translate="">Priority</th>
+ <td tal:content="structure python:context.priority.menu(value=2)">priority</td>
  <th style="text-align: right" i18n:translate="">Related ticket</th>
  <td style="padding: 0px 0px 0px 30px">
   <span tal:replace="structure python:context.superseder.field(showid=1, size=30)" />
@@ -81,9 +69,39 @@
  </td>
  
 </tr>
-<tr class=issueitem>
- <th tal:condition="context/id" i18n:translate="">Status</th>
- <td tal:condition="context/id" tal:content="structure python:context.status.menu()">status</td>
+
+<tr class=issueitem tal:condition="not:context/id">
+ <th i18n:translate="">Status</th>
+ <td tal:content="structure python:context.status.menu(value=1)">status</td>
+ <th style="text-align: right" i18n:translate="">CC</th>
+ <td style="padding: 0px 0px 0px 30px">
+  <span tal:replace="structure context/nosy/field" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure
+python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
+ </td>
+</tr>
+
+<!-- This is ugly -->
+<!-- I know, I know -->
+<tr class=issueitem tal:condition="context/id">
+ <th class="required item" i18n:translate="">Priority</th>
+ <td tal:content="structure python:context.priority.menu()">priority</td>
+ <th style="text-align: right" i18n:translate="">Related ticket</th>
+ <td style="padding: 0px 0px 0px 30px">
+  <span tal:replace="structure python:context.superseder.field(showid=1, size=30)" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title', property='superseder')" />
+  <span tal:condition="context/superseder">
+   <br><span i18n:translate="">View:</span>
+     <a tal:repeat="sup context/superseder"
+        tal:content="python:sup['id'] + ', '*(not repeat['sup'].end)"
+        tal:attributes="href string:issue${sup/id}"></a>
+  </span>
+ </td>
+ 
+</tr>
+<tr class=issueitem tal:condition="context/id">
+ <th i18n:translate="">Status</th>
+ <td tal:content="structure python:context.status.menu()">status</td>
 <th style="text-align: right" i18n:translate="">CC</th>
  <td style="padding: 0px 0px 0px 30px">
   <span tal:replace="structure context/nosy/field" />
@@ -93,8 +111,8 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
 
 </tr>
 <tr>
- <th tal:condition="context/id" i18n:translate="">Dept</th>
- <td tal:condition="context/id" tal:content="structure python:context.department.menu(height=1)">department</td>
+ <th i18n:translate="">Dept</th>
+ <td tal:content="structure python:context.department.menu(height=11)">department</td>
  <th style="text-align: right" i18n:translate="">Assignee</th>
  <td style="padding: 0px 0px 0px 30px" tal:content="structure context/assignedto/menu">assignedto menu</td>
  
@@ -153,6 +171,7 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
  </tal:block>
 </table>
 <br />
+<!--
 <tal:block tal:condition="not:context/id" i18n:translate="">
 <table class="form">
 <tr>
@@ -162,7 +181,7 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
 </tr>
 </table>
 </tal:block>
-
+-->
 <table class="files" tal:condition="context/files">
  <tr><th colspan="5" class="header" i18n:translate="">Files</th></tr>
  <tr>
