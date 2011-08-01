@@ -38,11 +38,11 @@
   </td>
  </tr>
  <tr>
-  <th i18n:translate="">Phone</th>
+  <th i18n:translate="">Phone (optional)</th>
   <td tal:content="structure context/phone/field">phone</td>
  </tr>
  <tr>
-  <th i18n:translate="">Organisation</th>
+  <th i18n:translate="">Organisation (optional)</th>
   <td tal:content="structure context/organisation/field">organisation</td>
  </tr>
  <tr>
@@ -67,6 +67,7 @@
 
 </form>
 
+<!--
 <tal:block tal:condition="not:context/id" i18n:translate="">
 <table class="form">
 <tr>
@@ -76,8 +77,7 @@
 </tr>
 </table>
 </tal:block>
-
+-->
 </td>
 
 </tal:block>
-<!-- SHA: ed7a2465033194eb71fa79431b028150c23be650 -->
