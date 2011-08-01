@@ -28,7 +28,7 @@
 		
 			<div class="article-container">
 			
-			<p>Welcome to the ISAW ticket system where you can put in a request for help. If you have an account please login below,
+			<p>Welcome to the ISAW issue tracker where you may make a request for help. If you are already registered please login below,
             otherwise simply click "Register" below.</p>	
   <p tal:condition="options/error_message | nothing" class="error-message"                                                                  
      tal:repeat="m options/error_message" tal:content="structure m" />
@@ -70,20 +70,21 @@
 						</dl>
 					</fieldset>
 					<button type="submit" value="Login" class="right">Log in</button>
-                    <!--<input type="hidden" name="__came_from" tal:attributes="value string:${request/base}${request/env/PATH_INFO}">-->
+
+    		<ul style="padding-top: 20px" class="login-links">
+            <li><a href="user?@template=register" tal:condition="python:request.user.hasPermission('Register', 'user')"
+             i18n:translate="">Register</a></li>
+			<li><a href="user?@template=forgotten">Lost password?</a></li>
+			<li><a href="http://isaw.nyu.edu">isaw.nyu.edu</a></li>
+		</ul>
+	                <!--<input type="hidden" name="__came_from" tal:attributes="value string:${request/base}${request/env/PATH_INFO}">-->
 				</form>
 			
 			</div>
 		
 		</article>
 		<!-- /Login box -->
-		<ul class="login-links">
-            <li><a href="user?@template=register" tal:condition="python:request.user.hasPermission('Register', 'user')"
-             i18n:translate="">Register</a></li>
-			<li><a href="user?@template=forgotten">Lost password?</a></li>
-			<li><a href="http://isaw.nyu.edu">isaw.nyu.edu</a></li>
-		</ul>
-		
+	
 	</section>
 
 	<!-- JS Libs at the end for faster loading -->

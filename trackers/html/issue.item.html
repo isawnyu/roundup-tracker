@@ -10,6 +10,7 @@
 /></tal:block>
 </title>
 
+<!--
 <tal:block metal:fill-slot="body_title">
  <span tal:condition="python: not (context.id or context.is_edit_ok())"
   tal:omit-tag="python:1" i18n:translate="">New Ticket</span>
@@ -22,6 +23,7 @@
   tal:omit-tag="python:1" i18n:translate="">Editing Ticket <tal:x
   replace="context/id" i18n:name="id" /></span>
 </tal:block>
+-->
 
 <span class="content" metal:fill-slot="content">
 
@@ -40,11 +42,17 @@
       tal:attributes="action context/designator">
 
 <table class="form">
- <h4 colspan=3 tal:content="structure python:context.title.field(size=60)">title</h4>
+ <th tal:condition="context/is_edit_ok">Title</th>
+<td colspan=3 tal:content="structure python:context.title.field(size=60)">title</td>
+</table>
 
-<tr tal:condition="context/is_edit_ok">
+<table class="form">
+
+<tr>
+<td tal:condition="context/is_edit_ok">
   <textarea cols="78" rows="10"  class="tinymce" tal:content="request/form/@note/value | default"
             name="@note"></textarea>
+</td>
 </tr>
 <br />
 </table>
@@ -157,7 +165,7 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
         <td colspan="2">
     	    <pre class="messages" tal:content="structure msg/content">content</pre><br />
      <!--<h2><tal:x replace="msg/author" /></h2><br />
-        <!--<pre tal:replace="structure msg/date" />-->
+         <pre tal:replace="structure msg/date" />-->
     <!--
     <form style="padding:0" method="POST" tal:condition="context/is_edit_ok"
           tal:attributes="action string:issue${context/id}">
@@ -226,11 +234,6 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
 </li>
 </ul>
 
-</div>
-
-</span>
-</tal:block>
-
 <!-- JS Libs at the end for faster loading -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="@@file/chromatron/HTML5/js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
@@ -271,5 +274,6 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
         });
         });
 </script>
-
-
+</div>
+</span>
+</tal:block>

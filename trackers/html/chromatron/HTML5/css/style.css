@@ -586,6 +586,7 @@ article section p a.button {
 	background-position:10px 12px;
 	background-repeat:no-repeat;
 	margin:10px 0;
+    font-size: 80%;
 }
 .close-notification {
 	float:right;
@@ -1159,6 +1160,7 @@ th, td {
 	text-align:left;
 	border-bottom:1px solid;
     vertical-align:middle;
+    font-size:120%;
 }
 
 
@@ -1200,6 +1202,16 @@ th, td {
 tr {
     padding-bottom: 1em;
 }
+
+.messages tr:nth-child(even) {
+    color:#AE432E;
+    font-size: 95%;
+}
+
+.messages tr:nth-child(odd):hover {
+    color:#333;
+   
+} 
 
 th.index {
 	text-align:center;
@@ -1292,9 +1304,9 @@ table .actions .delete { background:url('../img/icons/icon_table_delete.png') no
 }
 
 /*  Login Page  */
-.login { background-image:none; }
+.login { background:url('../img/bgs/loginbg.jpg') no-repeat; }
 .login section[role=main] {
-	margin:100px auto 0;
+	margin:150px auto 0;
 	min-width:380px;
 	width:380px;
 	background:none;
@@ -1307,12 +1319,13 @@ table .actions .delete { background:url('../img/icons/icon_table_delete.png') no
 	display:block;
 }
 .login #login-box {
-	margin-top:25px;
+	margin-top:60px;
 	border-radius:3px;
+    opacity:0.92;
 }
 #login-box .article-container {
-	border:1px solid;
-	padding:25px 25px 15px;
+	border:5px solid;
+	padding:25px 25px 20px;
 	border-radius:3px;
 }
 .login form {
