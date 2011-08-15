@@ -92,13 +92,16 @@ status_notresolved string:1,2,3,4,5,6,-7;
       '@search_text': '',
       'status': status_notresolved,
       '@pagesize': 15,
+      '@startwith': 0,
      })"
        i18n:translate="">Home</a>
     </li>
+    <!--
     <span tal:condition="python:request.user.username=='anonymous'">
         <br/>
         <a href="http://ticket.isaw.nyu.edu/help/user?@template=register">New user?</a>
     </span>
+    -->
   </span>
   </form>
   </section>
@@ -213,7 +216,7 @@ status_notresolved string:1,2,3,4,5,6,-7;
   </div>
   </section>
   <section tal:condition="options/ok_message | nothing" class="sidebar nested">
-  <div class="notification information">
+  <div class="notification note">
   <a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
   <p tal:condition="options/ok_message | nothing" class="ok-message">
     <span tal:repeat="m options/ok_message"

@@ -36,7 +36,7 @@ def deptissue(db, cl, nodeid, oldvalues):
         for msgid in cl.get(nodeid, 'messages'):
             try:
                 print "Alerting Building Engineering Department"
-                cl.send_message(nodeid, msgid, create, ['christopher.warner@drms.dla.mil'])
+                cl.send_message(nodeid, msgid, create, ['mike.kojasevic@leonlevy.org'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
@@ -44,7 +44,7 @@ def deptissue(db, cl, nodeid, oldvalues):
         for msgid in cl.get(nodeid, 'messages'):
             try:
                 print "Alerting Technology Department"
-                cl.send_message(nodeid, msgid, create, ['Technology EMAIL ADDRESS HERE'])
+                cl.send_message(nodeid, msgid, create, ['isaw.it@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
@@ -52,7 +52,7 @@ def deptissue(db, cl, nodeid, oldvalues):
         for msgid in cl.get(nodeid, 'messages'):
             try:
                 print "Alerting Research Department"
-                cl.send_message(nodeid, msgid, create, ['RESEARCH EMAIL ADDRESS HERE'])
+                cl.send_message(nodeid, msgid, create, ['isaw.library@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
     else:

@@ -99,19 +99,22 @@
     <div tal:define="columns_showall string:id,title,creator,status,priority,department" id="searchbox">                                                                                                                     
          <form method="GET" action="issue">
                 <input type="hidden" name="@columns"
-                          tal:attributes="value columns_showall"
-                                    value="id,activity,title,creator,assignedto,status"/>
-                                           <input type="hidden" name="@sort" value="activity"/>
-                                                  <input type="hidden" name="@group" value="priority"/>
-                                                         <input class="medium" id="search-text" name="@search_text" 
-                                                                       tal:attributes="value request/search_text | default" />
-                                                                              <p> 
-                                                                                     <input class=button-link gray type="submit" id="submit" name="submit" value="Search"
-                                                                                                   i18n:attributes="value" /></p>
-                                                                                                        </form>
-                                                                                                           </div>
-                                                                                                            </td>
-
+                 tal:attributes="value columns_showall"
+                 value="id,activity,title,creator,assignedto,status"/>
+                <input type="hidden" name="@sort" value="-activity"/>
+                <input type="hidden" name="@group" value="-priority"/>
+                <input type="hidden" name="@filter" value="status"/>
+                <input type="hidden" name="status" value="1,2,3,4,5,6,-7"/>
+                <br />
+                <input class="large" id="search-text" name="@search_text" 
+                 tal:attributes="value request/search_text | default" />
+                 <p>
+                 <br />
+                <input class=button type="submit" id="submit" name="submit" value="Search"
+                  i18n:attributes="value" /> &nbsp;&nbsp; <a class="button" href="issue?@template=search" i18n:translate="">Advanced search</a></p>
+         </form>
+         </div>
+</td>
 
  <!--
  <td colspan="4">

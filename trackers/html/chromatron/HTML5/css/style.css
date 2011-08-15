@@ -604,13 +604,13 @@ article section p a.button {
 }
 .notification.error strong { color:#ae432e; }
 .notification.success {
-	background-color:#d9e6c3;
+	background-color:#D9F9C7;
 	background-image:url('../img/icons/icon_notification_success.png');
 	border-color:#77ab13;
 }
 .notification.success strong { color:#69990f; }
 .notification.attention {
-	background-color:#faf6d4;
+	background-color:#FAF9E9;
 	background-image:url('../img/icons/icon_notification_attention.png');
 	border-color:#e6c26e;
 }
@@ -1160,7 +1160,7 @@ th, td {
 	text-align:left;
 	border-bottom:1px solid;
     vertical-align:middle;
-    font-size:120%;
+    font-size:110%;
 }
 
 
@@ -1306,7 +1306,7 @@ table .actions .delete { background:url('../img/icons/icon_table_delete.png') no
 /*  Login Page  */
 .login { background:url('../img/bgs/loginbg.jpg') no-repeat; }
 .login section[role=main] {
-	margin:150px auto 0;
+	margin:100px auto 0;
 	min-width:380px;
 	width:380px;
 	background:none;
