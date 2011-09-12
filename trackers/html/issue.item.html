@@ -67,7 +67,7 @@
  <th style="text-align: right" i18n:translate="">Related ticket</th>
  <td style="padding: 0px 0px 0px 30px">
   <span tal:replace="structure python:context.superseder.field(showid=1, size=30)" />
-  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title', property='superseder')" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title,status', width='800', property='superseder', sort='-activity', filter='status=-1,2,3,4,5,6,-7')" />
   <span tal:condition="context/superseder">
    <br><span i18n:translate="">View:</span>
      <a tal:repeat="sup context/superseder"
@@ -97,7 +97,7 @@ python:db.user.classhelp('username,realname,address', property='nosy')" /><br>
  <th style="text-align: right" i18n:translate="">Related ticket</th>
  <td style="padding: 0px 0px 0px 30px">
   <span tal:replace="structure python:context.superseder.field(showid=1, size=30)" />
-  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title', property='superseder')" />
+  <span tal:condition="context/is_edit_ok" tal:replace="structure python:db.issue.classhelp('id,title,status', width='800', property='superseder', sort='-id', filter='status=-1,2,3,4,5,6,-7')" />
   <span tal:condition="context/superseder">
    <br><span i18n:translate="">View:</span>
      <a tal:repeat="sup context/superseder"

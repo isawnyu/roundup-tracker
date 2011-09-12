@@ -56,8 +56,12 @@ def deptissue(db, cl, nodeid, oldvalues):
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
     else:
-        print "Department doesn't exist"
-        pass
+        for msgid in cl.get(nodeid, 'messages'):
+            try:
+                print "Department doesn't exist"
+                cl.send_message(nodeid, msgid, create, ['isaw.it@nyu.edu'])
+            except roundupdb.MessageSendError, message:
+                raise roundupdb.DetectorError, message
 
 def init(db):
     # check on create of ticket

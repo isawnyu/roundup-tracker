@@ -1,7 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html tal:define="property request/form/property/value" >
   <head>
-      <link rel="stylesheet" type="text/css" href="@@file/style.css" />
+    <link rel="stylesheet" type="text/css" href="@@file/chromatron/HTML5/css/style.css" />
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/colors.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.tipsy.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.wysiwyg.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.datatables.css">                                                                      
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.facebox.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.datepicker.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.fileinput.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.fullcalendar.css">
+    <link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.visualize.css">
       <meta http-equiv="Content-Type"
        tal:attributes="content string:text/html;; charset=${request/client/charset}" />
       <tal:block tal:condition="python:request.form.has_key('property')">
@@ -18,7 +27,7 @@
       //--></script>
       </tal:block>
   </head>
- <body class="body" onload="resetList();">
+ <body style="background: none;" class="body" onload="resetList();">
  <form name="frm_help" tal:attributes="action request/base"
        tal:define="batch request/batch;
                    props python:request.form['properties'].value.split(',')">
@@ -67,11 +76,13 @@
       </tr>
      </table>
 
-     <table class="classhelp">
+     <table class="datatable">
+     <thead>
        <tr>
-           <th>&nbsp;<b>x</b></th>
-           <th tal:repeat="prop props" tal:content="prop" i18n:translate=""></th>
+           <th class="sorting">&nbsp;&nbsp;<b>x</b></th>
+           <th class="sorting" tal:repeat="prop props" tal:content="prop" i18n:translate=""></th>
        </tr>
+     </thead>
        <tr tal:repeat="item batch">
          <tal:block tal:define="attr python:item[props[0]]" >
            <td>
@@ -94,6 +105,10 @@
      </table>
 
  </form>
+
+
+<script src="js/jquery/jquery.datatables.js"></script>
+
  </body>
 </html>
 <!-- SHA: 992685537210e03230c9cfc3d5a4060edb1f1536 -->
