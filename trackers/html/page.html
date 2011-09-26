@@ -45,31 +45,9 @@ status_notresolved string:1,2,3,4,5,6,-7;
 <img class="logo" src="http://isaw.nyu.edu/isawdoortoday.png" />
 </section>
 
-<!--
-  <div id="body-title">
-   <header>
-     <h2 style="cursor: s-resize;">
-     <span metal:define-slot="body_title">body title</span>
-     </h2>
-   </header>
-   </div>
--->
-
-  <!--
-  <span class="classblock"
-     tal:condition="python:request.user.hasPermission('View', 'query')">
-   <span i18n:translate=""
-    ><b>Your Queries</b> <a class="button" href="query?@template=edit">edit</a></span>
-   <tal:block tal:repeat="qs request/user/queries">
-    <a href="#" tal:attributes="href string:${qs/klass}?${qs/url}&@dispname=${qs/name}"
-       tal:content="qs/name">link</a><br>
-   </tal:block>
-  </span>
-  -->
-
   <section class="sidebar nested">
   <form method="POST" tal:attributes="action request/base">
-    <b i18n:translate="">Tickets</b>
+    <b i18n:translate="">Ticket Control Panel</b>
     <br />
     <span tal:condition="python:request.user.hasPermission('View', 'issue')">
     <span tal:condition="python:request.user.username=='anonymous'">
@@ -80,6 +58,9 @@ status_notresolved string:1,2,3,4,5,6,-7;
    <span tal:condition="python:request.user.hasPermission('Create', 'issue')">
       <a href="http://ticket.isaw.nyu.edu/help/issue?@template=item" title="" i18n:translate="">New ticket</a>
     </span>
+    <li>
+    <a href="http://help.isaw.nyu.edu" target="_blank" title="ISAW help">Help</a>
+    </li>
    <li>
     <a href="#"
        class="gallery no-submenu"
@@ -96,28 +77,9 @@ status_notresolved string:1,2,3,4,5,6,-7;
      })"
        i18n:translate="">Home</a>
     </li>
-    <!--
-    <span tal:condition="python:request.user.username=='anonymous'">
-        <br/>
-        <a href="http://ticket.isaw.nyu.edu/help/user?@template=register">New user?</a>
-    </span>
-    -->
-  </span>
+ </span>
   </form>
   </section>
-
-  <!--
-  <p class="classblock"
-     tal:condition="python:kw_edit or kw_create">
-   <b i18n:translate="">Keywords</b><br>
-   <span tal:condition="python:request.user.hasPermission('Create', 'keyword')">
-    <a href="keyword?@template=item" i18n:translate="">Create New</a><br>
-   </span>
-   <span tal:condition="kw_edit_link">
-    <a href="keyword?@template=item" i18n:translate="">Edit Existing</a><br>
-   </span>
-  </p>
-  -->
 
   <section tal:condition="python:request.user.hasPermission('Edit', 'None')" class="sidebar nested">
   <p class="classblock"
@@ -127,7 +89,6 @@ status_notresolved string:1,2,3,4,5,6,-7;
     <a href="home?@template=classlist" i18n:translate="">Class List</a><br>
    </span>
    <span tal:condition="python:request.user.hasPermission('Edit', 'None')">
-   <!--                         or request.user.hasPermission('Edit', 'user')"> -->
     <a href="user"  i18n:translate="">User List</a><br>
    </span>
    <a tal:condition="python:request.user.hasPermission('Create', 'user')"
@@ -136,28 +97,6 @@ status_notresolved string:1,2,3,4,5,6,-7;
   </section>
 
   <div>
-  <!-- LOST DATA LOGIN -->
-  <!--
-  <form method="POST" tal:condition="python:request.user.username=='anonymous'"
-        tal:attributes="action request/base">
-   <p class="userblock">
-    <b i18n:translate="">Login</b><br>
-    <input size="10" name="__login_name"><br>
-    <input size="10" type="password" name="__login_password"><br>
-    <input type="hidden" name="@action" value="Login">
-    <input type="checkbox" name="remember" id="remember">
-    <label for="remember" i18n:translate="">Remember me?</label><br>
-    <button type="submit" value="Login" i18n:attributes="value">Login</button><br>
-    <input type="hidden" name="__came_from" tal:attributes="value string:${request/base}${request/env/PATH_INFO}">
-    <span tal:replace="structure request/indexargs_form" />
-    <a href="user?@template=register"
-       tal:condition="python:request.user.hasPermission('Register', 'user')"
-     i18n:translate="">Register</a><br>
-    <a href="user?@template=forgotten" i18n:translate="">Lost&nbsp;your&nbsp;login?</a><br>
-   </p>
-  </form>
-
-  -->
   <section  tal:condition="python:request.user.hasPermission('View', 'user')" class="sidebar nested">
   <p class="userblock" tal:condition="python:request.user.username != 'anonymous'">
    <b i18n:translate=""><span i18n:name="user"
@@ -183,31 +122,6 @@ status_notresolved string:1,2,3,4,5,6,-7;
 
 <!-- LOST DATA LOGIN -->
   </div>
-  <!--
-  <p class="userblock">
-   <b i18n:translate="">Help</b><br>
-   <a href="http://www.roundup-tracker.org"
-    i18n:translate="">Roundup docs</a>
-  </p>
-  -->
-<!--
-   <section class="sidebar">
-   <div id="searchbox">
-     <form method="GET" action="issue">
-       <input type="hidden" name="@columns"
-	      tal:attributes="value columns_showall"
-	      value="id,activity,title,creator,assignedto,status"/>
-       <input type="hidden" name="@sort" value="activity"/>
-       <input type="hidden" name="@group" value="priority"/>
-       <input class="medium" id="search-text" name="@search_text" 
-              tal:attributes="value request/search_text | default" />
-       <p>
-       <input class="button" type="submit" id="submit" name="submit" value="Search"
-              i18n:attributes="value" /></p>
-     </form>
-   </div>
-   </section>
--->
   <section tal:condition="options/error_message" class="sidebar nested">
   <div class="notification error">
   <a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>

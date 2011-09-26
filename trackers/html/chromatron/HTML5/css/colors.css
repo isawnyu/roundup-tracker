@@ -11,7 +11,7 @@ a, #main-nav ul li.current a, #main-nav ul li.current li.current a, #main-nav ul
 #main-nav ul li a:hover, #main-nav ul li li a:hover, #main-nav ul li.current li a:hover,
 .tab-switch li a.current, .sidetab-switch li a.current, .tab-switch li a:hover, .sidetab-switch li a:hover,
 .widget.decrease strong, .jq-datepicker.datepick a, #user-info div > a:hover, .contacts li a.contacts-user:hover
-{ color:#ae432e; }
+{ color:#A44A26; }
 #main-nav ul li a, #main-nav ul li.current li a, #main-nav ul li span,
 .sidebar h2, .jq-datepicker .datepick-month-header select, .jq-datepicker .datepick-month th,
 .jq-datepicker .datepick-month th a, .tab-switch li a, sidetab-switch a
@@ -39,11 +39,11 @@ section[role=navigation] header h1, article footer, .widget.add-new-widget a:hov
 .htmlcalendar .week { color:#d6d6d6; }
 .htmlcalendar .day { color:#a6a6a6; }
 dd p { color:#888; }
-a:hover { color:#036;}
+a:hover { color:#666;}
 
 /*  Background Color  */
 body, body.login, body.error-page, tbody tr:hover { background-color:#e6e6e6; }
-.widget.add-new-widget, .htmlcalendar tr:nth-child(even) .day, tbody tr:nth-child(even),
+.widget.add-new-widget, .htmlcalendar tr:hover,nth-child(even) .day, tbody tr:nth-child(even),
 .jq-datepicker .datepick-month-header select, input:disabled, input.disabled, input, textarea, select, input.datepicker { background-color:#fafafa; }
 #user-info { background-color:#d9d9d9; }
 .htmlcalendar .calendar-event .event.blue { background-color:#058dc7; }
@@ -52,7 +52,7 @@ body, body.login, body.error-page, tbody tr:hover { background-color:#e6e6e6; }
 .htmlcalendar .calendar-event .event.black { background-color:#4d4d4d; }
 .htmlcalendar .calendar-event .event.gray, .jq-datepicker .datepick-month a:hover,
 .jq-datepicker .datepick-month td .datepick-weekend:hover, .jq-datepicker .datepick-month td .datepick-highlight { background-color:#999; }
-tbody tr:nth-child(odd), .widget, .stats-summary li, .progress-bar, .logs li, .contacts, .htmlcalendar .day { background-color:#f2f2f2; }
+tbody tr:hover,nth-child(odd), .widget, .stats-summary li, .progress-bar, .logs li, .contacts, .htmlcalendar .day { background-color:#f2f2f2; }
 .sidebar img, .contacts li img, .login #login-box, .table-actions ul, .table-actions > a,
 .htmlcalendar .week, .htmlcalendar .day.previous-month, .htmlcalendar .day.next-month { background-color:#fff; }
 .htmlcalendar .day.today, .htmlcalendar tr:nth-child(even) .day.today { background-color:#ffffcc; }

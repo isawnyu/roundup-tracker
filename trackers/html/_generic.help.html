@@ -44,7 +44,7 @@
               value=" Apply " onclick="updateList(); window.close();"
               i18n:attributes="value" />
      </div>
-     <table width="100%">
+     <table id=helplist width="100%">
       <tr class="navigation">
        <th>
         <a tal:define="prev batch/previous" tal:condition="prev"
@@ -79,7 +79,7 @@
      <table class="datatable">
      <thead>
        <tr>
-           <th class="sorting">&nbsp;&nbsp;<b>x</b></th>
+           <th>&nbsp;&nbsp;<b>x</b></th>
            <th class="sorting" tal:repeat="prop props" tal:content="prop" i18n:translate=""></th>
        </tr>
      </thead>
@@ -106,9 +106,15 @@
 
  </form>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="@@file/chromatron/HTML5/js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+<script src="@@file/chromatron/HTML5/js/jquery/jquery.datatables.js"></script>
 
-<script src="js/jquery/jquery.datatables.js"></script>
-
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#helplist').dataTable();
+} );
+</script>
  </body>
 </html>
 <!-- SHA: 992685537210e03230c9cfc3d5a4060edb1f1536 -->

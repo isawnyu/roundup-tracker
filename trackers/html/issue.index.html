@@ -1,4 +1,3 @@
-<!-- $Id: issue.index.html,v 1.29 2007-09-18 17:44:26 jpend Exp $ -->
 <tal:block metal:use-macro="templates/page/macros/icing">
 <title metal:fill-slot="head_title" >
   <h3 tal:omit-tag="true" i18n:translate="" >List of issues</h3>
@@ -29,72 +28,35 @@
  <table class="table-form">
  <thead>
   <tr class="issueindex">
-<!--   <th style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" i18n:translate="">ID</th> -->
-   <th class="sorting" tal:condition="request/show/title" i18n:translate="">Title</th>
-   <!--
-   <th class="index" tal:condition="request/show/creation" i18n:translate="">Creation</th>
-   <th tal:condition="request/show/activity" i18n:translate="">Activity</th>
-    -->
-   <th class="sorting" tal:condition="request/show/department" i18n:translate="">Department</th>
-   <th class="sorting" tal:condition="request/show/priority" i18n:translate="">Priority</th>
-    <!--
-   <th class="index" tal:condition="request/show/actor" i18n:translate="">Actor</th>
-   <th class="index" tal:condition="request/show/keyword" i18n:translate="">Keyword</th>
-    -->
-   <th class="sorting" tal:condition="request/show/status" i18n:translate="">Status</th>
-   <th class="sorting" tal:condition="request/show/creator" i18n:translate="">Opened By</th>
-    <!--
-   <th class="index" tal:condition="request/show/assignedto" i18n:translate="">Assigned&nbsp;To</th>
-   -->
+   <th tal:condition="request/show/title" i18n:translate="">Title</th>
+   <th tal:condition="request/show/department" i18n:translate="">Department</th>
+   <th tal:condition="request/show/priority" i18n:translate="">Priority</th>
+   <th tal:condition="request/show/status" i18n:translate="">Status</th>
+   <th tal:condition="request/show/creator" i18n:translate="">Opened By</th>
   </tr>
  </thead>
  <tal:block tal:repeat="i batch" condition=true>
- <!-- <tr tal:define="group python:[r[1] for r in request.group]"
-      tal:condition="python:group and batch.propchanged(*group)"> 
-   <th tal:attributes="colspan python:len(request.columns)" class="group">
-    <tal:block tal:repeat="g group">
-     <tal:block i18n:translate="" tal:content="python:str(i[g]) or '(no %s set)'%g"/>
-    </tal:block>
-   </th>
-  </tr>-->
   <tr>
-<!--   <td style="padding:0px 10px 0px 0px;" class="index" tal:condition="request/show/id" tal:content="i/id">&nbsp;</td> -->
    <td tal:condition="request/show/title" class="issueindex">
     <a tal:attributes="href string:issue${i/id}"
 		tal:content="python:str(i.title.plain(hyperlink=0)) or '[no title]'">title</a>
    </td>
-   <!--
-   <td class="date" tal:condition="request/show/creation"
-       tal:content="i/creation/reldate">&nbsp;</td>
-   <td class="date" tal:condition="request/show/activity"
-       tal:content="i/activity/reldate">&nbsp;</td>
-       -->
    <td tal:condition="request/show/department" class="issueindex"
         tal:content="python:i.department.plain() or default">&nbsp;</td>
    <td tal:condition="request/show/priority" class="issueindex"
        tal:content="python:i.priority.plain() or default">&nbsp;</td>
-       <!--
-   <td class="date" tal:condition="request/show/actor"
-       tal:content="python:i.actor.plain() or default">&nbsp;</td>
-   <td tal:condition="request/show/keyword"
-       tal:content="python:i.keyword.plain() or default">&nbsp;</td>
-       -->
    <td tal:condition="request/show/status"
        i18n:translate="" class="issueindex"
        tal:content="python:i.status.plain() or default">&nbsp;</td>
    <td tal:condition="request/show/creator" class="issueindex"
        tal:content="python:i.creator.plain() or default">&nbsp;</td>
-       <!--
-   <td tal:condition="request/show/assignedto"
-       tal:content="python:i.assignedto.plain() or default">&nbsp;</td>
-       -->
-  </tr>
+   </tr>
 
  </tal:block>
 
  <metal:index define-macro="batch-footer">
 
- <tr tal:condition="batch">
+ <tr style="background-color:#ffffff" tal:condition="batch">
  <td>
     <div tal:define="columns_showall string:id,title,creator,status,priority,department" id="searchbox">                                                                                                                     
          <form method="GET" action="issue">
@@ -115,14 +77,6 @@
          </form>
          </div>
 </td>
-
- <!--
- <td colspan="4">
-              <button type="submit" value="Redisplay"  i18n:attributes="value">Reload</button>
-              <tal:block tal:replace="structure
-                python:request.indexargs_form(sort=0, group=0)" />
-  </td>
-  -->
   <th tal:attributes="colspan python:len(request.columns)">
 
     <ul class="pagination">
@@ -151,64 +105,7 @@
 </table>
   </form>
 
-<!--
-<a tal:attributes="href python:request.indexargs_url('issue',
-            {'@action':'export_csv'})" i18n:translate="">Download as CSV</a>
-<li>
-<center><h3>Sort ticket list</h3></center>
-</li>
-<form method="GET" class="index-controls"
-    tal:attributes="action request/classname">
-
- <table class="form" tal:define="n_sort python:2">
-  <tal:block tal:repeat="n python:range(n_sort)" tal:condition="batch">
-  <tr tal:define="key python:len(request.sort)>n and request.sort[n]">
-   <th>
-    <tal:block tal:condition="not:n" i18n:translate="">Sort on:</tal:block>
-   </th>
-   <td>
-    <select tal:attributes="name python:'@sort%d'%n">
-     <option value="" i18n:translate="">- nothing -</option>
-     <option tal:repeat="col context/properties"
-             tal:attributes="value col/_name;
-                             selected python:key and col._name == key[1]"
-             tal:content="col/_name"
-             i18n:translate="">column</option>
-    </select>
-   </td>
-   <th i18n:translate="">Descending:</th>
-   <td><input type="checkbox" tal:attributes="name python:'@sortdir%d'%n;
-              checked python:key and key[0] == '-'">
-   </td>
-  </tr>
-  </tal:block>
-  <tal:block tal:repeat="n python:range(n_sort)" tal:condition="batch">
-  <tr tal:define="key python:len(request.group)>n and request.group[n]">
-   <th>
-    <tal:block tal:condition="not:n" i18n:translate="">Group on:</tal:block>
-   </th>
-   <td>
-    <select tal:attributes="name python:'@group%d'%n">
-     <option value="" i18n:translate="">- nothing -</option>
-     <option tal:repeat="col context/properties"
-             tal:attributes="value col/_name;
-                             selected python:key and col._name == key[1]"
-             tal:content="col/_name"
-             i18n:translate="">column</option>
-    </select>
-   </td>
-   <th i18n:translate="">Descending:</th>
-   <td><input type="checkbox" tal:attributes="name python:'@groupdir%d'%n;
-              checked python:key and key[0] == '-'">
-   </td>
-  </tr>
-  </tal:block>
- </table>
-</form>
--->
 </tal:block>
-
 </span>
 </tal:block><tal:comment condition=false> vim: sw=1 ts=8 et si
 </tal:comment>
-<!-- SHA: 4600774f11f5947ff1f565e2fb8023125cf51fc2 -->

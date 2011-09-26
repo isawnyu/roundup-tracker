@@ -78,9 +78,9 @@ em, i { font-style:italic; }
 ul, ol { margin:0 0 1em 1em; }
 ol { margin-left:2em; }
 ol { list-style-type:decimal; }
-a { outline:none; }
-a:hover {}
-a:hover, a:active { outline:none; }
+a { text-decoration:none; outline:none; }
+a:hover {text-decoration:underline;}
+a:hover, a:active { outline:none;}
 a.outside {
 	padding-right:10px;
 	background-position:top right;
@@ -1222,7 +1222,7 @@ td.index {
 }
 
 th { padding:10px 0px 10px 0px ; }
-th { font-size:90%; }
+th { font-size:120%; }
 table input[type="checkbox"] {
 	margin:0 6px;
 	position:static;
