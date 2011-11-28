@@ -35,7 +35,7 @@
 
 <tr>
 <td style="background-color:#ffffff" tal:condition="context/is_edit_ok">
-  <textarea name="content" id="cotent" class="tinymce" tal:content="request/form/@note/value | default"
+  <textarea class="tinymce" tal:content="request/form/@note/value | default"
             name="@note"></textarea>
 </td>
 </tr>
