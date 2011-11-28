@@ -37,6 +37,7 @@ def deptissue(db, cl, nodeid, oldvalues):
             try:
                 print "Alerting Building Engineering Department"
                 cl.send_message(nodeid, msgid, create, ['mike.kojasevic@leonlevy.org'])
+                cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 

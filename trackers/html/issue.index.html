@@ -35,12 +35,13 @@
    <th tal:condition="request/show/creator" i18n:translate="">Opened By</th>
   </tr>
  </thead>
- <tal:block tal:repeat="i batch" condition=true>
-  <tr>
-   <td tal:condition="request/show/title" class="issueindex">
-    <a tal:attributes="href string:issue${i/id}"
-		tal:content="python:str(i.title.plain(hyperlink=0)) or '[no title]'">title</a>
-   </td>
+
+    <tal:block tal:repeat="i batch" condition=true>
+        <tr>
+        <td tal:condition="request/show/title" class="issueindex">
+            <a tal:attributes="href string:issue${i/id}"
+	       tal:content="python:str(i.title.plain(hyperlink=0)) or '[no title]'">title</a>
+        </td>
    <td tal:condition="request/show/department" class="issueindex"
         tal:content="python:i.department.plain() or default">&nbsp;</td>
    <td tal:condition="request/show/priority" class="issueindex"
