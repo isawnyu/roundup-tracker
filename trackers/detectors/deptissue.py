@@ -26,11 +26,10 @@ def deptissue(db, cl, nodeid, oldvalues):
     # get all message info
     create = cl.generateCreateNote(nodeid)
     dept_id = cl.get(nodeid, 'department')
-    print dept_id
 
     ''' BUILDING DEPARTMENT '''
     # You have to know the id mapping
-    #  technically we could find this
+    # technically we could find this
 
     if dept_id == '1':
         for msgid in cl.get(nodeid, 'messages'):
