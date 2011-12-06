@@ -153,9 +153,20 @@ status_notresolved string:1,2,3,4,5,6,-7;
       '@search_text': '',
       'status': status_notresolved,
       'assignedto': request.user.id,
-      '@dispname': i18n.gettext('Your Issues'),
+      '@dispname': i18n.gettext('Assigned Tickets'),
      })"
     i18n:translate="">Assigned Tickets</a><br>
+    <a href="#"
+       tal:attributes="href python:request.indexargs_url('issue', {
+      '@filter': 'status,creator',
+      '@columns': 'id,title,creator,status,department',
+      '@search_text': '',
+      'status': status_notresolved,
+      'creator': request.user.id,
+      '@dispname': i18n.gettext('Your Tickets'),
+     })"
+    i18n:translate="">Your Tickets</a><br>
+ 
    <a href="#" tal:attributes="href string:user${request/user/id}"
     i18n:translate="">Your Details</a><br>
    <a href="#" tal:attributes="href python:request.indexargs_url('',
