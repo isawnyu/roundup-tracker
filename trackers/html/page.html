@@ -124,6 +124,11 @@ status_notresolved string:1,2,3,4,5,6,-7;
   </form>
   </section>
 
+  <section class="sidebar nested">
+       <p> <strong>Please note:</strong> for phone, email or calendar issues please contact ITS at 212-998-3333 or email at <a href="mailto:AskITS@nyu.edu?cc=isaw.it@nyu.edu">AskITS@nyu.edu</a></p><br />
+       <p><a href="http://ticket.isaw.nyu.edu/help/user?@template=forgotten"><strong>Lost your password?</strong></a></p>
+  </section>
+
   <section tal:condition="python:request.user.hasPermission('Edit', 'None')" class="sidebar nested">
   <p class="classblock"
        tal:condition="python:request.user.hasPermission('Edit', 'None')">
@@ -197,7 +202,6 @@ status_notresolved string:1,2,3,4,5,6,-7;
 </section>
 
 <section role="main">
-
 <article class="full-block clearfix">
 <div class="article-container">
 

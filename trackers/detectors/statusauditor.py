@@ -32,7 +32,7 @@ def chatty(db, cl, nodeid, newvalues):
 
     # get the chatting state ID
     try:
-        chatting_id = db.status.lookup('chatting')
+        chatting_id = db.status.lookup('in-progress')
     except KeyError:
         # no chatting state, ignore all this stuff
         return
@@ -47,7 +47,7 @@ def chatty(db, cl, nodeid, newvalues):
 
     # determine the id of 'unread', 'resolved' and 'chatting'
     fromstates = []
-    for state in 'unread resolved done-cbb'.split():
+    for state in 'unread resolved'.split():
         try:
             fromstates.append(db.status.lookup(state))
         except KeyError:
