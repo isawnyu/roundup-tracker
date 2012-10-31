@@ -1,0 +1,1 @@
+<p>So, it turns out that Workgroup Manager doesn't actually manage group renames over the owner of group directories which subsequently causes problems. Also if a certificate has expired openldap will quite happily keep using that. If a new certificate is requested or a renewal signed it still uses the old certificate. Both of these issues have been reported to Apple.</p>

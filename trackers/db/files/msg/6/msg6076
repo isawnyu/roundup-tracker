@@ -1,0 +1,7 @@
+<p>Hello Christopher,</p>
+<p>The connection of network electronics that are not managed centrally by ITS is not permitted by default per NYU-NET operational policy. The addition of an unmanaged switch can result in network disruption, complicate network troubleshooting and support, and prevent us from offering standard network services that would otherwise be available.</p>
+<p>http://www.nyu.edu/its/policies/netopolicy.html</p>
+<p>I would highly recommend that you work with my colleagues in the ITS COS Infrastructure Operations Services group to provision the additional NYU-NET cabling (and if necessary electronics) to expand service available at the specified locations and accomodate future growth. To start this process, you will need to fill out an ITS Request for Communication Services form which is available here:</p>
+<p>http://www.nyu.edu/its/nyunet/office/#jack</p>
+<p>I will also re-assign this ticket to our Data Technicians group (its.cos-data@nyu.edu) in case you have any questions about completing the form or what information you should include.</p>
+<p>Thanks,<br />Yoni</p>

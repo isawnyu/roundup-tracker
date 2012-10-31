@@ -1,0 +1,3 @@
+Closing this ticket out. If you need to connect through the Lan cable you can send me the MAC address of the computer if you are using linux you can find this by executing
+
+/sbin/ifconfig or via the distro's network druid. Re-open the ticket and we'll take it from there.

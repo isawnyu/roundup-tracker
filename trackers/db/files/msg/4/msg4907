@@ -1,0 +1,25 @@
+Roger:
+
+I didn't have the account split problem that you are, but here's what I did to get my Thunderbird working with the new servers and accounts:
+
+1. To use new NYU/Google email with a desktop client *and/or* a mobile client you must manually establish a new, separate Google Apps for Education password (distinct from your netid password). This is done by visiting http://start.nyu.edu, logging in with your netid credentials, and following the appropriate prompts.
+
+2. My imap settings look like this:
+
+server name: imap.gmail.com
+port number: 993
+username: te20@nyu.edu (i.e., [your-net-id]@nyu.edu
+connection security: SSL/TLS
+authentication method: normal password
+
+[[ use the new Google Apps for Education password for imap authentication ]]
+
+3. My smtp settings look like this:
+
+server name: smtp.nyu.edu
+port: 465
+username: te20 (i.e., just [your-net-id] and nothing else)
+authentication method: normal password
+connection security: SSL/TLS
+
+[[ use your regular NYU netid password for SMTP authentication ]]

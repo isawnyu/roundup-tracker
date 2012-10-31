@@ -1,0 +1,5 @@
+<p>It seems if I have uploaded a .txt file to the ISAW site, clicking on a link to it does not result in the file being downloaded (as happens with a .doc file) but instead the contents of the file are displayed all jumbled together on a web page.</p>
+<p>For example go to</p>
+<p><a href="http://isaw.nyu.edu/Members/alexander.jones-40nyu.edu/chama/chama-registration">http://isaw.nyu.edu/Members/alexander.jones-40nyu.edu/chama/chama-registration</a></p>
+<p>and click on one of the "Text" links, which is supposed to download a text-only file of our registration form.</p>
+<p>Is there a workaround?</p>

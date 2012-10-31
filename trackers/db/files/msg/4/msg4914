@@ -1,0 +1,3 @@
+Actual data of ticket migration begins tomorrow June 13. Mapping out all of the necessary data and writing the sql routines took sometime. It's possible I decide to use XML-RPC and see how roundup's implementation works as it will be highly useful going forward.
+
+That aside, there are some contributions I should probably make to the roundup project. As a side note I got into a slight argument with the OsTicket author recently on it's failings to which I will wait and see if the discussion is published as there were some insightful tidbits. The long and short is that OsTicket is inadequate and will most likely end up being severely plagued with security breaches shortly as spammers take notice.

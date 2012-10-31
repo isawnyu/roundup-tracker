@@ -1,0 +1,1 @@
+When trying to print word documents that contain jpeg images only some of the images print. When images cant be printed "ERROR: limitcheck OFFENDING COMMAND: image" is printed on the page.

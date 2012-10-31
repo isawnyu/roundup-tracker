@@ -1,0 +1,1 @@
+<p>Attached Screenshot is what actually made it onto isaw.nyu.edu production. There are a couple of things to note here that primary vcl_error is a single string in Varnish.. Nginx will proxy to the right dirs and this is only for 50x errors. Everything else is handled by Plone for the most part.</p>

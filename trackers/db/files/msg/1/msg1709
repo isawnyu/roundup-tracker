@@ -1,0 +1,1 @@
+The time machine drive has been offline since the server move.  Some troubleshooting shows that it connects through firewire 800 and does not connect through eSATA.  The server is recognizing the eSATA card.  Attempting to troubleshoot by using another eSATA drive.

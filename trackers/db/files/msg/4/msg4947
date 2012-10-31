@@ -1,0 +1,8 @@
+This is a feature request that involves upgrading the feature portlet to take this behavior into account.
+
+Left text needs to have an associated link added.
+http://isaw.nyu.edu/++contextportlets++plone.rightcolumn/feature-portlet/edit?referer=http%3A//isaw.nyu.edu/%40%40manage-portlets
+
+In the meantime i've updated the template for Current Exhibit.
+
+RSS title updated.

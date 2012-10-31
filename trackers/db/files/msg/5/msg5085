@@ -1,0 +1,14 @@
+http://www.nyu.edu/its/nyunet/offcampus/vpn/#use
+
+Expand the Mac OSX 10.6 selection and that should get you through it.
+
+If not go to the upper right of your screen where you should see a symbol that resembles a magnification icon. Select that and search for the term &quot;vpn&quot; or Cisco. I'm reproducing the instructions from the link above:
+
+To use Snow Leopard's built-in VPN sofware to open a secure connection to an NYU service:
+
+Make sure your computer is connected to the Internet.
+Start the VPN software, either by clicking the shortcut icon at the top right of your screen (see screenshot) or by opening the Apple menu at the top left and selecting System Preferences, then Network, then VPN (Cisco IPSec) in the left pane, and Connect in the right pane.
+
+In the Authentication window that opens, enter your NetID in the Username field, and the password you use with NYUHome in the Password field. Click OK.
+Once you are connected, the VPN window will display a text message, informing you that you have connected to the VPN Service. At times, the text message may also contain service-related information or announcements.
+You can disconnect from the VPN service at any time by re-opening the VPN software (as described in #2 above) and clicking Disconnect.

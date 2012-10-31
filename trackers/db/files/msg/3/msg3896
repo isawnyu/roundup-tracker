@@ -1,0 +1,3 @@
+This is a problem with the NYU wireless access points where when one is connected via the lan the daemon for the Apple wireless connect gets confused and connects and drops in repeat fashion. I've remedied this on Tiffany's computer but it's likely to return ever so often.
+
+The fix is to simply unplug the laptop and let it connect to the wireless network and then one can replug it back into the lan.

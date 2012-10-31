@@ -1,0 +1,3 @@
+Tom's reply to Roger's initial note:
+
+There seems to be something odd/unexpected going on with the permissions in the &quot;people&quot; sections. I've been able to duplicate the problem you're having with a test user I set up for the purpose and gave the same permissions as you have. Site managers (like me) *can* make changes, but it should be possible to open that up to certain others as well and that's not working so far as I can see. I can't seem to sort it out on my own so I'll be working with Christopher and we'll let you know when we have a tested solution working. I'll open a ticket for this issue so you can follow progress there.

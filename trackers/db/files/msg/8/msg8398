@@ -1,0 +1,1 @@
+<p>I should note it seems the bugs with plone.app.caching and Varnish have been fixed.. Caching has been fully enabled, we'll see what happens.</p>

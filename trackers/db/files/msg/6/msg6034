@@ -1,0 +1,2 @@
+<p>Yes, rename the file with the extension .text</p>
+<p>The issue here is that Plone will see .txt as automatically convert it into a document content type summarily transforming the text into html. If you set the extension to .text it will work. However you need to delete the objects you made first.</p>

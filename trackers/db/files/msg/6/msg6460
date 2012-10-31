@@ -1,0 +1,2 @@
+<p>This was related to the event log being full. It turns out the event log is a sql database table that has such a low limit that it needs to be dumped or reset manually. I'm not installing SQL server on the scanner just to do that simple step so event logging has been turned off until the scanner needs some other sort of service where I need to call someone. At that time i'll have the event log reset or at the very least an empty event log table sent.</p>
+<p>In the meantime we lose the ability to know when the scanner has been turned on and off, not such a big deal.</p>

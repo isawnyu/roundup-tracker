@@ -1,0 +1,7 @@
+Roger, can you restart the calendar program and try this again and tell Elizabeth as well.
+
+Tom, Michael:
+
+This is just a Apple is not for server issue. There is a service leaving too many connections in an open CLOSE_WAIT state. I'll report this issue to Apple, they will probably not care to fix it or I'll have to find out what the tunable is for OSX. So in the meantime I'll rig something to restart ical/apache at midnight or whatever.
+
+The workaround until then is to restart apache on serv1.isaw.nyu.edu. This will dump the CLOSE_WAIT connections and things should start working.

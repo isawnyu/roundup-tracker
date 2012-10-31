@@ -1,0 +1,4 @@
+<p>Automaton now has a ZFS raidz pool called "heron" made from ad10 and ad14 the lay out currently looks like:</p>
+<div><img src="http://dl.dropbox.com/u/5510475/Screen%20Shot%202011-09-22%20at%201.04.10%20PM.png" alt="" width="632" height="143" /></div>
+<div>&nbsp;</div>
+<div>Where we have about 916G available, <strong>/heron/ticket.isaw.nyu.edu</strong> is set to keep two copies of the data which ensures we have double redundancy. I still need to write a script that automatically takes a snapshot of the file system daily but I'll get around to that after we have a bit of a burn in period for the drives, i'll then resolve this.</div>

@@ -1,0 +1,3 @@
+<p>I've spent about 15 minutes plowing through the google calendar and google groups documentation and don't see a way to do this given the current setup. Replies to calendar event invitations are designed to support a "will attend" / "won't attend" model, rather than what we'd like to do here, which is to faciliate an action in another email context.</p>
+<p>One possibility for getting around this is, instead of adding each individual's email address on the appointment, add the google group address instead. Doing a "reply all" instead of a "reply" to that message <strong>might</strong> work.</p>
+<p>Tom</p>

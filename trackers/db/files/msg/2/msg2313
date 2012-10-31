@@ -1,0 +1,8 @@
+For what it's worth:
+
+Christopher: I was doing some other work on the listserv and had a look at this too. All of those addresses failed DNS lookups at the same time (down to the second) and date(!!). It may have been a transient DNS failure. I'll email you both a copy of the full log. 
+
+Unfortunately, the listserv has purged earlier delivery logs which are likely showing the recurrence of the error as reported by Alex. I've changed the retention settings from 5 days to 120 days, so hopefully we'll be able to get a history on this if it happens again while you're working the question with ITS etc.
+
+Best,
+Tom

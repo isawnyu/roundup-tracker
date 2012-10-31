@@ -1,0 +1,1 @@
+<p>So initial testing and zfs is still failing in 32 bit scenarios. This unfortunately brought down the ticket system, so we'll need a separate resource to test on. I'll try to use one of the imacs sitting idle in here for continued testing.</p>

@@ -1,0 +1,11 @@
+I am not sure where to even begin with this, It's 2011.
+
+I am supposedly sitting in a building retrofitted with state-of-the-art, custom made furniture with a library at its core.
+
+For all this at ISAW our switches seemingly don't support link aggregation or it hasn't been enabled as a default for our ports. This is so unbelievably comical; it is sad.
+
+1. We need to find out why link aggregation isn't abled for our port setup. It simply doesn't make sense every wall jack has two ports and I find it hard to believe that with the switches that are on these floors they don't support link aggregation. Why wasn't this enabled? Don't we pay money to lease these switches or some such at some outrageous price?
+
+2. If for whatever that can't be remedied we purchase a switch that is 802.3ad compliant with some gigabit ports and put it between the server and whatever switches the 6th floor is hooked up to. This wouldn't be the biggest help but at the very least we'd gain failover for the server and I would have to figure something out.
+
+I just don't understand the rationale sometimes..

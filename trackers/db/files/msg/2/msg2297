@@ -1,0 +1,18 @@
+Seth,
+
+Thanks for your feedback.  ISAW purchased its first copy of Windows 7 after those instructions were made earlier this summer.  As time permits, we will add additional instructions for Windows 7.
+
+The models of the copiers are:
+- 3rd floor - Lanier 275
+- 4th floor - Lanier 335
+
+Typically one would choose the PCL6 driver, but for various reasons one might want to use the PostScript driver.  If you're not sure which, then you should use the PCL6.
+
+Once you get to the bit about selecting which driver you want to use, the steps should be identical to installing any other kind of printer.  Unfortunately, I don't have a Windows machine with me to test this.
+
+For the fourth floor copier, the PCL6 driver unzips to a folder named z46397en[1].  Inside that folder is another folder called disk1 and inside that folder is the OEMSETUP file.
+
+I wonder if you may have figured this out already..  I will not be back at ISAW until Monday morning, but I'm happy to help you then if you still need it.
+
+Best regards,
+Michael Edgcumbe

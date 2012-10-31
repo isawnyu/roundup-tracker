@@ -1,0 +1,3 @@
+<p>By default, google notifies partners when a change is made, but in practical terms on form submission we need an email generated that includes the data entered in the form.</p>
+<p>&nbsp;</p>
+<p>(deferring this until we get permissions issues sorted and until we can carve out some developer time to dig into the problem; I'll hold the todo until that point).</p>

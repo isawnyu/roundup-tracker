@@ -1,0 +1,14 @@
+Linda:
+
+Michael is out until Monday.
+
+Have you tried the following procedures, outlined in Michael's note (subj: Upgrading ISAW services) sent to the isaw-internal listserv on 14 October:
+
+
+1)  The filemaker databases (contacts, events, etc.) will be shut down and moved to server address 128.122.167.33 on Wednesday morning at 10:00 AM.  They should be available from that address throughout the upgrade process.  To open them, click the &quot;Remote....&quot; button on the Open dialog.  View &quot;Local Hosts&quot;.  Select the 128.122.167.33 host.  Select the database you intend to use. 
+
+
+Please let us know if this helps (or not) by appending a note to the ticket in the help desk.
+
+Thanks,
+Tom

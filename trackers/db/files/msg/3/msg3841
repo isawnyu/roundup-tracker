@@ -1,0 +1,9 @@
+So according to NYU-NET policy this is not allowed. Here is my response for whomever may need to deal:
+
+I've just read this policy in this entirety and I understand the needs of NYU-NET and the critical stance to make sure that the network is reliable and available to all participants and schools apart of it. Here at ISAW however we quite frankly simply need the ability to dual-home. Sans the &quot;Remote Connections to Outside Networks&quot; as this is entirely local which as stated under &quot;Local Area Network and Servers&quot; first heading &quot;Backup&quot;
+
+Backups of computers over NYU-NET is not currently supported, due to the bandwidth requirements of such activities. Individuals may use the network to back up machines local to their LAN, but such traffic traversing the NYU-NET backbone can negatively impact the connectivity of others on NYU-NET.
+
+The Institutes issue is in following protocol to backup our faculty and staff machines only locally which is where we are seeing a problem. In our specific case we have a link that is increasingly being saturated by all of our users for backup. The machine in question is used for communications and backup processes. The need for extra bandwidth to this server as we grow as an Institute is beginning to become more of an issue. Our faculty/staff have begun to stop backing up or not backing up at all. The server itself is equipped to handle dual-homing and the extra gigabit of bandwidth from that port would give us some room into the forseeable future for some growth.
+
+I note that the policy version 1.2 was last revised August 28, 2007 and hope that there is something or some way we can work together in finding an amicable solution that ensures the stability of NYU-NET and allows the Institute as a whole to retain its data.

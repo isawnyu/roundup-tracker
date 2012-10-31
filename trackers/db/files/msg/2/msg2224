@@ -1,0 +1,15 @@
+Roger,
+
+The most straightforward way to archive messages is probably to use Thunderbird's built in capability.  Instructions are available here:
+http://support.mozillamessaging.com/en-US/kb/Archived+messages
+
+Although, there are some downsides.  Thunderbird intentionally stores archived messages in a format based on the date of the message, rather than the folder structure you so carefully set up.  I find this irritating.
+
+Apple's Mail app has a Archive Messages feature which allows you to take an entire folder and save it locally in their .mbox format.  An mbox is a flat text file that contains all of the messages in the folder.  It's not human-readable because it includes headers and attachments as text as well, but you can open it in the Mail app.
+
+One alternative method to explore would be creating a script which turns the messages into PDFs.  Another would be to open up Outlook and see what's available there.  
+
+Let me know if you're interested in any of these particularly.  In any event, if you choose to store these locally, then I'd highly recommend finding at least two other places to keep them as well.
+
+Best,
+Michael

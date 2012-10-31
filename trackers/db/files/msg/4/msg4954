@@ -1,0 +1,3 @@
+This is a noted Apple bug, it looks as if they took a stab at fixing it in 10.6.7 http://support.apple.com/kb/HT4605 however, it's obvious this has failed. There are some work arounds that involve rolling back to 10.6.6
+
+I think it's better that we let Apple solve the problem which is probably someone checking in the wrong file for FontBook or damaging it or some such. A new .x release simply needs to be cut.

@@ -1,0 +1,9 @@
+<p>This just in from Yoni, via email:</p>
+<p>-------- Original Message --------<br />Subject: [NYU ITS C&amp;CS COS #8703] public-facing IP address for router for ISAW exhibition<br />Date: Wed, 12 Sep 2012 16:25:16 -0400<br />From: hostmaster@nyu.edu<br />Reply-To: hostmaster@nyu.edu<br />To: tom.elliott@nyu.edu<br />CC: an62@nyu.edu, bk5@nyu.edu, dem2@nyu.edu, isaw.it@nyu.edu, larry@esam.net</p>
+<p>Chris and ISAW IT Team,</p>
+<p>The new subnet for use by the vendor's equipment at ISAW, (192.76.177.248/29) is now expressed on the NYU network infrastructure and is ready for use.</p>
+<p>As the next step, please submit a request to our Data Techs's group at its.cos-data@nyu.edu to configure the access port used by the host with MAC <br />address 30469A63335D for subnet 192.76.177.248/29. Please provide them with as specific information as possible regarding the data jack location so they <br />can track down the port if the MAC address is not immediately visible.</p>
+<p>Once the access port has been configured on the new subnet, you should be able to connect the vendor's WAN port to the datajack, and it should have <br />Internet connectivity once it has been configured with the below settings.</p>
+<p>&gt; DEVICE FQDN: ISAW-VENDOR-RTR.NYU.ORG<br />&gt; DEVICE USER NETID: cww6<br />&gt; DEVICE RESPONSIBLE PARTY NETID: te20<br />&gt; DEVICE IP ADDRESS: 192.76.177.253<br />&gt; SUBNET MASK: 255.255.255.248<br />&gt; DEFAULT GATEWAY: 192.76.177.249<br />&gt;</p>
+<p>If you have any questions, please let me know. Otherwise, we will proceed to close this Hostmaster request.</p>
+<p>Thanks,<br />Yoni</p>

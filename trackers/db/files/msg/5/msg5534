@@ -1,0 +1,5 @@
+<p>Currently we have:</p>
+<p>#featured h2 { line-height: 14px; ... }</p>
+<p>this causes ugliness when the heading wraps to a second line</p>
+<p>suggest we change to:</p>
+<p>#featured h2 {line-height: 1em; ... }</p>

@@ -1,0 +1,10 @@
+<p>Hi Bruno,</p>
+<p>In an effort to consolidate ISAW web properties and sever resources, i'd like to go ahead and move amheida.org away from i4.nyu.edu and onto isaw4.atlantides.org. I've taken the liberty of prepping for the potential move and have tested it in doing so. If you'd like you can modify your "hosts" file and point amehida.org to 66.35.39.43 (isaw4.atlantides.org) to see the setup.</p>
+<p>Your gains for making the move would be access to a faster server, more memory, site caching, liberty to make changes to amheida.org on the fly, no quotas and you're free to do as you'd like within the confines of decency.</p>
+<p>I've also made you an account on that server that you can ssh into with the following details:</p>
+<p>login: bbazzani<br />password: wqJA7XzR</p>
+<p>This includes the subversion repository, there are a couple of things I'd like to talk about in regards to permissions for instance some of the subversion base dirs have octal modes of 0775 and I wasn't sure if that was an error made sometime ago or if there was a reason for that. Regardless of moving or not it should be changed.</p>
+<p>If you agree to this move, i'll proceed to initiate it with the dns admins at nyu to either transfer the domain or point the ip of amheida.org to isaw4.atlantides.org</p>
+<p>Thanks!</p>
+<p>Christopher Warner<br />christopher.warner@nyu.edu<br />Institute for the Study of the Ancient World</p>
+<p>web: http://cwarner.kernelcode.com<br />twitter: @christophwarner</p>

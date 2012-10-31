@@ -1,0 +1,3 @@
+Spoke with Diane about this, it's a timeout session via the SSO system which looks to have been recently upgraded due to the Sun Microsystems to Oracle transfer. Will find out more about this as we'll most likely be interfacing with whatever external api login.nyu.edu and ldap.nyu.edu use.
+
+Closing ticket.

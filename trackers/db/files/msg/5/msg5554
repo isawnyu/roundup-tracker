@@ -1,0 +1,6 @@
+<p>Kate:</p>
+<p>As I mentioned in email, these don't appear to be Unicode characters, so it's not surprising to me that they fail to paste. Moreover, I suspect that most users of our website won't have a Unicode font installed that includes the Aramaic range.&nbsp;</p>
+<p>At a minimum, to go any further with this, we'd need Anthony to send us the text of these characters in Unicode rather than whatever custom font encoding this is that he's using. Then we could at least put them in ... but they're still likely to be borked on some user's web pages. He'd probably be better off transliterating at this point.</p>
+<p>If it's ok I'd like to go ahead and close this ticket since you're going to have to go back to him and get something different.</p>
+<p>OK?</p>
+<p>Tom</p>

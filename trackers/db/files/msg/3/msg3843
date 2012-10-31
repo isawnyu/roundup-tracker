@@ -1,0 +1,127 @@
+Hello Christopher,
+
+Jennifer Sy referred me to your below message regarding NYU-NET policies
+surrounding the &quot;multi-homing&quot; of end host devices.  Indeed as you
+noted, some of the language of the policy page may be a little dated;
+our policy and technology security groups in ITS are working with us on
+getting this information updated this semester.
+
+However, that said, &quot;dual-homing&quot; of end hosts is not a supported
+service/practice at most NYU-NET locations.  One of the main reasons for
+this is that there is substantial overhead in managing these types of
+links, which results in both added complexity and more troublesome
+failure modes.  The main exception to this rule is at the central ITS
+Data Center locations, where the physical plant and network were
+designed from inception to support specific types of &quot;multi-homing&quot; by
+high performance or critical systems running applications used by the
+University as a whole.
+
+In addition, the hardware refresh cycle of network electronics on
+NYU-NET is centrally managed and architected to provide (and in fact
+over-provision) sufficient bandwidth on the campus network to the
+majority of end-user/client devices as well as most departmental
+servers.  Again, systems requiring extremely high performance or
+critical to the functioning of the University should typically be
+located in an ITS Data Center).  For example, the access switchports at
+your NYU-NET location (ISAW, 15 E84th St), can provide 10, 100, and
+1000Mbit/s (Gigabit) Full Duplex Ethernet connections to your devices
+over Category6 or better UTP cabling, depending on the capabilities of
+the end host's NICs.  In turn, the building network backbones of most of
+NYU-NET locations, including ISAW, use single-mode fiber-optic cabling
+and are Gigabit Ethernet-based. From our monitoring, we rarely see them
+approach even 30% utilization at peak times.  On the DataCenter side,
+with 10-Gigabit Ethernet inter-switch trunk links, peak overall
+utilization is still generally well under 1 Gig (between a given DC
+switch and router), even &lt; 2 Gbits/sec in the case of the main backup
+server for the University's Data Warehouse!  Finally, it has been our
+experience that for most applications the efficiency of the kernel's
+implementation of TCP/IP, not the underlying network infrastructure, is
+what caps performance in the &gt;500 Mb/sec range.
+
+Based on our monitoring of the network access switches and other NYU-NET
+electronics at ISAW, we have not observed any indication of high
+utilization within the building backbone (L2 distribution).  That said,
+if your troubleshooting of your backup server performance issue has
+indicated a network bottleneck of some kind, then we can certainly do a
+&quot;deeper dive&quot; down to the access switchport side to determine if this is
+the case.  Our point of contact for system administrators who have
+network-related questions or a technical manner is noc@nyu.edu (see the
+attached &quot;nyuitscos-networkcontacts.pdf&quot;).  If you feel there is a
+network performance issue or bottleneck that is effecting your
+application or system, please contact us at noc@nyu.edu and include the
+details listed below under the &quot;Request for Network Engineering
+Assistance&quot; heading.
+
+On a somewhat related note (at least related to hostmaster),
+registration of devices on NYU-NET can be performed by the departmental
+IT support personnel or system administrators, using a web-based
+application tool we (ITS COS) provide called DNSManager. In fact, this
+is the primary way that all staff/departmental device registrations on
+campus are handled.  Registration services by Hostmaster is only for
+smaller departments without any dedicated or even hybrid IT personnel or
+for custom DHCP/DNS requests that cannot be performed via DNSManager.
+For more information on DNSManager, pleasee the DNSManager-FAQs.pdf
+which can be downloaded here:
+https://webspace.nyu.edu/xythoswfs/webui/_xy-3097318_1-t_isIZkVUF
+
+It appears that DNSManager access for ISAW has lapsed with staff
+changeover.  The current and sole member of the inactive ISAW group in
+DNSManager is tpl210 (Timothy P Libert), who I believe now works for the
+Journalism department.  To resolve this discrepancy/gap, we will create
+a new Hostmaster ticket to populate the ISAW DNSmanager group with your
+current staff as is appropriate.  You will be contacted by hostmaster to
+complete this process so you can manage your device registrations for
+ISAW via the DNSManager Web UI.
+
+If you have any additional questions or concerns on the above, feel free
+to contact me to discuss further.
+
+Thanks,
+Yoni
+
+*******************************************************
+Yonatan (Yoni) Radzin
+Team Leader- Network Engineering
+New York University
+ITS C&amp;CS, Communication Operations Services
+726 Broadway, 8th Fl, New York, NY 10003
+Phone: +1-212-998-3450
+Email: 
+*******************************************************
+
+&quot;Request for Network Engineering Assistance&quot;
+
+Please fill in the below information in order for ITS NOC to provide
+troubleshooting assistance for a connectivity or network performance
+problem.
+
+- Application Name, Version, and Description:
+- Application Access Method (Relevant URLs or server FQDN):
+- Problem Description: (Error Messages, etc)
+- Session Start Timestamp (day of week, date, time of day, UTC offset)
+- Session End Timestamp (day of week, date, time of day, UTC offset)
+
+* Example Client Specifications
+
+- Client Machine Hardware Type:
+- Client Machine OS:
+- Client Machine Location:
+- Client NIC Settings:
+- Client Source MAC Address:
+- Client Source IP Address:
+- Client TCP/IP Settings: (Mask, Default Gateway, DNS Servers, etc)
+
+* Server and Application Specifications
+
+- Destination Server(s) IP addresses:
+- Application L4 Transport Protocol (TCP/UDP/Other):
+- Destination Server Port(s) (assuming TCP/UDP):
+- Application Layer Protocol(s): (e.g. HTTP, HTTPS, SQL, etc)
+
+* Additional Information
+
+- Client OS or application logs messages corresponding to the above
+session timestamps:
+- Server and/or application log messages corresponding to the above session:
+- Client and Server application log analysis
+- Application Architecture and Dependencies

@@ -1,0 +1,7 @@
+I (Tom) will take responsibility for fixing this issue, but I did want Michael et al. to know about it.
+
+Snow leopard does something to java that clobbers installed versions of the Oxygen XML editor. I think this only affects the scanner imac, and I'm going to fix that. 
+
+Background here: http://www.oxygenxml.com/forum/topic4180.html
+
+Fix is download and install updated version of Oxygen.

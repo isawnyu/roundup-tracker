@@ -1,0 +1,11 @@
+In the left pane there is a small + button.
+
+Select that button and a modal window should come up:
+
+Select Interface VPN
+Select VPN Type: Cisco IPSec
+Service name should be VPN (Cisco IPSec)
+
+Select Create:
+
+Follow the instructions from there. I'll update ITS so they can update the instructions.

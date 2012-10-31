@@ -1,0 +1,1 @@
+<p>This is a plone core issue. If you switch the display to thumbnail view as you've done. You are using a default view that is inherited from base.css because it's so general it will need to be overrided. It's not as simple as just changing the stylesheet.</p>

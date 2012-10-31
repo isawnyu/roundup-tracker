@@ -1,0 +1,12 @@
+<div>Chris -</div>
+<div>&nbsp;</div>
+<div>It appears there are existing solutions within the Zope framework for authenticating to Shibboleth (a SAML v2 implementer,) although I am not very familiar with Zope.</div>
+<div>Take a look at this:&nbsp;<a href="http://plone.org/products/liberty-authentication-plugin-for-pas" target="_blank">http://plone.org/products/liberty-authentication-plugin-for-pas</a>&nbsp;as one option.</div>
+<div>&nbsp;</div>
+<div>We'd like to use Shibboleth as our interface for this integration, which implements SAMLv2.&nbsp; It has the added benefit of giving you flexibility to accept users from other institutions in the future if you choose to expand the scope of your application, and is built on a good standard for interoperability.</div>
+<div>&nbsp;</div>
+<div>When you're ready to proceed, we can set you up in our Shibboleth development environment.<br /><br /></div>
+<div>
+<div><span id="q_132ca9caf3a7a317_1" class="h4">- Show quoted text -</span></div>
+</div>
+<p><span style="color: #888888;">--&nbsp;<br />William Ward<br /><a href="mailto:wwward@nyu.edu" target="_blank">wwward@nyu.edu</a></span></p>

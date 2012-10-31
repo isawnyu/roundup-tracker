@@ -1,0 +1,18 @@
+Relevant data; as we can see below just simply using ping gets us a request timeout for a low amount of traffic, this is primarily because the link is being hammered via the backup cycles. Which means communication services and such are hindered.
+
+64 bytes from 128.122.167.44: icmp_seq=392 ttl=50 time=15.278 ms
+64 bytes from 128.122.167.44: icmp_seq=393 ttl=50 time=13.323 ms
+64 bytes from 128.122.167.44: icmp_seq=394 ttl=50 time=13.613 ms
+64 bytes from 128.122.167.44: icmp_seq=395 ttl=50 time=15.469 ms
+64 bytes from 128.122.167.44: icmp_seq=396 ttl=50 time=15.021 ms
+64 bytes from 128.122.167.44: icmp_seq=397 ttl=50 time=13.067 ms
+64 bytes from 128.122.167.44: icmp_seq=398 ttl=50 time=15.367 ms
+64 bytes from 128.122.167.44: icmp_seq=399 ttl=50 time=13.424 ms
+Request timeout for icmp_seq 400
+64 bytes from 128.122.167.44: icmp_seq=401 ttl=50 time=18.153 ms
+64 bytes from 128.122.167.44: icmp_seq=402 ttl=50 time=17.232 ms
+64 bytes from 128.122.167.44: icmp_seq=403 ttl=50 time=18.529 ms
+64 bytes from 128.122.167.44: icmp_seq=404 ttl=50 time=16.851 ms
+64 bytes from 128.122.167.44: icmp_seq=405 ttl=50 time=20.394 ms
+64 bytes from 128.122.167.44: icmp_seq=406 ttl=50 time=22.948 ms
+64 bytes from 128.122.167.44: icmp_seq=407 ttl=50 time=18.241 ms

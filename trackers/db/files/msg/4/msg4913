@@ -1,0 +1,5 @@
+So we'll be using Roundup for issue tracking.. I've already begun modifying it heavily on our new automation server: http://automaton.isaw.nyu.edu:8081/help/index. Automaton will manage all of the automated processes that need to be built, and all of the help/issue/tracking systems. It currently uses Freebsd 8.0 and is a sourced Dell machine that was sitting here doing nothing since i've been here.
+
+I am currently waiting to hear back from ITS as to why I don't have access to isawapp.nyu.edu or what happened to the ssh server there. It seems they moved isawapp.nyu.edu and I'm not sure what machine it's on now.
+
+I've decided that ticket.isaw.nyu.edu will be the new address for the ticket system and help.isaw.nyu.edu will take you to a landing page that will shoot you off into the right direction for help whatever it may be.

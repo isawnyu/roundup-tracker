@@ -1,0 +1,1 @@
+<p>not changing from deferred at this time, but have noticed that it looks like if we can change div.viewButton and div.viewButton100 to float:none and width=100% we can resolve the problem.</p>

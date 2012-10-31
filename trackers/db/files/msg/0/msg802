@@ -1,0 +1,16 @@
+Software:
+
+1. One copy of silverfast for the workstation to which the scanner is attached.
+
+For each of the interns' computers we need:
+
+2. jhove (open source)
+3. exiftool (open source)
+4. Oxygen XML Editor (commercial; academic license)
+5. Adobe Photoshop CS 3 or 4 (commercial)
+6. Saxon B (not A; open source)
+7. md5deep (open source)
+8. ichat (comes with operating system)
+9. colloquy (open source)
+
+There is a PDF document entitled "workspace-setup.pdf" on the server in the scanned images directory under techgroup that provides more details on the open-source packages.

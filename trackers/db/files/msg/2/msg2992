@@ -1,0 +1,2 @@
+I thought I sent a reply yesterday but something must have gone wrong. I need you to commit the changes once more because I still had some problems with the mailto links: it seems that the web server automatically transforms the email-like strings into mailto links, thus duplicating the email addresses of the  tags.
+Thanks !

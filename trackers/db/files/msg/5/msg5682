@@ -1,0 +1,2 @@
+<p>I went ahead and substituted the collection for the old top-level link. I haven't messed with anything under "about" yet. First steps; at least it gets us a clean, date-ordered, paged view of the news from the upper-right-corner link. I'll probably modify the main navigation (by adding a link to the collection inside the "about" folder and hiding the other from navigation, but need to think about what the path is our internal authors use to get to that spot).</p>
+<p>I'll take this ticket for now.</p>

@@ -1,0 +1,2 @@
+My timezone is properly set, but recent ticket activity (#304583) shows at 8PM while the system-generated email shows 3PM. This seems to be a bug, because other tickets have been wrong, then adjusted later.
+Diane

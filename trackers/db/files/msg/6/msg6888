@@ -1,0 +1,1 @@
+<p>Well, I setup a smtp server on automaton.isaw.nyu.edu in the meantime as nyu.edu blocks outbound 25 port access and the BMS system would need to be modified for TLS or SSL and quite frankly that's more effort than it's worth. Automaton is becoming more of a critical resource so it's something we should probably keep an eye on.</p>

@@ -1,0 +1,4 @@
+<p>Right so we can do one of two things:</p>
+<p>1. Get two new drives, and fully rebuild the main slice, this will help us continue on as we have been. It's likely this will happen again at some point as we remain with whatever this current setup is.<br />2. &nbsp;We take the time to solve the problem, architect it correctly and figure out a way to get our groups data into a stable environment such that we don't have to worry about this problem again.</p>
+<p>To do 1, i'll simply need two 500GB drives, i'll shutdown the server and rebuild the data from backup onto the new drive and then rebuild the entire raid from there.<br />To do 2, i'll need to spend time here, come up with a plan that works, and then implement it. I won't be able to do this for at least another week or two however and it will require much more time than the 1st one.</p>
+<p>Let me know how you'd like to proceed.&nbsp;</p>

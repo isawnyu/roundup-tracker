@@ -1,0 +1,3 @@
+Additional notes from Tom:
+
+I created a &quot;tomtester&quot; user on the website and gave it the same permissions as Roger. When logged in as &quot;tomtester&quot; I cannot see the &quot;edit&quot; option on the &quot;faculty&quot; page. It seems that only those with &quot;manager&quot; permissions can see this option. What needs to be done so that we can selectively give some users like Roger the ability to edit the major people sections?

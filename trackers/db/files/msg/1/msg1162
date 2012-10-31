@@ -1,0 +1,11 @@
+Hi there! I'm one of the new visiting scholars. When I was in ISAW yesterday I tried to connect my laptop to the NYU wifi network, without success, tho I followed the instructions on the NYU IT website. 
+
+I have a Dell Latitude D820 running XP. My wifi connections are not managed by Microsoft Windows, but by Intel PROSet / Wireless software 10.1.0.3 (which must have been installed by my own university a few years ago). 
+
+Many of the options for preparing the connection are the same as in Windows - tho I am no expert, and may be overlooking all kinds of things. When I tried to connect, the reported error was at the authentication stage. One feature in the Intel software, which I didn't see in Windows, and which came up in the error message, is the requirement to provide a 'roaming identity', which Intel suggests should be of the pattern anonymous@abc.com . I tried a few at random, but no luck. (And no surprise.) Any thoughts? Or should I (can I?) temporarily disable the Intel software and use Windows own wifi software whilst here?
+
+I am not in ISAW every day, but if you need to see my machine, I can be there any time between 9.30 and 2.00 most days. (I'm limited by kids' school hours at present.)
+
+Many thanks,
+
+David

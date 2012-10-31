@@ -1,0 +1,5 @@
+As Kate normally keeps her machine plugged in and it's been two years her battery doesn't normally get proper conditioning. Do the way Snow Leopard manages batteries it reset her configuration on the 10.6.6 upgrade which most likely drained her battery.
+
+A reset of PRAM and the SMC did nothing. It's been 2 years..
+
+At the same time I did an upgrade on the machine to 10.6.7 and all of the security/java etc upgrades that needed to occur there as well. I've given the machine back to Kate in limp mode which means she can use it but obviously the battery is dead so it will need to remain plugged in.

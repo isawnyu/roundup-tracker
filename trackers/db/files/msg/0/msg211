@@ -1,0 +1,16 @@
+Hi Tim:
+
+I followed these instructions and the install completed successfully. However, when I try to start the software (e.g., ArcMap) I get the following notice:
+
+
+Provide your license server administrator with the following information:
+
+License server machine is down or not responding.
+See the system administrator about starting the license server system, or make sure you're referring to the right host (see LM_LICENSE_FILE). 
+Feature: ARC/INFO
+Hostname: Not_Set
+License path: @Not_Set;
+FLEXnet Licensing error: -96,7. System Error: 11004 "WinSock: Valid name, but no record (NO_ADDRESS)"
+
+
+My only option is to click "OK" and the software then exits.

@@ -1,0 +1,3 @@
+<p>For instance there is currently a 6000x8000 pixel image on our website..</p>
+<p><a href="http://isaw.nyu.edu/events/guest-lecture/event_Image">http://isaw.nyu.edu/events/guest-lecture/event_Image</a></p>
+<p>That is an obscene size to have on the web, even though most modern browsers do an excellent job in resizing this image down. It will take the avg person a little while to download this i'm afraid. This is a high priority because with the advent of caching almost the entire site and the rules working there.. this is just going to slow us down no matter what.</p>

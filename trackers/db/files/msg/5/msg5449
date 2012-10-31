@@ -1,0 +1,1 @@
+<p>restart &lt;name&gt; Restart a process<br />restart &lt;gname&gt;:* Restart all processes in a group<br />restart &lt;name&gt; &lt;name&gt; Restart multiple processes or groups<br />restart all Restart all processes</p>

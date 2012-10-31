@@ -1,0 +1,13 @@
+NYU ITS has responded with a few recommendations:  
+
+-Update Adobe reader -Did not help
+-Openning another PDF files (non BRIO) - Does not help
+-Was the BRIO plugging installed
+-If using Window7 are you running admin mode
+-Try using different computer - Not helpful
+
+  1. Click on the Start button, then Run.
+  2. Type regedit and click OK to open the Registry.
+  3. Go through the following path: HKEY LOCAL MACHINE -&gt; Software -&gt;Microsoft -&gt; Windows -&gt; Current Version -&gt; Internet Settings -&gt; HTTP Filters
+  4. Delete RPA, then click on File/Exit.
+  5. restart computer.
