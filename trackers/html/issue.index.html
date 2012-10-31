@@ -25,7 +25,7 @@
 <tal:block tal:define="batch request/batch" tal:condition="context/is_view_ok">
 
  <form class="table-form">
- <table class="table-form">
+ <table class="table-form datatable">
  <thead>
   <tr class="issueindex">
    <th tal:condition="request/show/title" i18n:translate="">Title</th>
@@ -53,8 +53,10 @@
        tal:content="python:i.creator.plain() or default">&nbsp;</td>
    </tr>
 
- </tal:block>
-
+</tal:block>
+</table>
+<table>
+ 
  <metal:index define-macro="batch-footer">
 
  <tr style="background-color:#ffffff" tal:condition="batch">
