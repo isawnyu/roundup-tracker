@@ -27,10 +27,3 @@ department = db.getclass('department')
 department.create(name=''"building", order="1")
 department.create(name=''"isawit", order="2")
 department.create(name=''"research", order="3")
-
-# add any additional database creation steps here - but only if you
-# haven't initialised the database with the admin "initialise" command
-
-
-# vim: set filetype=python sts=4 sw=4 et si
-#SHA: f52a98b31599aa459a82a7852175660cf9cdcd6b

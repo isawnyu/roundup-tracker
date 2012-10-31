@@ -37,6 +37,7 @@ def deptissue(db, cl, nodeid, oldvalues):
                 print "Alerting Building Engineering Department"
                 cl.send_message(nodeid, msgid, create, ['mike.kojasevic@leonlevy.org'])
                 cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
@@ -44,15 +45,23 @@ def deptissue(db, cl, nodeid, oldvalues):
         for msgid in cl.get(nodeid, 'messages'):
             try:
                 print "Alerting Technology Department"
-                cl.send_message(nodeid, msgid, create, ['isaw.it@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['christopher.warner@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['akj267@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['monish.bhagat@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
-    elif dept_id == '3':
+    elif dept_id == '5':
         for msgid in cl.get(nodeid, 'messages'):
             try:
-                print "Alerting Research Department"
-                cl.send_message(nodeid, msgid, create, ['isaw.library@nyu.edu'])
+                print "Alerting Administrative Department"
+                cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['roger.bagnall@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['wls3@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['john.bernstein@leonlevy.org'])
+                cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
+
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
     else:

@@ -68,13 +68,15 @@ def presetunread(db, cl, nodeid, newvalues):
 
     # get the unread state ID
     try:
-        unread_id = db.status.lookup('unread')
+        inprogress_id = db.status.lookup('in-progress')
+        print "Progress id"
+        print inprogress_id
     except KeyError:
         # no unread state, ignore all this stuff
         return
 
     # ok, do it
-    newvalues['status'] = unread_id
+    newvalues['status'] = inprogress_id
 
 
 def init(db):
