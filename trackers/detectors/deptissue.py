@@ -38,6 +38,7 @@ def deptissue(db, cl, nodeid, oldvalues):
                 cl.send_message(nodeid, msgid, create, ['mike.kojasevic@leonlevy.org'])
                 cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['alexander.jones@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
@@ -58,9 +59,9 @@ def deptissue(db, cl, nodeid, oldvalues):
                 print "Alerting Administrative Department"
                 cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['roger.bagnall@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['wls3@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['john.bernstein@leonlevy.org'])
+                cl.send_message(nodeid, msgid, create, ['andrea.chang@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['alexander.jones@nyu.edu'])
 
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
@@ -68,7 +69,7 @@ def deptissue(db, cl, nodeid, oldvalues):
         for msgid in cl.get(nodeid, 'messages'):
             try:
                 print "Department doesn't exist"
-                cl.send_message(nodeid, msgid, create, ['isaw.it@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['isaw.it-group@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
