@@ -34,41 +34,50 @@ def deptissue(db, cl, nodeid, oldvalues):
     if dept_id == '1':
         for msgid in cl.get(nodeid, 'messages'):
             try:
-                print "Alerting Building Engineering Department"
+                print "Alerting Building Engineering Team"
                 cl.send_message(nodeid, msgid, create, ['mike.kojasevic@leonlevy.org'])
                 cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['alexander.jones@nyu.edu'])
+                # Dwayne Boyd
+                cl.send_message(nodeid, msgid, create, ['db1723@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
     elif dept_id == '2':
         for msgid in cl.get(nodeid, 'messages'):
             try:
-                print "Alerting Technology Department"
-                cl.send_message(nodeid, msgid, create, ['christopher.warner@nyu.edu'])
+                print "Alerting IT Support Team"
+                cl.send_message(nodeid, msgid, create, ['anshul.jain@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['kristen.soule@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['akj267@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['monish.bhagat@nyu.edu'])
+            except roundupdb.MessageSendError, message:
+                raise roundupdb.DetectorError, message
+
+    elif dept_id == '4':
+        for msgid in cl.get(nodeid, 'messages'):
+            try:
+                print "Alerting Web Team"
+                cl.send_message(nodeid, msgid, create, ['kristen.soule@nyu.edu'])
+                cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
 
     elif dept_id == '5':
         for msgid in cl.get(nodeid, 'messages'):
             try:
-                print "Alerting Administrative Department"
+                print "Alerting Administrative Team"
                 cl.send_message(nodeid, msgid, create, ['diane.bennett@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['roger.bagnall@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['andrea.chang@nyu.edu'])
                 cl.send_message(nodeid, msgid, create, ['tom.elliott@nyu.edu'])
-                cl.send_message(nodeid, msgid, create, ['alexander.jones@nyu.edu'])
 
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
+                
     else:
         for msgid in cl.get(nodeid, 'messages'):
             try:
-                print "Department doesn't exist"
+                print "Department %s doesn't exist" % dept_id
                 cl.send_message(nodeid, msgid, create, ['isaw.it-group@nyu.edu'])
             except roundupdb.MessageSendError, message:
                 raise roundupdb.DetectorError, message
