@@ -1,0 +1,1 @@
+<p>As a note it seems something is simply going on with plone.app.caching. Leaving deferred bumping to normal as we haven't lost too much speed. It's noticeably slower to me but that's because I've seen it much faster, the everyday user/visitor/editor will most likely notice no difference.</p>

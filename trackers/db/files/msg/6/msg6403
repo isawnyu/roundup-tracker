@@ -1,0 +1,10 @@
+<p>All I have is:</p>
+<dl id="plone-contentmenu-workflow" class="actionMenu activated"><dt class="actionMenuHeader label-state-internal"><a title="Change the state of this item" href="http://isaw.nyu.edu/events/test/content_status_history"> <span>State:</span> <span class="state-internal">Internal draft</span> <span class="arrowDownAlternative">▼</span> </a></dt><dd class="actionMenuContent">
+<ul>
+<li><a id="workflow-transition-hide" class="kssIgnore" title="Making an item private means that it will not be visible to anyone but the owner and the site administrator." href="http://isaw.nyu.edu/events/test/content_status_modify?workflow_action=hide"> <span class="subMenuTitle">Make private</span> </a></li>
+<li><a id="workflow-transition-publish_internally" class="kssIgnore" title="Publishing the item makes it visible to other users." href="http://isaw.nyu.edu/events/test/content_status_modify?workflow_action=publish_internally"> <span class="subMenuTitle">Publish internally</span> </a></li>
+<li><a id="workflow-transition-submit" class="kssIgnore" title="Puts your item in a review queue, so it can be published externally or internally." href="http://isaw.nyu.edu/events/test/content_status_modify?workflow_action=submit"> <span class="subMenuTitle">Submit for publication</span> </a></li>
+<li class="actionSeparator"><a id="advanced" class="kssIgnore" title="" href="http://isaw.nyu.edu/events/test/content_status_history"> <span class="subMenuTitle">Advanced...</span> </a></li>
+<li><a id="policy" class="kssIgnore" title="" href="http://isaw.nyu.edu/events/test/placeful_workflow_configuration"> <span class="subMenuTitle">Polic</span></a>y</li>
+</ul>
+</dd></dl>

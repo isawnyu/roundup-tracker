@@ -1,0 +1,11 @@
+Perhaps user error on my part then.
+
+When I go to http://isaw.nyu.edu/Members/sebastian.heath-40nyu.edu/isaw-papers-editorial-guidelines-for-authors , one of the menus is "Edit".
+
+When I go to,  http://isaw.nyu.edu/people/faculty/sebastian-heath . I don't see the "Edit" menu.
+
+On that profile page, when I hover over the "by Sebastian Heath" link, it's going to the OpenID version of me. I don't know enough about Plone to know if that's relevant. When I go to that page for the OpenID account (http://isaw.nyu.edu/author/?author=https://www.google.com/accounts/o8/id?id=AItOawmL7-uyP7a-hB8PxeisoCCqcGzeCu2_2xE) , it looks like it owns various bits of content about me that I would like to be able to edit.
+
+ Chris, I didn't quite get what you meant by "complete". The information on my page is slightly incorrect (phone number and some other things). I'm still having the problem of not being able to edit. But I probably need some user education?
+
+ -S.

@@ -1,0 +1,1 @@
+reformatted drive, deleted plist, excluded all directories outside of user dir as well as microsoft user data which can cause problem and the Plls folder.  problem *may* have been with backing up old recovered system files left from reinstall.

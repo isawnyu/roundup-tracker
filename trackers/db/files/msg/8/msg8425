@@ -1,0 +1,4 @@
+<p><span>The following is what happened, i'll open a ticket after I send this email with the specifics so we have a record:</span></p>
+<div>Since the inception of this system we keep every system email that has been sent backed up to /var/spool/postfix/maildrop. Unfortunately /var is only 5 gig's. It ran out of space conveniently around the same time all of this mess was going on. What i'm going to do is rotate this directory and move the saved files to /heron/logs.</div>
+<div>&nbsp;</div>
+<div>/Heron is our rotating backup zfs raidz 1TB store for this type of thing and for the last 14 months it has been doing ok.</div>

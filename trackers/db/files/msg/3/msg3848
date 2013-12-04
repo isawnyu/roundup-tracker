@@ -1,0 +1,40 @@
+Hello Christopher,
+
+Per your request, a DNSManager account has been created using NetIDs:
+cww6, te20 and scg4.  These accounts have been added to  the existing
+DNSManager  group &quot;isaw_group&quot;. The owner of each relevant NetID should
+be able to login to DNSManager at https://dnsmanager.nyu.edu/ using
+his/her NetID &amp; Password (same as NYUHome).
+
+Below is a list of the current members of the &quot;isaw_group&quot; in
+DNSManager.  Please review this list and reply with any necessary
+changes (e.g. previous members to remove from the group).
+
+cww6@NYU.EDU
+scg4@NYU.EDU
+te20@NYU.EDU
+
+This group has permission to manage registrations for the following
+subnet/subdomain/location combinations:
+
+128.122.167.0/24/ISAW.NYU.EDU:ISAW/15 East 84th St.
+
+Please make sure the new DNSManager user(s) has reviewed the
+introductory PDFs which can be downloaded here:.
+
+1) DNSManager-FAQs.pdf
+https://webspace.nyu.edu/xythoswfs/webui/_xy-3097318_1-t_isIZkVUF
+
+2) Computer Self-Registration System PDF
+https://webspace.nyu.edu/xythoswfs/webui/_xy-3248153_1-t_hfrpxuwb
+
+If you have any questions or need further assistance in this matter,
+please reply to this message.
+For new requests in the future please send a new message to us at
+hostmaster@nyu.edu.
+
+Thank you.
+
+Vincent Goods
+x.3047
+hostmaster@nyu.edu ITS (COS)

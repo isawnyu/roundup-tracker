@@ -1,0 +1,18 @@
+wrote library helpdesk, they need to reimage this computer...
+
+---
+
+Hi,
+
+We're having problems again with the same computer.  I think somebody needs to come up here and take a look at it, I believe it needs to be reimaged.  The following message appears at boot:
+
+**
+Windows could not start because the following file is missing or corrupt:
+
+\WINDOWS\system32\config\SYSTEM
+
+**
+
+Thanks,
+
+Tim Libert, sys admin - ISAW

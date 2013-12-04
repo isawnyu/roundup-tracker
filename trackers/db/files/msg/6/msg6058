@@ -1,0 +1,18 @@
+<p>When I click on 'edit' for the graduate program page, it goes to a error page that just lists a lot of script, which looks like this:</p>
+<p>Here is the full error message:</p>
+<p><a href="http://isaw.nyu.edu/academics/graduate-program/error_log/getLogEntryAsText?id=1317938051.580.823440743634">Display traceback as text</a></p>
+<p>Traceback (innermost last):</p>
+<ul>
+<li>Module ZPublisher.Publish, line 127, in publish</li>
+<li>Module ZPublisher.mapply, line 77, in mapply</li>
+<li>Module ZPublisher.Publish, line 47, in call_object</li>
+<li>Module Products.CMFFormController.FSControllerPageTemplate, line 91, in __call__</li>
+<li>Module Products.CMFFormController.BaseControllerPageTemplate, line 31, in _call</li>
+<li>Module Shared.DC.Scripts.Bindings, line 324, in __call__</li>
+<li>Module Shared.DC.Scripts.Bindings, line 361, in _bindAndExec</li>
+<li>Module Products.CMFCore.FSPageTemplate, line 240, in _exec</li>
+<li>Module Products.CMFCore.FSPageTemplate, line 180, in pt_render</li>
+<li>Module Products.PageTemplates.PageTemplate, line 80, in pt_render</li>
+<li>Module zope.pagetemplate.pagetemplate, line 113, in pt_render<br /><strong>Warning: Macro expansion failed</strong></li>
+</ul>
+<p>etc...</p>

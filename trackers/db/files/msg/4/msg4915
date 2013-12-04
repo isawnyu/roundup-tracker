@@ -1,0 +1,3 @@
+Ticket migration is still on-going i've been a little swamped with other tasks today.. we'll see how it progresses in the evening. The problem involved not having client access to isawapp.nyu.edu except from i4.nyu.edu which doesn't have python available.
+
+To work around it means having to dump the database and recreating the environment on automaton.isaw.nyu.edu temporarily so I can get the program written correctly. Once that is complete we can begin migration.

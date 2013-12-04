@@ -1,0 +1,11 @@
+<div>Chris, to facilitate this integration, you'll want the following details from us:</div>
+<div>&nbsp;</div>
+<div>1. Use the attached, self-signed X.509 certificate as your SAML Identity Provider "signing" and "encryption" certificate.</div>
+<div>2. Use this string as the Identity Provider "entityID":&nbsp;<a href="https://shibbolethdev.es.its.nyu.edu/idp/shibboleth" target="_blank">https://shibbolethdev.es.its.nyu.edu/idp/shibboleth</a></div>
+<div>3. Let us know what format you need the name to be.&nbsp; Just "www3" (netid) or "<a href="mailto:www3@nyu.edu" target="_blank"><span class="il">www3@nyu.edu</span></a>" (scoped, AKA eduPersonPrincipalName, might not the same as email address.)&nbsp; Note that accepting a scoped name might be easier if you wish to add other institutions to your service list later for broader collaboration.</div>
+<div>&nbsp;</div>
+<div>I will need the following details from you:</div>
+<div>1. The certificate you use to "sign" your authentication requests - this may not necessarily be the same certificate used for HTTPS (SSL) and probably should be a long-lived self-signed certificate, 10+ years, RSA-2048 bit.&nbsp; Creating this may be covered in the documentation for implementing your plugin.</div>
+<div>2. Your Service Provider "entityID" string, configured when you implement the plugin.</div>
+<div>3. A list of the attributes you need.&nbsp; We get our attributes from the LDAP server, so these would be the same attributes you query from LDAP now.</div>
+<div><br /><span style="color: #888888;">--&nbsp;<br />William Ward<br /><a href="mailto:wwward@nyu.edu" target="_blank">wwward@nyu.edu</a></span></div>

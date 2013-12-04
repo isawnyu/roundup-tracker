@@ -1,0 +1,5 @@
+<p>Kate:</p>
+<p>Even though I can sort in the contents page, it's not having an effect on the view. This means that either there's a custom sort method that's got a bug in it, or our caching system (which makes pages load faster) is not refreshing when the contents are changed.</p>
+<p>Either way, this is something that Christopher is going to have to look into. I'm assigning this ticket to him for next action.</p>
+<p>Best,</p>
+<p>Tom</p>

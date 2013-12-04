@@ -1,0 +1,7 @@
+<p>The current way exhibitions are done is through actual pages so for instance<br /><br /><a href="http://isaw.nyu.edu/exhibitions">http://isaw.nyu.edu/exhibitions</a></p>
+<p>However, a page like this&nbsp;<a href="http://isaw.nyu.edu/exhibitions/edge-of-empires/highlights/sacrifice">http://isaw.nyu.edu/exhibitions/edge-of-empires/highlights/sacrifice</a></p>
+<p>Is actually a page and it should have never been done this way. It should actually be a display view for highlights so a exhibition_highlight added after an image object should display the object as such. This solves the problem of having another page object when it simply isn't required. So, one, a link to <a href="http://isaw.nyu.edu/exhibitions/edge-of-empires/highlights/image_object/exhibition_highlight">http://isaw.nyu.edu/exhibitions/edge-of-empires/highlights/image_object/exhibition_highlight</a>&nbsp;is the correct behavior and two, no one will have to bother about creating a page for exhibitions. To see the image in highlight mode exhibitions would just add the exhibition_highlight onto the end of the image. The image itself will have the copyright info etc etc.</p>
+<p>In that vein the template will be the way it looks right now in page mode.&nbsp;</p>
+<p>The overall solution is to display the correct form for the object/image while keeping the copyright and metadata associated with that image.&nbsp;</p>
+<p>I'll implement this tonight sometime..&nbsp;</p>
+<p><br /><br />&nbsp;</p>

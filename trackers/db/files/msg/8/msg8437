@@ -1,0 +1,1 @@
+<p>Added sorting of columns, so one can sort each column depending on their needs. I'm not sure how useful this will be. The default is to sort by priority, emergency being the top of the list, high, normal, low. In that order. I put this in deferred mode for this specific functionality as sort descending already worked. Closing as resolved.</p>

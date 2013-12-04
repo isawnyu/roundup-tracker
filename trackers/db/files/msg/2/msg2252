@@ -1,0 +1,8 @@
+Hi, my nyu id is ss5952 and I'd like to request an ISAW server account.
+
+I also am unable to get onto any of the regular nyu wireless networks from within ISAW. NYU-ROAM2 and 3 just won't let me on, and NYU asks for credentials and then gives me this:
+
+Radius Server:           rad.nyu.edu
+Root CA:                    Class 3 Public Primary Certification Authority
+
+The server "rad.nyu.edu" presented a valid certificate issued by "Class 3 Public Primary Certification Authority", but "Class 3 Public Primary Certification Authority" is not configured as a valid trust anchor for this profile. Further, the server "rad.nyu.edu" is not configured as a valid NPS server to connect to for this profile.

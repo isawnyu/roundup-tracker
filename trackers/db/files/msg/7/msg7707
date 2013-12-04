@@ -1,0 +1,1 @@
+<p>Demoted and removed disk6s2 completely from the raid set, disk0s2 is the only slice remaining here. 6s2, will need diagnosing, which will need a server shutdown, etc etc for some period of time. So, one less disk, it seems there is a 500.11 GB WDC in here i'm not sure exactly what that was for or is doing but this whole thing needs to be architected properly.</p>

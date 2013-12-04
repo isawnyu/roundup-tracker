@@ -1,0 +1,3 @@
+We have an initial dump of the data from the ticket system in the new ticket system.
+
+Next step is to finese the data so the variables are precise and the creation dates etc are accurate. From there I will create temporary user accounts and finish visual cleanups. Add row high lighting and fix the email template. At that point I will create ticket.isaw.nyu.edu and begin setting up the server processes.

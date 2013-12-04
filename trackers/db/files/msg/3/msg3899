@@ -1,0 +1,9 @@
+Again, Monday is trying to foil my use of the English language. Let me try again.
+
+This is due to a bug in Apple 10.6.5 Server. On update it modifies the hostname of service configurations. More information is available via the link below. I simply don't have time to report or debug with Apple. The remedy is to simply add the correct hostname to the iChat service via Server Administrator.
+
+The issue should be reported to Apple, if you need to choose between Apple or the Jabber team please report to the current maintainer Tomasz Sterna instead of Apple and pray the Apple maintainer pulls from upstream and it's a free update.
+
+In the event that Apple doesn't fix this, or pulls a one must update to Lion Server or whatever nonsense. Make a big stink and they will fix it.
+
+See, http://discussions.apple.com/thread.jspa?threadID=2772446&amp;;tstart=0

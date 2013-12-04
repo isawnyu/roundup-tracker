@@ -1,0 +1,2 @@
+<p>Default is set to exclude from global navigation. This disables events on the lefthand sidebar in navproperties for the actual metatypes.. I will update the code when I figure out if I'm misremembering the exclude_from_nav existing or it was just removed for some reason from archetypes. I mean.. i'd rather change it there than in navtree_properties. Moving this to those properties alone seems like a bad idea.. I wonder who made this decision.</p>
+<p>Closing as resolved in the meantime.</p>

@@ -1,0 +1,61 @@
+Nina,
+
+The instructions for PC are a bit more complicated than the instructions for a Mac.  We officially support Thunderbird at ISAW, but alternatives to use would also be Sunbird, which is Mozilla's calendar-only client, and possibly Outlook (although I've never looked into it).
+
+I've made an implicit assumption that you are only interested in viewing the calendar for the building's events.  Is that correct?  The alternative possibility is that you would want a calendar with which you could coordinate with ISAW staff and faculty to schedule meetings.  The second type requires us to set up a user account on the ISAW server, which is trivial, but adds complexity to the instructions.
+
+Do you have technical support available to you at the Foundation?  I have a set of instructions, which I will provide below, that show the addresses of the ISAW Events calendars, but I don't feel like you should be left to figure them out without some help if you need it.  Perhaps it would be worthwhile for me to visit your office and set them up if necessary.  Please let me know what would make you feel most comfortable.
+
+There are two videos that we have on our wiki that I have made available to you on my personal server.  The first video shows how to install Thunderbird and the Lightening calendaring plugin.  The second video shows how to add the calendars to Thunderbird.
+
+http://neocyde.net/isaw/ThunderbirdAndLightning.m4v
+http://neocyde.net/isaw/ISAWEventsCalendars.m4v
+
+The ISAW Events account can be reached with the following credentials:
+user name: isawevents
+pass: 15E84th
+
+Instructions that follow along with the video are below.
+Adding ISAW Calendars to Thunderbird:
+Select the calendar icon.
+Right-click on the Calendar list and select &quot;New Calendar...&quot;
+Select the &quot;On the Network&quot; radio button.
+Select &quot;Next&quot;.
+Select the &quot;CalDAV&quot; radio button.
+Enter the web address of the calendar from the table above into the Location field.
+Select &quot;Next&quot;.
+Name the calendar using the table above.
+Enter your ISAW Server username and password. (Only upon entering the first calendar.)
+Make sure the &quot;Use Password Manager..&quot; is selected.
+Select &quot;Finish&quot;.
+ The web addresses of the shared calendars are:
+
+Gallery 1
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/B2AB1729-7809-4209-813F-B093B2FFEA09/
+Gallery 2
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/BAE95106-4812-4EE7-A79F-40EE8DB88D45/
+Oak Library
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/D545C30F-01F3-4E0E-8C98-A4D296F1C3AD/
+Seminar Room
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/D8030405-B92F-4CB6-AD4D-516E98A64400/
+Lecture Hall
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/E86EE2B5-8B68-4607-B8B6-F028CFE8ED4F/
+ISAW Events
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/calendar
+Conference Room 1
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/845C5E1D-D313-4451-AD95-D745F1BDA4E1/
+Conference Room 2
+http://serv1.isaw.nyu.edu/calendars/users/isawevents/3CF7AA2D-CAE6-46DC-A225-FBADBAD45281/
+
+Again, please be sure to let me know if you need any in-person help with setting these up.  Thanks for bearing with the complicated nature of the calendar server.
+
+Best,
+Michael Edgcumbe
+IT Graduate Assistant
+Institute for the Study of the Ancient World
+15 East 84 St
+New York, NY 10028
+
+(212) 992-7845.phone
+(212) 992-7809.fax
+mae337@nyu.edu

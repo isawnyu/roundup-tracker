@@ -1,0 +1,35 @@
+<table class="Bs nH iY" cellpadding="0">
+<tbody>
+<tr>
+<td class="Bu">
+<div class="nH if">
+<div class="nH">
+<div class="nH hx">
+<div class="nH">
+<div class="h7  ">
+<div class="Bk">
+<div class="G3 G2">
+<div>
+<div id=":1n2">
+<div class="HprMsc mNrSre">
+<div class="gs">
+<div id=":a2" class="ii gt">
+<div id=":1n0">Chris,<br /><br />I definitely understand the need to be able to dynamically<br />update/manage multiple systems. &nbsp;In the same regard, our current<br />design for wireless around campus has developed around the same<br />requirements (the ability to dynamically manage thousands of access<br />points and their associated networks). &nbsp;This results in the access<br />points becoming "lightweight" devices that receive their configuration<br />from central controllers. This design means that the networks that<br />users connect to are not associated with a single location; most<br />wireless network encompass several locations which differs from our<br />standard wired deployment (however this fits within our guiding design<br />principles for the network as a whole).<br /><br />As for your additional query, a dedicated device that essentially<br />routes between the wired and wireless networks would be against<br />policy. &nbsp;Individual devices connecting to the wired networks to obtain<br />Bonjour information for use when wireless doesn't violate any ITS<br />policies, however. Additionally, my understanding is that Bonjour<br />queries are by default contained to the local broadcast domain and<br />would therefore be unavailable for devices on different broadcast<br />domains (which would include any wireless and wired network). A<br />Bonjour service contained on the local wired network (in this case, a<br />printer), would not be transmitted to the wireless network.<br /><br />Have you inquired with other system administrators regarding system<br />management and/or policy management on a wide-group of machines?<br />Through various discussions with other system administrators as well<br />as ITS folks, I believe there should be other solutions that can help<br />resolve the configuration of multiple machines. &nbsp;Specifically, Jorge<br />Najera-Ordonez deals with systems deployed across NYC as well as<br />various global sites, his group's deployment history and current<br />knowledge of system/policy management may help solve this problem as<br />well. I've CC'd jorge on this message so he may help provide any<br />guidance.<br /><br />Feel free to call me to discuss any of this further; we definitely<br />don't want to seem like a hinderance in making your systems easier to<br />manage!<br />
+<div class="im"><br />Thanks,<br />Chris<br /><br />*******************************************<br />Christopher Cook<br />Senior Network Engineer<br />New York University<br />ITS C&amp;CS, Communication Operations Services<br />Phone:&nbsp;<a href="tel:%2B1-212-998-3465">+1-212-998-3465</a><br />Email: &lt;<a href="mailto:christopher.cook@nyu.edu">christopher.cook@nyu.edu</a>&gt;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>

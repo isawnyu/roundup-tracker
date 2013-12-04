@@ -1,0 +1,4 @@
+<p>To add the printers via your laptop, go to "System Preferences" and select "Print &amp; Scan".&nbsp;</p>
+<p>Select the "+" button in the lower left hand menu and then select IP.</p>
+<p>For the 4th floor printer the settings should be as follows:<br />Protocol: Line Printer Daemon - LPD<br />Address: 128.122.167.40</p>
+<p>It will automatically detect the rest.&nbsp;<br />For the 6th floor printer the settings should be as follows:<br />Protocol: Line Printer Daemon - LPD<br />Address: 128.122.167.37<br /><br /><br />&nbsp;</p>

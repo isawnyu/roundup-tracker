@@ -1304,7 +1304,8 @@ table .actions .delete { background:url('../img/icons/icon_table_delete.png') no
 }
 
 /*  Login Page  */
-.login { background:url('../img/bgs/loginbg.jpg') no-repeat; }
+.login { margin-left: auto; margin-right: auto; background:url('../img/bgs/loginbg.jpg') no-repeat center center; }
+
 .login section[role=main] {
 	margin:100px auto 0;
 	min-width:380px;

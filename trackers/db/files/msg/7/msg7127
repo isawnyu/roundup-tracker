@@ -1,0 +1,11 @@
+<p>Sebs:</p>
+<p>By default, new content gets added to the menus. Here's how to get it out of there (I've done this for one of the items in question, leaving the other one for you as an exercise).</p>
+<p>1. Login</p>
+<p>2. Navigate to the folder containing the content in question, in this case the publications folder at&nbsp;<a href="http://isaw.nyu.edu/publications">http://isaw.nyu.edu/publications</a></p>
+<p>3. If necessary, as it is in this case, click "contents" in the menu bar (to the left of View | Edit | Rules | etc.</p>
+<p>4. Select the first item of content in question, in this case I selected "amheida-advert"</p>
+<p>5. Click "edit" in the menu bar, then "settings" in the edit submenu bar</p>
+<p>6. Select the checkbox next to "exclude from navigation"</p>
+<p>7. Click the "save" button.</p>
+<p>8. Rinse and repeat.</p>
+<p>Let me know if you run into trouble.</p>

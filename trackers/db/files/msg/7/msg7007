@@ -1,0 +1,1 @@
+<p>While upgrading Varnish the old one was blown away due to the fact that the required data is actually apart of the application server. This exposed a slight runtime condition that can be remedied by simply separating the environments.</p>

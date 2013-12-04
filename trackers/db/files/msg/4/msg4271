@@ -1,0 +1,29 @@
+Unfortunately this is not possible and I'm sure the correspondence that follows is not what we want.
+
+Hello,
+This is Tony from ITS Service Desk replying to your request,  Separate Departmental email accounts are not supported here at NYU.  All email aliases must be linked to a NYU email account.   However using email clients such as MS Outlook, Eudura and Thunderbird,  along with setting up seperate folders can set up to give the impression that you have another email account.  Check with your Sys Admin for details...
+
+
+To receive email into a single folder using NYU Home:
+1. Go to your Email via NYU Home
+2. Select  &quot;Folders&quot;
+3. Select  &quot;New&quot;
+4. Enter the folder name to be used. (THIS SHOULD BE THE NAME OF THE ALIAS)
+5. Select  the &quot;newly created folder&quot; then select &quot;Share&quot;
+6. Select  Enable direct delivery of email to folder. (TAKE NOTE OF THE NETID+FOLDERNAME@NYU.EDU and sent that to the Accounts Team)
+7. Once this is done email from this alias should go directly this folder.
+
+
+To send email using an Alias in MS Outlook
+1. Go to Tools
+2. Go to Email Accounts
+3. Add a New Email Account
+4. Select either POP3 of IMAP
+5. Fill out the Internet Email Setting using the Alias info (Your Name = alias name / email address = alias address{alias@nyu.edu} / server name = mail.nyu.edu / smtp server = smtp.nyu.edu)
+6. You should now see another account name.
+7. Click on this account and you should see the INBOX.
+8. The top left hand corner click on &quot;NEW&quot;
+9. Send out your Email.  (send a test msg to a gmail or yahoo email account.)
+
+Tony Afflick
+ITS Service Desk

@@ -1,0 +1,1 @@
+<p>Yes, it's a mailto: link and not just a link tag. Originally blah AT blah blah was actually how mail was sent, which is why doing AT doesn't actually prevent spam harvesting. However the bots will explicitly look for mailto links, just having your email address in plain format is enough but wrapping in mailto:// for every email address?? It's just asking for it.</p>

@@ -1,0 +1,7 @@
+Soeren will most likely need a switch in his office, but this also brings up a good point.
+
+We currently don't support wireless backup most likely to preserve bandwidth. However, faculty members are most likely not docking their laptops when in the building which may leave them to believe their laptops are being backed up. When in actual fact; they are not.
+
+To alleviate this problem we can either provide a separate access point called 'isaw-backup' that is bridged to our Time Machine server in the building or explicitly send out a notice reminding that laptops etc need to be plugged in physically to the network to be backed up.
+
+The best solution would be the bridge as it's the more seamless of the two and would initially involve some work upfront but that would remedy the problem permanently.

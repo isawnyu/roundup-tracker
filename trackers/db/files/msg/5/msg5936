@@ -1,0 +1,1 @@
+<p>This is primarily for the printers so that they can be automatically discovered again via Bonjour. I'm not sure if there was a device that was bridging and then was removed but that no longer works. The route should be explicit anyway so that it's apart of our switch config.</p>

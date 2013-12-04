@@ -15,8 +15,6 @@
 # FOR A PARTICULAR PURPOSE.  THE CODE PROVIDED HEREUNDER IS ON AN "AS IS"
 # BASIS, AND THERE IS NO OBLIGATION WHATSOEVER TO PROVIDE MAINTENANCE,
 # SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
-# 
-# $Id: roundup.cgi,v 1.2 2006-12-11 23:36:15 richard Exp $
 
 # python version check
 from roundup import version_check
@@ -48,7 +46,7 @@ DEBUG_TO_CLIENT = False
 
 # This indicates where the Roundup tracker lives
 TRACKER_HOMES = {
-    'isaw':'/usr/local/share/roundup/trackers'
+#    'example': '/path/to/example',
 }
 
 # Where to log debugging information to. Use an instance of DevNull if you

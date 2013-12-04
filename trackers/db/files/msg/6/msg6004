@@ -1,0 +1,43 @@
+<p>If the below doesn't work tell the person who has the best clue as to what is going on to contact me at christopher.warner@nyu.edu</p>
+<p>Go here:&nbsp;<a href="http://start.nyu.edu">http://start.nyu.edu</a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Following the link for "<strong>Set a NYU Google Apps for Education Password</strong>"</p>
+<div><span id="internal-source-marker_0.49705076892860234">Add your NYU Account</span>
+<ul>
+<li><span>Open the&nbsp;</span><span>Settings</span><span>&nbsp;application on your device's home screen.</span></li>
+<li><span>Open&nbsp;</span><span>Mail, Contacts, Calendars.</span></li>
+<li><span>&nbsp;Tap&nbsp;</span><span>Add Account...</span><span>.</span><img src="https://lh5.googleusercontent.com/U-Zto0UZGB2ccppmGREYeHwYFZcdX2j7Kd8XxiMnYfla-_GGqFfsnxDQPJTOUgpTfhk5CFAYYgIDVZsmh3wEvp-p_NrJp2t7WOzIqnI2NjFJkW03VA" alt="" width="153px;" height="224px;" /><img src="https://lh3.googleusercontent.com/uEEMr-rV4W49oPgc0w6pxGSTs3SUs_z40k75Bv9fbYvdVJqXR-iL56uhHhGZNOKmozDQWovlAiu5krpTdMMlXErT-QJ23-lIViFduHMfZkQ6QnZdEQ" alt="" width="152px;" height="225px;" /><img src="https://lh3.googleusercontent.com/FCHuPTbcaH9bdBCKjTNVpLM8_rkVxouVD64l-Me76ZLH1SM4FQakFW8d6xBNZ3gE4GtF3cm5LcW84VpvAhUBdnOgvbwOzPVFrkD2ML2CEzGvv9Hm0A" alt="" width="151px;" height="222px;" /></li>
+<li><span>Select </span><span>Microsoft Exchange</span><span>. iOS 4.0+ allows multiple Exchange accounts. However, if you're on a device that doesn't let you add a second account, you could also use </span><a href="http://www.google.com/support/mobile/bin/answer.py?answer=151674"><span>CalDAV</span></a><span> to sync Google Calendar and </span><a href="https://mail.google.com/support/bin/answer.py?hl=en&amp;answer=77702"><span>IMAP</span></a><span> to sync Gmail. </span></li>
+<li><span>Enter your </span><a href="mailto:NetID@nyu.edu"><span>NetID@nyu.edu</span></a><span> address in the </span><span>Email </span><span>section.</span></li>
+<li><span>Leave the Domain field blank.</span></li>
+<li><span>Enter your </span><a href="mailto:NetID@nyu.edu"><span>NetID@nyu.edu</span></a><span> address in the </span><span>Username</span><span> section.</span></li>
+<li><span>Enter your Google Apps Password in the </span><span>Password </span><span>section.</span></li>
+<li><span>Enter NYU in the </span><span>Description </span><span>section.</span></li>
+<li><span>Click </span><span>Next</span><span>.</span></li>
+<li><span>When the </span><span>Server </span><span>field appears, enter m.google.com.</span></li>
+<li><span>Click </span><span>Next</span><span>.</span></li>
+<li><span>Select the options that you would like to sync on your device.</span></li>
+<li><span>Click </span><span>Save</span><span>.</span></li>
+<li><span>Unless you want to delete all the existing Contacts and Calendars on your phone, select the </span><span>Keep on my iPhone</span><span> (or iPad or iPod touch) option when prompted. This will also allow you to keep syncing with your computer via iTunes.</span></li>
+<li><span>If you want to sync only the </span><span>My Contacts</span><span> group, you must choose to </span><span>Delete Existing Contacts</span><span> during the Google Sync install when prompted. If you choose to keep existing contacts, it will sync the contents of the</span><span>All Contacts</span><span> group instead. If there are no contacts on your phone, the latter will happen -- the contents of your </span><span>All Contacts</span><span> group will be synced.</span></li>
+</ul>
+<br /><hr /><br /><br /><span>Additional Calendar Settings</span><br />
+<ul>
+<li><span>To enable </span><span>New Invitations</span><span>, sign in to your Google Calendar using the web browser on your computer. Go to </span><span>Calendar Settings &gt; Calendars &gt;</span><span> Click on the </span><span>Notifications</span><span> for the calendar you want to sync. Under </span><span>Email</span><span> check </span><span>New Invitations</span><span> (and any of the other Invitation settings you want enabled), and click </span><span>Save</span><span>.</span></li>
+</ul>
+<br />
+<ul>
+<li><span>If you would like to sync more than one calendar on your device:</span></li>
+<ul>
+<li><span>Open the Safari browser on your phone and go to </span><a href="http://m.google.com/"><span>http://m.google.com</span></a></li>
+<li><span>Click on </span><span>Google Apps user?</span><span> at the bottom of the screen.</span></li>
+<li><span>Enter your domain name (nyu.edu).</span></li>
+<li><span>Click the </span><span>Sync</span><span> icon in your domain area (this section has a green background).</span></li>
+<li><span>Click </span><span>Sign in with your Google Apps Account</span><span>.</span></li>
+<li><span>Sign in if required.</span></li>
+<li><span>Select your device to configure Calendars.</span></li>
+<li><span>Select the Calendars you would like to sync with the device.</span></li>
+<li><span>Click </span><span>Save</span><span>.<br class="kix-line-break" /></span></li>
+</ul>
+</ul>
+<br /><span>Additional information can be found at </span><span><a href="http://www.google.com/support/mobile">http://www.google.com/support/mobile</a></span></div>

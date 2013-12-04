@@ -1,0 +1,113 @@
+<p>Tried editing&nbsp;<a href="http://isaw.nyu.edu/exhibitions/edge-of-empires/press-information/,">http://isaw.nyu.edu/exhibitions/edge-of-empires/press-information/,</a>&nbsp;got:</p>
+<p>Traceback (innermost last):</p>
+<ul>
+<li>Module ZPublisher.Publish, line 127, in publish</li>
+<li>Module ZPublisher.mapply, line 77, in mapply</li>
+<li>Module ZPublisher.Publish, line 47, in call_object</li>
+<li>Module Products.CMFFormController.FSControllerPageTemplate, line 91, in __call__</li>
+<li>Module Products.CMFFormController.BaseControllerPageTemplate, line 31, in _call</li>
+<li>Module Shared.DC.Scripts.Bindings, line 324, in __call__</li>
+<li>Module Shared.DC.Scripts.Bindings, line 361, in _bindAndExec</li>
+<li>Module Products.CMFCore.FSPageTemplate, line 240, in _exec</li>
+<li>Module Products.CMFCore.FSPageTemplate, line 180, in pt_render</li>
+<li>Module Products.PageTemplates.PageTemplate, line 80, in pt_render</li>
+<li>Module zope.pagetemplate.pagetemplate, line 113, in pt_render<br /><strong>Warning: Macro expansion failed</strong><br /><strong>Warning: &lt;type 'exceptions.KeyError'&gt;: 'macro'</strong></li>
+<li>Module zope.tal.talinterpreter, line 271, in __call__</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 888, in do_useMacro</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 888, in do_useMacro</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 954, in do_defineSlot</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 858, in do_defineMacro</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 954, in do_defineSlot</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 946, in do_defineSlot</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 858, in do_defineMacro</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 888, in do_useMacro</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 852, in do_condition</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 954, in do_defineSlot</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 852, in do_condition</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 821, in do_loop_tal</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 522, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 821, in do_loop_tal</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 533, in do_optTag_tal</li>
+<li>Module zope.tal.talinterpreter, line 518, in do_optTag</li>
+<li>Module zope.tal.talinterpreter, line 513, in no_tag</li>
+<li>Module zope.tal.talinterpreter, line 343, in interpret</li>
+<li>Module zope.tal.talinterpreter, line 867, in do_useMacro</li>
+<li>Module zope.tales.tales, line 696, in evaluate<br /><strong>URL: file:/opt/isaw.nyu.edu/Plone/buildout-cache/eggs/Products.Archetypes-1.6.4-py2.6.egg/Products/Archetypes/skins/archetypes/edit_macros.pt</strong><br /><strong>Line 103, Column 20</strong><br /><strong>Expression: &lt;PythonExpr context.widget(field.getName(), mode='edit')&gt;</strong><br /><strong>Names:</strong>
+<pre>{'container': &lt;ATDocument at /isaw/exhibitions/edge-of-empires/press-information&gt;,
+ 'context': &lt;ATDocument at /isaw/exhibitions/edge-of-empires/press-information&gt;,
+ 'default': &lt;object object at 0xb75b46d8&gt;,
+ 'here': &lt;ATDocument at /isaw/exhibitions/edge-of-empires/press-information&gt;,
+ 'loop': {u'field': &lt;Products.PageTemplates.Expressions.PathIterator object at 0xd544d0c&gt;,
+          u'fieldset': &lt;Products.PageTemplates.Expressions.PathIterator object at 0xf4dafcc&gt;},
+ 'nothing': None,
+ 'options': {'args': (),
+             'state': &lt;Products.CMFFormController.ControllerState.ControllerState object at 0xadc4d80c&gt;},
+ 'repeat': &lt;Products.PageTemplates.Expressions.SafeMapping object at 0xadc3361c&gt;,
+ 'request': &lt;HTTPRequest, URL=http://isaw.nyu.edu/exhibitions/edge-of-empires/press-information/atct_edit&gt;,
+ 'root': &lt;Application at &gt;,
+ 'template': &lt;FSControllerPageTemplate at /isaw/exhibitions/edge-of-empires/press-information/atct_edit&gt;,
+ 'traverse_subpath': [],
+ 'user': &lt;PloneUser 'tom.elliott@nyu.edu'&gt;}</pre>
+</li>
+<li>Module Products.PageTemplates.ZRPythonExpr, line 49, in __call__<br />__traceback_info__: context.widget(field.getName(), mode='edit')</li>
+<li>Module PythonExpr, line 1, in &lt;expression&gt;</li>
+<li>Module Products.Archetypes.BaseObject, line 284, in widget</li>
+<li>Module Products.Archetypes.Renderer, line 24, in render</li>
+<li>Module Products.Archetypes.generator.widget, line 140, in __call__</li>
+<li>Module Products.PageTemplates.PageTemplate, line 52, in macros</li>
+<li>Module Products.CMFCore.FSPageTemplate, line 168, in pt_macros</li>
+<li>Module Products.PageTemplates.PageTemplate, line 61, in pt_macros<br /><strong>Warning: Compilation failed</strong><br /><strong>Warning: zope.tal.taldefs.TALError: Python expression error: invalid syntax (PythonExpr, line 1) in expression u"python: '/'.join(set.getPhysicalPath()) | obj_path python: '/'", at line 164, column 15</strong></li>
+</ul>
+<p>PTRuntimeError: Page Template referencebrowser has errors: ['Compilation failed', 'zope.tal.taldefs.TALError: Python expression error:\ninvalid syntax (PythonExpr, line 1) in expression u"python: \'/\'.join(set.getPhysicalPath()) | obj_path python: \'/\'", at line 164, column 15']</p>

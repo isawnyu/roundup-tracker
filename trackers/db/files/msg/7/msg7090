@@ -1,0 +1,17 @@
+<p><span>Hi,</span></p>
+<div>The solid green light indicates no wireless clients are associated to the AP at that moment. &nbsp;Going solid blue indicates that at least on client is associated to the device.</div>
+<div>&nbsp;</div>
+<div>When I checked the AP I saw that it's running an outdated level of code. &nbsp;I loaded and rebooted it. &nbsp;</div>
+<div>&nbsp;</div>
+<div>I see two devices with MAC addresses&nbsp;<span style="font-family: Arial, Helvetica, sans-serif;"><a name="136084fc0408573e_001c.b370.ad48" href="http://ap6c-15e84.wireless.net.nyu.edu/ap_stationview-client.shtml" target="_blank"></a>001c.b370.ad48&nbsp;&amp;&nbsp;</span><span style="font-family: Arial, Helvetica, sans-serif;"><a name="136084fc0408573e_001c.b375.95fb" href="http://ap6c-15e84.wireless.net.nyu.edu/ap_stationview-client.shtml" target="_blank"></a>001c.b375.95fb&nbsp;associated to the AP via the nyu SSID but I see no authentication attempts being recorded on the RADIUS servers. &nbsp;Don't know if these are partially or misconfigured clients. &nbsp;The AP's configuration looks correct (i.e., VLANs, RADIUS server definitions, etc.).</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;"><br /></span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">Let me know if you see connectivity issues with this particular AP and please provide a MAC address of the client(s) you're trying to get on-line with.</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;"><br /></span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">Thanks,</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;"><br /></span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">Carlo</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;"><br /></span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">Carlo Cernivani</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">Sr. Project Manager, Planning and Implementation</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">ITS/COS, Network Engineering</span></div>
+<div><span style="font-family: Arial, Helvetica, sans-serif;">New York University</span></div>

@@ -1,0 +1,2 @@
+<p>Added the bottom, the current indexed stuff will eventually expire. If it doesn't i'll bring it up. Resolved.</p>
+<p>-A RH-Firewall-1-INPUT -m tcp -p tcp -m multiport -d 66.35.39.43 --dports 8083,8084 -j REJECT</p>

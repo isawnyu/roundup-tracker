@@ -1,0 +1,11 @@
+Currently there is only 1-port in use on the ISAW server which is essentially saturated as traffic increases. More backups, more people, more calendar interaction, more of everything. This is causing sever delays and network i/o pausing. Even though the primary drive is only 7200rpm it makes sense to aggregate eth1 and eth2 at 1000baseT if the switches and jack support it (which they should). 
+
+The server will have to go down and the mac address of eth2 needs to be sent downtown to allow it to connect.
+
+Steps:
+
+1. Get eth2 registered with downtown, test to make sure the ip is working etc.
+2. Bond the links
+3. Bring back all services serv1.isaw.nyu.edu may have to point to a new ip
+
+This is only a temporary measure, eventually the disks in this server will need to be upgraded and/or an external store will need to be provided. Having backup as well as critical services on the same machine is a recipe for disaster.

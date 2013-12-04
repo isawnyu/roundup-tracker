@@ -1,0 +1,5 @@
+We will be moving the calendar system from serv1.isaw.nyu.edu to the google calendar system. This entails migrating current calendars to public ones and then signing specific users up for each calendar here at ISAW. I'm not currently sure when I'll have time to do this, but that is what needs to happen. This falls under the destroy and rebuild campaign.
+
+This doesn't mean people have to use the Google web application. They can continue to use the same calendar application they are currently use to. Thunderbird or iCal.
+
+This move will insure that the calendar server and backend is always consistent. Or at the very least so long as Google continues to provide the service to NYU.

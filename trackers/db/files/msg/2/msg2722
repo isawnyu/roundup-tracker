@@ -1,0 +1,12 @@
+**SCRIPT** In the case of catastrophic failure of serv1.isaw.nyu.edu **SCRIPT**
+
+1. DON'T PANIC, don't let anyone make you feel any state of panic and remain calm. These things happen, the world is still turning.
+2. On shutdown or failure via serv1. It should send a panic or help message alerting isaw.it@nyu.edu that it is in need of immediate repair. Test need to be written for this before this step can be removed from this script.
+3. A reassuring email needs to be sent via the list to all of ISAW administrators and faculty that we are aware of the issue and are working on speedy resolution with further updates as the information becomes available. Including letting these groups know they should log any immediate issues they will have because of the lack of access to the ticket system.
+4. The logs for why and when the failure occurred need to be processed. As serv1 is an OSX machine these will be available via the console. In the event that the root partition is not bootable the hard disk needs to be isolated.  *** NOTE In the case of complete hardware failure we DO NOT have a backup serv1.isaw.nyu.edu, this is a weakness that will need to be addressed when and where monetary and time concern allow ***
+4a. A full restore will need to take place of serv1; this will take time. An email should be sent in the interim notifying ISAW faculty and administrators that they should be bracing for an extended outage. Right after this and when and where possible, the administrator or the persons heading the restore effort should touch basis with most of ISAW administration surfacing any issues caused by not having access to serv1. Making sure those issues are summarily being added to the ticket system by those parties.
+5. If the failure was preventable, action needs to be taken to make sure it is remedied via solving the problem and then writing tests or routines to isolate the catastrophic failure in the future. This may take time, as we currently don't have a backup it may have to fall until later. The immediate concern is getting serv1 fully operational from failure mode.
+6. An update email needs to be sent to isaw-internal with details of the failure and steps taking to remedy the problem.
+7. Close out all emergency tickets related to the catastrophic failure, ignore anything else.
+
+The more all of the above can be automated the better.

@@ -1,0 +1,2 @@
+<p>If a font is not Unicode it will not display on any machine except the machine that has the same font. &nbsp;As the ISAW website only utilizes universal fonts this will not display. The script in specific will need to be converted into unicode syriac and will display with most web browsers if he uses the correct html references for syriac.&nbsp;</p>
+<p>The information for conversion and code tables for Syriac is available here:&nbsp;<a href="http://www.unicode.org/charts/PDF/U0700.pdf">http://www.unicode.org/charts/PDF/U0700.pdf</a></p>

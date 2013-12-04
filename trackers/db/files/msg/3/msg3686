@@ -1,0 +1,26 @@
+ITS response is below, it seems that in the account Tiffany setup she used POP which downloaded all of the messages to most likely her home computer. In which case there would be very little that could be done. They've asked that she call the IT Service Desk so that they may be able to resolve or help remedy the issue.
+
+ITS RESPONSE:
+Christopher,
+
+Tiffany Wall is utilizing 37% of the email quota for her account. There are currently a number of emails in the Inbox as well as other folders:
+
+INBOX     191
+Apple Mail To Do        1
+Deleted Messages        175
+Drafts  0
+Notes   1
+Sent    4531
+Sent Messages   898
+Spam    0
+Trash   0
+
+She may be using mutliple email programs or accounts to check email.
+
+It appears that Tiffany has downloaded email using the POP protocol as recently as February 28th, so there is a possibility that she has congured an email program to download the messages without leaving them on the server.
+
+We can also see IMAP activity from February 28th, which does NOT delete messages from the server.
+
+There is no indication of recent Webmail logins.
+
+Please ask Tiffany to call the IT Service Desk at 212-998-3333 so we can help her sort this out.

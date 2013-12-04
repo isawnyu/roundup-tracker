@@ -1,0 +1,5 @@
+<p><em>In response to Sean:</em></p>
+<p><span>So, there is an instance of bibsoup here&nbsp;</span><a href="http://isaw.nyu.edu:5050/" target="_blank">http://isaw.nyu.edu:5050</a><span>&nbsp;</span></p>
+<div>It looks like it will require some work, or at least I think so. The codebase is a bit raw. It's on github so it can be branched, otherwise I don't see why it can't be of use. At least it is better than most of what I have seen.</div>
+<div>&nbsp;</div>
+<div>This is running on-top of openjdk and not oracle reference so it's possible elasticsearch may operate in odd fashion. Also this is screen'd in my dev environment so is&nbsp;ephemeral. I'll get rid of it myself in a couple of days and lest I forget, none of this is tested.</div>

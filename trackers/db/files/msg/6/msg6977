@@ -1,0 +1,1 @@
+<p>Uploading of a 2GB file seems to be failing for some reason; it simply will not upload. I'm not sure if this is because the drive filesystem doesn't support it or the applet prevents it. Seems as though this is something that I shouldn't have to figure out though.</p>

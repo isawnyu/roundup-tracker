@@ -1,0 +1,2 @@
+<p>Bumped size, however the scanner should not delete what's in the queue until after it has confirmation that the email was sent. This does two things, 1. It allows the person who is scanning and expecting and email to actually see if an error has occurred and two, it allows the person to make changes should there actually be an error of the scans in the mix.</p>
+<p>This not only saves an inordinate amount of time but is just common sense.</p>

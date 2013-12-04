@@ -1,0 +1,5 @@
+<p>the style, as it stands, is not entirely friendly to the kinds of long image titles that often arise in the context of our exhibitions. See: <a href="http://isaw.nyu.edu/exhibitions/edge-of-empires-1/highlights/">http://isaw.nyu.edu/exhibitions/edge-of-empires-1/highlights/</a></p>
+<p>Consider a modification like the following:</p>
+<p>background-image: none;</p>
+<p>border: 1px solid #BBB;</p>
+<p>margin: 0.33em;</p>

@@ -1,0 +1,3 @@
+<p>One quick issue to discuss with Roger ... I'm assuming that some/many of these files contain Greek. Do you know what fonts were used and whether any of them were non-unicode Greek encodings? If we have any non-unicode Greek we'll want to sniff-test the RTF and make sure it's preserved the old encodings and then undertake a separate effort to convert to unicode (Hugh previously developed code to support this sort of work, though depending on the origin encoding there might be some analysis and testing required). Anyway, it's an issue &nbsp;not to lose sight of.</p>
+<p>&nbsp;</p>
+<p>Tom</p>

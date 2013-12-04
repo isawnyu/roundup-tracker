@@ -1,0 +1,1 @@
+<p>Let's talk about this. I don't see how wrapping blah@blah.com in a link tag will cause any more spam harvesting than having the email in their in plain text. It's the same regular expression to fish it out. My guess is even the common obfuscations (like "blah *at* blah *dot* blah) are regularly recognized by harvesting bots. Or is there something I'm missing here?</p>

@@ -19,7 +19,14 @@ $(function () {
   //          { iFrameClass:'wysiwyg-iframe' });
 
 	// jQuery dataTables
-	$('.datatable').dataTable();
+	$('.datatable').dataTable(
+        {
+            "aaSorting": [],
+            "bPaginate": false,
+            "bFilter": false,
+            "bInfo": false
+        }
+        );
 
 	// jQuery Custome File Input
 	$('.fileupload').customFileInput();

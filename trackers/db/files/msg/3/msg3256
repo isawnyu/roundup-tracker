@@ -1,0 +1,5 @@
+This is complete and Alexander's data was moved over without issue to a new Hitachi 2TB drive leaving him with approximately 1.71TB of space available on that drive.
+
+The old drive i've formatted and left in the machine as removing it makes little sense, it functions but it should not be used as the primary drive any longer. To denote this specifically I switched the hard drive positions as they stand in the MacPro currently. Drive 1 is the primary and Drive 2,3,4 secondary, tertiary, etc as it normally out of the factory. Again, the secondary I have cautioned should be used primarily as a transient drive. Primarily for cruft or for cases where the main drive is being taxed or out of room, temporary space or where the data is safe to lose. In total that machine has roughly 2.1TB of usable space remaining.
+
+Closing this ticket end of week.

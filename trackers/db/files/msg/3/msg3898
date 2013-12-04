@@ -1,0 +1,8 @@
+One cannot connect to iChat even when they authenticate against the Jabber server.
+
+This is due to a bug in Apple 10.6.5 server on update it modifies the hostname of service configurations. More information is here I don't have time to report or debug with Apple. The remedy is to simply add the correct hostname to the ichat service.
+
+Someone needs to debug and send the information to the jabber team here https://launchpad.net/jabberd2
+
+As well as reporting to Apple, if you need to choose report to the current Tomasz Sterna instead of Apple and pray that they pull from upstream.
+See, http://discussions.apple.com/thread.jspa?threadID=2772446&amp;tstart=0

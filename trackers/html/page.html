@@ -33,6 +33,7 @@
             // General options 
             width : "100%",
             theme : "advanced",
+            skin : "thebigreason",
             plugins : "autolink,autoresize,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",
 
             // Theme options
@@ -69,6 +70,7 @@
 <script tal:replace="structure request/base_javascript">
 </script>
 <metal:x define-slot="more-javascript" />
+<meta name="robots" content="noindex">
 
 </head>
 <body>
@@ -81,7 +83,7 @@ kw_create python:request.user.hasPermission('Create', 'keyword');
 kw_edit_link python:kw_edit and db.keyword.list();
 columns string:id,title,creator,status,department;
 columns_showall string:id,title,creator,status,priority,department;
-status_notresolved string:1,2,3,4,5,6,-7;
+status_notresolved string:1,2,3,4,5,6,-7,9;
 "
 >
 <section class="sidebar">
@@ -226,7 +228,9 @@ status_notresolved string:1,2,3,4,5,6,-7;
 
     <!-- Tab Content #tab1 -->
     <div class="tab" id="tab1">
-<iframe src="http://www.google.com/calendar/embed?src=nyu.edu_uhhli5c6hs5acqefi83dmso2fs%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<!--<iframe src="http://www.google.com/calendar/embed?src=nyu.edu_uhhli5c6hs5acqefi83dmso2fs%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+-->
+<iframe src="https://www.google.com/calendar/embed?title=ISAW%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=nyu.edu_uhhli5c6hs5acqefi83dmso2fs%40group.calendar.google.com&amp;color=%232F6309&amp;src=nyu.edu_c9v0egabpvm10m29cddsnu7b84%40group.calendar.google.com&amp;color=%231B887A&amp;src=nyu.edu_697361775f6c6563747572655f726f6f6d%40resource.calendar.google.com&amp;color=%2323164E&amp;src=nyu.edu_69736177323037%40resource.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <!-- /Tab Content #tab1 -->
 

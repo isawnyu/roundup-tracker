@@ -1,0 +1,3 @@
+It gave the error message "The webpage you are viewing is trying to close the window. Do you want to close this window?" I opened a number of windows, and it kept giving the error message each time. The progress bar looks like it is continuing to try to refresh, and it is not going anywhere. 
+
+I closed Parallels and assumed that would stop the error. Opening the session now, the error messages are all still there and it is unresponsive. If I can find a way to close/force quit and reboot, I will

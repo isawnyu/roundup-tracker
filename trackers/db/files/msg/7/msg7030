@@ -1,0 +1,8 @@
+<p>isaw.nyu.edu was still spitting out read errors after just checking. Pulled isawdoortoday.png 1000 times after a full shutdown of zeoserver, restart, pack and flush and I got zero errors.&nbsp;</p>
+<p>Benchmarking isaw.nyu.edu (be patient)<br />Completed 100 requests<br />Completed 200 requests<br />Completed 300 requests<br />Completed 400 requests<br />Completed 500 requests<br />Completed 600 requests<br />Completed 700 requests<br />Completed 800 requests<br />Completed 900 requests<br />Completed 1000 requests<br />Finished 1000 requests</p>
+<p><br />Server Software: nginx/1.0.11<br />Server Hostname: isaw.nyu.edu<br />Server Port: 80</p>
+<p>Document Path: /isawdoortoday.png<br />Document Length: 103448 bytes</p>
+<p>Concurrency Level: 3<br />Time taken for tests: 349.510 seconds<br />Complete requests: 1000<br />Failed requests: 0<br />Write errors: 0<br />Total transferred: 103972000 bytes<br />HTML transferred: 103448000 bytes<br />Requests per second: 2.86 [#/sec] (mean)<br />Time per request: 1048.531 [ms] (mean)<br />Time per request: 349.510 [ms] (mean, across all concurrent requests)<br />Transfer rate: 290.51 [Kbytes/sec] received</p>
+<p>Connection Times (ms)<br /> min mean[+/-sd] median max<br />Connect: 64 1043 157.0 1032 2778<br />Processing: 0 5 28.5 2 556<br />Waiting: 0 0 5.5 0 123<br />Total: 503 1047 152.3 1035 2778</p>
+<p>Percentage of the requests served within a certain time (ms)<br /> 50% 1035<br /> 66% 1062<br /> 75% 1081<br /> 80% 1093<br /> 90% 1125<br /> 95% 1169<br /> 98% 1291<br /> 99% 1815<br /> 100% 2778 (longest request)</p>
+<p>Will continue to monitor the situation but hopefully it is indeed remedied.&nbsp;</p>

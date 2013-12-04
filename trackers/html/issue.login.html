@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="@@file/chromatron/HTML5/css/jquery.tipsy.css">
 
 	<script src="@@file/chromatron/HTML5/js/libs/modernizr-1.7.min.js"></script>
+    <meta name="robots" content="noindex">
 </head>
 <body class="login">
 	<section role="main">
@@ -29,7 +30,7 @@
 			<div class="article-container">
 			
 			<p>Welcome to the ISAW issue tracker where you may make a request for help. If you are already registered please login below,
-            otherwise simply click "Register" below.</p>	
+            otherwise simply click "Signup" below.</p>	
   <p tal:condition="options/error_message | nothing" class="error-message"                                                                  
      tal:repeat="m options/error_message" tal:content="structure m" />
   <p tal:condition="options/ok_message | nothing" class="ok-message">
@@ -73,7 +74,7 @@
 
     		<ul style="padding-top: 20px" class="login-links">
             <li><a href="user?@template=register" tal:condition="python:request.user.hasPermission('Register', 'user')"
-             i18n:translate="">Register</a></li>
+             i18n:translate="">Signup</a></li>
 			<li><a href="user?@template=forgotten">Lost password?</a></li>
 			<li><a href="http://isaw.nyu.edu">isaw.nyu.edu</a></li>
 		</ul>

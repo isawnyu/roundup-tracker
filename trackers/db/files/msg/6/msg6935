@@ -1,0 +1,4 @@
+<p>Mike should now be able to remote into the vpn client from his machine.</p>
+<p>The directions to setup VPN are located here:&nbsp;<a href="http://www.nyu.edu/its/nyunet/offcampus/vpn/" target="_blank">http://www.nyu.edu/its/nyunet/offcampus/vpn</a></p>
+<p>After this is setup then Mike can run the Remote Desktop Client "mstsc" from startup and then enter the information to connect to this address&nbsp;<span>KOJASEVICM01.ISAW.NYU.EDU</span></p>
+<p><span>Mike is going to bring his laptop in and i'll try to automate this down to an icon.</span></p>

@@ -1,0 +1,15 @@
+<p>tried to submit new content at <a href="http://isaw.nyu.edu/events_request.htm">http://isaw.nyu.edu/events_request.htm</a>&nbsp;, got:</p>
+<p>Traceback (innermost last):</p>
+<ul>
+<li>Module ZPublisher.Publish, line 127, in publish</li>
+<li>Module ZPublisher.mapply, line 77, in mapply</li>
+<li>Module ZPublisher.Publish, line 47, in call_object</li>
+<li>Module z3c.form.form, line 215, in __call__</li>
+<li>Module z3c.form.form, line 210, in update</li>
+<li>Module z3c.form.action, line 99, in execute</li>
+<li>Module z3c.form.button, line 311, in __call__</li>
+<li>Module z3c.form.button, line 170, in __call__</li>
+<li>Module isaw.theme.browser.forms.eventrequest, line 58, in handleApply</li>
+</ul>
+<p>KeyError: 'title'</p>
+<p>Using chrome&nbsp;17.0.963.83 under OSX Lion with both eyes open and my shoes tied.</p>

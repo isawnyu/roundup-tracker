@@ -1,0 +1,23 @@
+Pasting email exchange from last week here:
+
+Seems fine to me, that's Plone's default mechanism. What I suspect is that with all of the moving data over from Plone Alpha 4, 4a1 etc etc etc I just made a folder to house all news content objects without having to worry about Migration.
+
+Open a ticket and next time I visit website items i'll take care of it.
+
+On Fri, May 27, 2011 at 4:04 PM, Tom Elliott  wrote:
+
+    Christopher:
+
+    What do you think about this proposal:
+
+    1. Delete the link http://isaw.nyu.edu/news
+
+    2. Move the collection I just created at http://isaw.nyu.edu/Members/tom.elliott-40nyu.edu/news from its current location to http://isaw.nyu.edu/news
+
+    3. Link the &quot;Latest News&quot; header in the sliding magic box on the home page to http://isaw.nyu.edu/news instead of http://isaw.nyu.edu/about/news
+
+    Rationale: give visitors to the site access to the complete history of our news items in a paged way that's also ordered by effective date without us having to do any manual reordering of content (not sustainable). Compare the view of http://isaw.nyu.edu/about/news
+
+    Alternatively, we could modify (template modifications?) the display of http://isaw.nyu.edu/about/news to do what I'm suggesting.
+
+    Thoughts?

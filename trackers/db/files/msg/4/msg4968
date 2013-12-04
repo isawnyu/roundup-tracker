@@ -1,0 +1,15 @@
+Follow up from email exchange last week:
+
+
+Current settings are available here.. http://isaw.nyu.edu/about/news/synPropertiesForm 
+Right now it's set hourly but the feed is being cached and ordered by maximum value from start data of news content in June. 
+
+We need to open a ticket for this because what i'm gonna have to do is disable caching for rss links. Next time I make my way back over to web items i'll fix it.
+
+On Fri, May 27, 2011 at 4:27 PM, Tom Elliott  wrote:
+
+    Christopher:
+
+    How often does our RSS from the site update? At present I'm not seeing the newly published news item in it.
+
+    http://isaw.nyu.edu/about/news/RSS

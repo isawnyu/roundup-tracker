@@ -1,0 +1,1 @@
+<p>Added the faily freebsd update cron for automaton.. I'm not sure why I didn't do it earlier but opening a ticket only to make sure the random hour cycle is run within the next 24 hours. As such, root@automaton should receive an email etc etc</p>

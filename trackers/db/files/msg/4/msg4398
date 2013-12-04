@@ -1,0 +1,17 @@
+The short is that the folder is inheriting permissions from higher levels, and it was created by a manager so only managers can edit it and the roles are obtuse and the system is confusing. Someday when I have my own team of clones I will have one of myself write out the documentation for the Zope security system as it's been placed into Plone. This has been brought up via people on the documentation team several times it seems. Me going on a tantrum will get people to agree etc but i'll have to do the work and I don't have the time right now.
+
+For now you can access this link to see the changes: 
+
+http://isaw4.atlantides.org:8083/isaw/people/manage_access
+
+&quot;manage_access&quot; can be placed at the end of each object to change the permissions on that object. In this case I just set all rights for the Editor/Manager of the people folder.
+
+As far as permissions go this concept maybe a little confusing but I'm going to try my best to explain it without getting overly technical.
+
+The Faculty folder is just a folder with objects in it. From those objects I generate the actual view or page that you see at http://isaw4.atlantides.org:8083/isaw/people/faculty. 
+
+So when you click that link you are actually going to a folder and not a page. The page is generated on-the-fly and then displayed. Editors/Reviewers/Members etc etc normally don't need to edit the actual folder itself unless they themselves create it. As the folder was created by a &quot;Manager&quot; member, it is not editable to other groups even via the &quot;Sharing&quot; tab.
+
+The description that is shown on the faculty page itself is actually the description for the faculty folder/content object and thus it's like trying to change something that the administrator/manager owns.
+
+I know.. confusing.

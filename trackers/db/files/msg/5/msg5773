@@ -1,0 +1,2 @@
+<p>This morning a user revealed a likely-to-be-repeated user failure mode: failure to select a value on the "Dept" combo box when creating a ticket. A "high" importance ticket (i.e., time-critical) was created, but because no department was assigned, no email to isaw.it@nyu.edu was created. Can we protect ourselves and our users from themselves by generating an isaw.it@nyu.edu email when Dept = isaw it OR Dept = no selection?&nbsp;</p>
+<p>T</p>

@@ -1,0 +1,16 @@
+Hi Bruno:
+
+I've updated the server. Please let me know if you spot any problems. Here's the update transcript:
+
+U    inc/pages/reports.page
+U    inc/pages/maps.page
+D    inc/pdf/Birds_2010.pdf
+A    inc/pdf/2008_SiteManagementPlan.pdf
+A    inc/pdf/Zoology_2010.pdf
+A    inc/img/plans/previews/general_plan_2010.jpg
+A    inc/img/plans/general_plan_2010.jpg
+Updated to revision 18.
+
+
+Best,
+Tom

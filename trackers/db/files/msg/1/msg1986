@@ -1,0 +1,19 @@
+So you did.
+
+You'll want to go to this link:and download the &quot;Fetch&quot; software.
+http://www.nyu.edu/its/software/#ftp
+
+Open the Fetch disk image and drag fetch to your applications folder.
+Open Fetch.  The NYU license information is 
+Serial Number Name:  New York University
+Serial Number: FETCHEX001-WLVK-K6T8-YXJU-8K6D-Z8A9
+
+A window will open asking for the information for your site.
+
+The hostname is: cdl.museum.upenn.edu
+The username is: natc
+You will connect using &quot;SFTP&quot;  - change the dropdown box from FTP to SFTP
+The password is: nabunaid
+
+Click the connect button.
+A directory listing will show.  Click on the 'beate' folder.  Currently it contains 12 or so PDFs and one word document.

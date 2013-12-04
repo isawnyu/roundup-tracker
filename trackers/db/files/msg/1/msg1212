@@ -1,0 +1,40 @@
+Top this is a list of notes I've been keeping on the subject of introducing new Scholars to the system...
+
+1. Obtain list of incoming scholars
+	- from Kate Lawson
+
+2. Setup copier codes
+	- 128.122.167.37 - Third Floor Copier
+	- 128.122.167.40 - Fourth Floor Copier
+	- Copier codes are the four digit representation of the number in the NYU Net ID.  For example, if a net id is mae14, the copier code is 0014
+	- Each person's account name, copier code, and email address should be entered.  All of the options for printing, scanning, copying, etc. should be turned on.
+
+3. Setup server accounts
+	- each user gets a user account on the server for access to the wiki
+	- the short name should be their user ID
+	- the password should be their copier code
+	- they should be granted access to the isaw and Workgroup groups
+
+4. Setup wireless credentials
+	- each person should be setup with access to the NYU wireless network
+	- the credentials are the user's netID and password
+	- the network is a WPA2
+	- on a Mac, the 802.1X should be set to Automatic - the Mac will typically pick up everything automatically
+	- on a PC, the setup is more complicated and specific to each user's computer manufacturer/model
+	- the instructions for setting up a PC are here:  http://www.nyu.edu/its/wireless/configure/nyu.html
+	
+5. Setup printers
+	- each user should have access to both copiers (listed above)
+	- 128.122.167.37 - Lanier LD 275
+	- 128.122.167.40 - Lanier LD 345
+	- Windows XP sets them up through an IP address on a LOCAL port, not through the &quot;network&quot; option as one might imagine
+	- Better to use the actual drivers from the company than the generic postscript drivers on the Mac
+	
+6. Setup listserv access
+	- a moderator should setup the email accounts on lists.nyu.edu
+	- the username to access the server is the moderator's full email address
+	- the password is the NetID password
+
+7. Register any wired requests
+	- activate the data jack if necessary with an ITS Request Form
+	- hostmaster@nyu.edu w MAC address and data jack number or ITS request form above

@@ -1,0 +1,11 @@
+When Linda tries to print from Iphoto to the 5th floor HP Color Laserjet it fails with an onerous message:
+
+ERROR: limitcheck
+OFFENDING COMMAND: image
+STACK:
+
+The problem seems to be Iphoto.
+
+Linda the work around is that you have to save the modified images you are working with and then print them out using preview. 
+
+I'll update after I walk through this process with Linda herself.
